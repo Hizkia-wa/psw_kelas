@@ -19,9 +19,9 @@ import tm16 from '../images/Bgl1016.jpg';
 
 const teamData = [
   { id: 1, name: "FEBRI SILAEN", img: tm1, about: "..." },
-  { id: 2, name: "ROSSEVA APRILIA TAMBA", img: tm5, about: "..." },
-  { id: 3, name: "CHANTIQUE AMORELIA SHETTY NABABAN", img: tm9, about: "..." },
-  { id: 4, name: "RUBEN KRISTIAN HAMONANGAN TAMBUNAN", img: tm13, about: "..." },
+  { id: 2, name: "ROSSEVA APRILIA TAMBA", img: tm5, about: "Halo, aku Rosseva Aprilia Tamba biasa dipanggil Eva, aku punya kemampuan untuk bermain musik dan itu berubah menjadi hobiku. Orang-orang bilang tata bicara dan cara ku bersikap tidak seperti cewek pada hakekatnya, tapi itu sudah jadi hal lumrah yang aku dengar sejak SMA . Aku suka banget sama matcha, baik dalam bentuk minuman ataupun cemilan, matcha adalah andalanku. Cara bicaraku bisa dikatakan agak kasar, dan aku kadang tidak bisa mengontrol emosiku dengan baik, namun aku memiliki teman-teman yang baik dan mau berteman denganku"},
+  { id: 3, name: "CHANTIQUE AMORELIA SHETTY NABABAN", img: tm9, about: "Aku heran karena kalau aku ngomong pasti dibilang teman² Chantikk suaramu kuat kali padahal menurutku itu kecil. Gak cuman teman-teman, kakak asuh juga katakan demikian. Terus aku orangnya itu perhatian. Perhatian ke satu prodi, lebih tepatnya yang dekat dengan aku. Sampai aku dijuluki sebagai Mother. Aku punya hobi yaitu memasak, paling suka kalau udh ngumpul di rumah karena dapat memasak." },
+  { id: 4, name: "RUBEN KRISTIAN HAMONANGAN TAMBUNAN", img: tm13, about: "Kenalin nama gua Ruben Tambunan asal gua dari Jakarta hobi gua bermain game , gua orangnya baik hati dan tidak sombong kayaknya" },
 ];
 
 const myTeamImages = [

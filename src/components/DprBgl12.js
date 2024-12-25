@@ -20,7 +20,7 @@ import tm16 from '../images/Bgl1216.jpg';
 const teamData = [
   { id: 1, name: "SHINTA ELDO MARPAUNG", img: tm1, about: "..." },
   { id: 2, name: "NOVA WINDYANA SIMANJUNTAK", img: tm5, about: "..." },
-  { id: 3, name: "SHANDRA GRACE NAINGGOLAN", img: tm9, about: "..." },
+  { id: 3, name: "SHANDRA GRACE NAINGGOLAN", img: tm9, about: "saya orangnya baik hati dan hobi saya menggambar saya suka ngeluh kalo banyak tugas dan saya juga agak malas ya gess tapi tetap semangat dalam menjalani hidup dan juga perkuliahan saya, itulah saya shandra nainggolan" },
   { id: 4, name: "NAHESSON SUGOS NAINGGOLAN", img: tm13, about: "..." },
 ];
 
