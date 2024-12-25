@@ -770,9 +770,9 @@ function App() {
         <Route path="/QzBing11b8" element={<QzBing11b8 />} />
 
         {/* Rute untuk kuis Inggris 12*/}
-        <Route path="/qzpresenttense" element={<QzBing12Present />} />
-        <Route path="/qzpasttense" element={<QzBing12Past />} />
-        <Route path="/qzfuturetense" element={<QzBing12Future />} />
+        <Route path="/QzBing12Present" element={<QzBing12Present />} />
+        <Route path="/QzBing12Past" element={<QzBing12Past />} />
+        <Route path="/QzBing12Future" element={<QzBing12Future />} />
 
         {/* Rute untuk Materi Biologi 11 */}
         {/* <Route path="/QzBgl12b1" element={<QzBgl12b1 />} />
