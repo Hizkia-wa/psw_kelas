@@ -1,227 +1,202 @@
 import React, { useState } from "react";
-import "../css/QuestionPage.css";
+import "./../css/QuestionPage.css";
 
 const LatihanSoal3 = () => {
-  const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+ const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+
+  
 
   const questions = [
     {
       question: "Apa faktor yang dapat mempengaruhi laju reaksi?",
-      options: [
-        { label: "A. Konsentrasi, suhu, dan katalis", value: "A", isCorrect: true },
-        { label: "B. Volume, tekanan, dan suhu", value: "B" },
-        { label: "C. Waktu, suhu, dan warna", value: "C" },
-        { label: "D. Berat molekul, tekanan, dan waktu", value: "D" },
-      ],
+      options: ["A. Konsentrasi, suhu, dan katalis", "B. Volume, tekanan, dan suhu", "C. Waktu, suhu, dan warna", "D. Berat molekul, tekanan, dan waktu"],
+      correctOption: "A",
       explanation: "Faktor utama yang mempengaruhi laju reaksi adalah konsentrasi, suhu, dan keberadaan katalis."
     },
     {
       question: "Bagaimana cara katalis mempercepat laju reaksi?",
-      options: [
-        { label: "A. Dengan meningkatkan suhu reaksi", value: "A" },
-        { label: "B. Dengan menurunkan energi aktivasi reaksi", value: "B", isCorrect: true },
-        { label: "C. Dengan meningkatkan konsentrasi reaktan", value: "C" },
-        { label: "D. Dengan menambah energi ke dalam sistem", value: "D" },
-      ],
+      options: ["A. Dengan meningkatkan suhu reaksi", "B. Dengan menurunkan energi aktivasi reaksi", "C. Dengan meningkatkan konsentrasi reaktan", "D. Dengan menambah energi ke dalam sistem"],
+      correctOption: "B",
       explanation: "Katalis mempercepat reaksi dengan menurunkan energi aktivasi, sehingga reaksi lebih mudah terjadi."
     },
     {
       question: "Apa yang terjadi pada laju reaksi jika suhu dinaikkan?",
-      options: [
-        { label: "A. Laju reaksi meningkat", value: "A", isCorrect: true },
-        { label: "B. Laju reaksi menurun", value: "B" },
-        { label: "C. Tidak ada perubahan", value: "C" },
-        { label: "D. Reaksi berhenti", value: "D" },
-      ],
+      options: ["A. Laju reaksi meningkat", "B. Laju reaksi menurun", "C. Tidak ada perubahan", "D. Reaksi berhenti"],
+      correctOption: "A",
       explanation: "Peningkatan suhu menyebabkan partikel bergerak lebih cepat, sehingga peluang tumbukan efektif meningkat."
     },
     {
       question: "Dalam grafik energi vs lintasan reaksi, apa peran puncak kurva?",
-      options: [
-        { label: "A. Energi potensial awal", value: "A" },
-        { label: "B. Energi aktivasi", value: "B", isCorrect: true },
-        { label: "C. Energi kinetik maksimum", value: "C" },
-        { label: "D. Energi produk reaksi", value: "D" },
-      ],
+      options: ["A. Energi potensial awal", "B. Energi aktivasi", "C. Energi kinetik maksimum", "D. Energi produk reaksi"],
+      correctOption: "B",
       explanation: "Puncak kurva menunjukkan energi aktivasi, yaitu energi minimum yang diperlukan agar reaksi berlangsung."
     },
     {
       question: "Apa pengaruh luas permukaan pada laju reaksi?",
-      options: [
-        { label: "A. Semakin kecil luas permukaan, semakin cepat reaksi", value: "A" },
-        { label: "B. Semakin besar luas permukaan, semakin cepat reaksi", value: "B", isCorrect: true },
-        { label: "C. Tidak ada pengaruh", value: "C" },
-        { label: "D. Hanya memengaruhi reaksi endoterm", value: "D" },
-      ],
+      options: ["A. Semakin kecil luas permukaan, semakin cepat reaksi", "B. Semakin besar luas permukaan, semakin cepat reaksi", "C. Tidak ada pengaruh", "D. Hanya memengaruhi reaksi endoterm"],
+      correctOption: "B",
       explanation: "Luas permukaan yang lebih besar meningkatkan peluang tumbukan antar partikel, sehingga mempercepat laju reaksi."
     },
     {
       question: "Apa pengaruh konsentrasi terhadap laju reaksi?",
-      options: [
-        { label: "A. Semakin tinggi konsentrasi, semakin cepat reaksi", value: "A", isCorrect: true },
-        { label: "B. Semakin rendah konsentrasi, semakin cepat reaksi", value: "B" },
-        { label: "C. Konsentrasi tidak mempengaruhi laju reaksi", value: "C" },
-        { label: "D. Hanya mempengaruhi reaksi endoterm", value: "D" },
-      ],
+      options: ["A. Semakin tinggi konsentrasi, semakin cepat reaksi", "B. Semakin rendah konsentrasi, semakin cepat reaksi", "C. Konsentrasi tidak mempengaruhi laju reaksi", "D. Hanya mempengaruhi reaksi endoterm"],
+      correctOption: "A",
       explanation: "Semakin banyak partikel dalam volume tertentu, semakin banyak tumbukan efektif yang terjadi, sehingga laju reaksi meningkat."
     },
     {
       question: "Bagaimana pengaruh tekanan terhadap laju reaksi gas?",
-      options: [
-        { label: "A. Menurunkan laju reaksi", value: "A" },
-        { label: "B. Meningkatkan laju reaksi", value: "B", isCorrect: true },
-        { label: "C. Tidak mempengaruhi laju reaksi", value: "C" },
-        { label: "D. Mengurangi jumlah produk", value: "D" },
-      ],
+      options: ["A. Menurunkan laju reaksi", "B. Meningkatkan laju reaksi", "C. Tidak mempengaruhi laju reaksi", "D. Mengurangi jumlah produk"],
+      correctOption: "B",
       explanation: "Meningkatkan tekanan pada gas memperkecil volume dan meningkatkan frekuensi tumbukan antara partikel, mempercepat reaksi."
     },
     {
       question: "Apa yang dimaksud dengan reaksi orde satu?",
-      options: [
-        { label: "A. Laju reaksi berbanding lurus dengan konsentrasi reaktan", value: "A", isCorrect: true },
-        { label: "B. Laju reaksi berbanding terbalik dengan konsentrasi reaktan", value: "B" },
-        { label: "C. Laju reaksi tidak tergantung pada konsentrasi reaktan", value: "C" },
-        { label: "D. Laju reaksi tidak berubah dengan suhu", value: "D" },
-      ],
+      options: ["A. Laju reaksi berbanding lurus dengan konsentrasi reaktan", "B. Laju reaksi berbanding terbalik dengan konsentrasi reaktan", "C. Laju reaksi tidak tergantung pada konsentrasi reaktan", "D. Laju reaksi tidak berubah dengan suhu"],
+      correctOption: "A",
       explanation: "Pada reaksi orde satu, laju reaksi berbanding lurus dengan konsentrasi reaktan yang ada."
     },
     {
       question: "Apa yang terjadi pada laju reaksi jika konsentrasi reaktan sangat tinggi?",
-      options: [
-        { label: "A. Laju reaksi sangat cepat", value: "A", isCorrect: true },
-        { label: "B. Laju reaksi sangat lambat", value: "B" },
-        { label: "C. Tidak ada perubahan", value: "C" },
-        { label: "D. Reaksi terhambat", value: "D" },
-      ],
+      options: ["A. Laju reaksi sangat cepat", "B. Laju reaksi sangat lambat", "C. Tidak ada perubahan", "D. Reaksi terhambat"],
+      correctOption: "A",
       explanation: "Pada konsentrasi yang sangat tinggi, lebih banyak partikel yang bertumbukan, yang mengarah pada peningkatan laju reaksi."
     },
     {
       question: "Apa yang dimaksud dengan reaksi yang mencapai keadaan setimbang?",
-      options: [
-        { label: "A. Laju reaksi maju dan mundur sama", value: "A", isCorrect: true },
-        { label: "B. Laju reaksi tidak berubah", value: "B" },
-        { label: "C. Reaksi berhenti", value: "C" },
-        { label: "D. Reaksi berlangsung tanpa pengaruh luar", value: "D" },
-      ],
+      options: ["A. Laju reaksi maju dan mundur sama", "B. Laju reaksi tidak berubah", "C. Reaksi berhenti", "D. Reaksi berlangsung tanpa pengaruh luar"],
+      correctOption: "A",
       explanation: "Keadaan setimbang terjadi ketika laju reaksi maju dan mundur menjadi sama, sehingga konsentrasi reaktan dan produk tetap konstan."
     }
   ];
 
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] ? true : false);
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      resetSelection();
     }
   };
 
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] ? true : false);
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 1) {
+      setCurrentQuestion(currentQuestion - 1);
+      resetSelection();
     }
   };
 
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
+    setShowConfirmation(true); // Trigger confirmation popup
   };
 
-  const resetQuiz = () => {
-    setAnswers([]);
-    setIsAnswered(false);
-    setIsCorrect(false);
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setIsFinished(false);
+  const resetSelection = () => {
+    setSelectedOption(null);
   };
 
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Mode Bionik</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>Skor Anda: {score}/{questions.length}</p>
-          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const handleDropdownChange = (e) => {
+    const selectedNumber = parseInt(e.target.value);
+    setCurrentQuestion(selectedNumber);
+    resetSelection();
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      // Optionally, you can show the explanation here if confirmed
+    }
+    setShowConfirmation(false); // Close the confirmation popup
+  };
 
   return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
+    <div className="question-page">
+      <div className="question-container">
+        <button
+          className="oval-button previous-button"
+          onClick={handlePreviousQuestion}
+          disabled={currentQuestion === 1}
+        >
+          &larr; Soal Sebelumnya
+        </button>
+        <div className="question-box">
+          <h2>Soal {currentQuestion}</h2>
+          <p>{questions[currentQuestion - 1].question}</p>
         </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
+        <button
+          className="oval-button next-button"
+          onClick={handleNextQuestion}
+          disabled={currentQuestion === questions.length}
+        >
+          Soal Berikutnya &rarr;
+        </button>
+      </div>
+
+      <div className="interactive-section">
+        <div className="dropdown-container">
+          <label htmlFor="question-dropdown">Pilih Soal:</label>
+          <select
+            id="question-dropdown"
+            value={currentQuestion}
+            onChange={handleDropdownChange}
+          >
+            {questions.map((_, index) => (
+              <option key={index} value={index + 1}>
+                Soal {index + 1}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="options-container">
+          {questions[currentQuestion - 1].options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""
+              className={`option-button ${
+                selectedOption === option
+                  ? option === questions[currentQuestion - 1].correctOption
+                    ? "correct"
+                    : "incorrect"
+                  : ""
               }`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex]}
+              onClick={() => handleOptionSelect(option)}
             >
-              {option.label}
+              {option}
             </button>
           ))}
         </div>
-        {answers[currentQuestionIndex] && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${currentQuestion.options.find((opt) => opt.isCorrect)?.value}`}
-            </h3>
-            <p>{currentQuestion.explanation}</p>
+
+        {selectedOption && !showConfirmation && (
+          <div className="explanation-container">
+            <p className="explanation-text">
+              {questions[currentQuestion - 1].explanation}
+            </p>
           </div>
         )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
-          >
-            {currentQuestionIndex === questions.length - 1 ? "Selesai" : "Soal Selanjutnya →"}
-          </button>
-        </div>
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
+
 
 export default LatihanSoal3;
