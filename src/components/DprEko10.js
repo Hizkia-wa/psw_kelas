@@ -18,10 +18,10 @@ import tm15 from '../images/Eko1015.jpg';
 import tm16 from '../images/Eko1016.jpg';
 
 const teamData = [
-  { id: 1, name: "ALDI FAHREL NABABAN", img: tm1, about: "..." },
+  { id: 1, name: "ALDI FAHREL NABABAN", img: tm1, about: "Aku orang yang suka main musik, sering banget menghabiskan waktu buat main game, dan nggak bisa lepas dari kopi. Dalam obrolan, aku selalu mencoba pengertian, meskipun kadang nggak semua orang bisa aku pahami sepenuhnya. Tapi tenang aja, itu cuma caraku untuk lebih memahami situasi. Aku Aldi Fahrel Nababan, dan ya, aku orang yang santai tapi selalu mendengarkan." },
   { id: 2, name: "BETHANIA PERMAI SIMANGUNSONG", img: tm5, about: "..." },
-  { id: 3, name: "KRISNA PUTRA IMMANUEL LUMBANTORUAN", img: tm9, about: "..." },
-  { id: 4, name: "DE PEDRO MONANG PANE", img: tm13, about: "..." },
+  { id: 3, name: "KRISNA PUTRA IMMANUEL LUMBANTORUAN", img: tm9, about: "Aku Krisna Putra Immanuel, aku orangnya baik hati, rajin menabung, suka bersedekah, rajin beribadah, taat agama, taat orang tua, sayang keluarga, mampu membelah lautan, dan yg terpenting orangnya ganteng." },
+  { id: 4, name: "DE PEDRO MONANG PANE", img: tm13, about: "Aku orangnya agak kasar dan emosian tapi tenang, sikap ku itu bisa terjadi hanya karna hal yang tidak baik, aku aslinya asik, soft spoken, dan pastinya ganteng. Aku orangnya suka sepak bola, drakor, dan gitar ataupun musik." },
 ];
 
 const myTeamImages = [
