@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
-const QzBing12Present = () => {
+const QzBing12Present= () => {
   const navigate = useNavigate();
 
   const questions = [
