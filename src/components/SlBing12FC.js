@@ -1,170 +1,198 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "../css/QuestionPage.css";
 
-const KuisFutureContinuousTense = () => {
-  const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+const  KuisFutureContinuous= () => {
+  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
-      question: "At 7 PM tonight, she ___ dinner. (eat)",
-      options: [
-        { label: "A. will eat", value: "A" },
-        { label: "B. will be eating", value: "B", isCorrect: true },
-        { label: "C. eats", value: "C" },
-        { label: "D. eating", value: "D" },
-      ],
+      question: "In a few minutes, she ... (give) her presentation to the team.",
+      options: ["A. will give", "B. will be giving", "C. is giving", "D. gives"],
+      correctOption: "B",
+      explanation: "The correct answer is 'B. will be giving' because it indicates an action in progress at a specific future time.",
     },
     {
-      question: "This time tomorrow, we ___ to the airport. (drive)",
-      options: [
-        { label: "A. will drive", value: "A" },
-        { label: "B. will be driving", value: "B", isCorrect: true },
-        { label: "C. are driving", value: "C" },
-        { label: "D. drove", value: "D" },
-      ],
+      question: "Tomorrow at noon, I ... (meet) my friends at the park.",
+      options: ["A. will meet", "B. am meeting", "C. meet", "D. will be meeting"],
+      correctOption: "D",
+      explanation: "The correct answer is 'D. will be meeting' as it refers to an ongoing action at a specific future time.",
     },
     {
-      question: "He ___ TV all evening. (watch)",
-      options: [
-        { label: "A. will watch", value: "A" },
-        { label: "B. will be watching", value: "B", isCorrect: true },
-        { label: "C. watches", value: "C" },
-        { label: "D. watching", value: "D" },
-      ],
+      question: "They ... help us with the project next week.",
+      options: ["A. shall", "B. will", "C. would", "D. are"],
+      correctOption: "A",
+      explanation: "The correct answer is 'A. shall' as it indicates a formal or emphatic intention.",
     },
     {
-      question: "By next week, they ___ for the marathon. (train)",
-      options: [
-        { label: "A. will train", value: "A" },
-        { label: "B. will be training", value: "B", isCorrect: true },
-        { label: "C. trained", value: "C" },
-        { label: "D. training", value: "D" },
-      ],
+      question: "... you be attending the seminar next week?",
+      options: ["A. will", "B. shall", "C. do", "D. are"],
+      correctOption: "B",
+      explanation: "The correct answer is 'B. shall' as it is often used in formal questions about future actions.",
     },
     {
-      question: "Tomorrow at noon, I ___ lunch with my colleagues. (have)",
-      options: [
-        { label: "A. will be having", value: "A", isCorrect: true },
-        { label: "B. will have", value: "B" },
-        { label: "C. having", value: "C" },
-        { label: "D. had", value: "D" },
-      ],
+      question: "... I be able to finish the report by tomorrow?",
+      options: ["A. can", "B. do", "C. will", "D. shall"],
+      correctOption: "C",
+      explanation: "The correct answer is 'C. will' as it refers to a future ability.",
+    },
+    {
+      question: "This time tomorrow, I ______ (travel) to Bali.",
+      options: ["A. will travel", "B. will have traveled", "C. will be traveling", "D. will have been traveling"],
+      correctOption: "C",
+      explanation: "The correct answer is 'C. will be traveling' as it describes an ongoing action in the future.",
+    },
+    {
+      question: "At 7 PM tonight, they ______ (have) dinner at the restaurant.",
+      options: ["A. will have", "B. will have had", "C. will be having", "D. will have been having"],
+      correctOption: "C",
+      explanation: "The correct answer is 'C. will be having' as it describes an ongoing action at a specific time in the future.",
+    },
+    {
+      question: "Next week, she ______ (work) on her new project.",
+      options: ["A. will work", "B. will have worked", "C. will be working", "D. will have been working"],
+      correctOption: "C",
+      explanation: "The correct answer is 'C. will be working' as it describes an ongoing action in the future.",
+    },
+    {
+      question: "When you call me, I ______ (watch) a movie.",
+      options: ["A. will watch", "B. will be watching", "C. will have watched", "D. will have been watching"],
+      correctOption: "B",
+      explanation: "The correct answer is 'B. will be watching' as it refers to an ongoing action in the future.",
+    },
+    {
+      question: "By this time tomorrow, he ______ (drive) to his hometown.",
+      options: ["A. will drive", "B. will be driving", "C. will have driven", "D. will have been driving"],
+      correctOption: "B",
+      explanation: "The correct answer is 'B. will be driving' as it indicates an ongoing action at a specific future time.",
     },
   ];
 
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] ? true : false);
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      resetSelection();
     }
   };
 
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] ? true : false);
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 1) {
+      setCurrentQuestion(currentQuestion - 1);
+      resetSelection();
     }
   };
 
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
   };
 
-  const handleRestartQuiz = () => {
-    setAnswers([]);
-    setScore(0);
-    setCurrentQuestionIndex(0);
-    setIsFinished(false);
+  const resetSelection = () => {
+    setSelectedOption(null);
   };
 
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Future Continuous Tense</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>Skor Anda: {score}/{questions.length}</p>
-          <button className="finish-button" onClick={handleRestartQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const handleDropdownChange = (e) => {
+    const selectedNumber = parseInt(e.target.value);
+    setCurrentQuestion(selectedNumber);
+    resetSelection();
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      setSelectedOption(true);
+    }
+    setShowConfirmation(false); 
+  };
 
   return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Future Continuous Tense</h1>
-        <div className="latihan-soal1-question">
-          <p>{currentQuestion.question}</p>
+    <div className="question-page">
+      <div className="question-container">
+        <button
+          className="oval-button previous-button"
+          onClick={handlePreviousQuestion}
+          disabled={currentQuestion === 1}
+        >
+          &larr; Soal Sebelumnya
+        </button>
+        <div className="question-box">
+          <h2>Soal {currentQuestion}</h2>
+          <p>{questions[currentQuestion - 1].question}</p>
         </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
+        <button
+          className="oval-button next-button"
+          onClick={handleNextQuestion}
+          disabled={currentQuestion === questions.length}
+        >
+          Soal Berikutnya &rarr;
+        </button>
+      </div>
+
+      <div className="interactive-section">
+        <div className="dropdown-container">
+          <label htmlFor="question-dropdown">Pilih Soal:</label>
+          <select
+            id="question-dropdown"
+            value={currentQuestion}
+            onChange={handleDropdownChange}
+          >
+            {questions.map((_, index) => (
+              <option key={index} value={index + 1}>
+                Soal {index + 1}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="options-container">
+          {questions[currentQuestion - 1].options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value
-                  ? "latihan-soal1-selected-answer"
+              className={`option-button ${
+                selectedOption === option
+                  ? option === questions[currentQuestion - 1].correctOption
+                    ? "correct"
+                    : "incorrect"
                   : ""
               }`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex]}
+              onClick={() => handleOptionSelect(option)}
             >
-              {option.label}
+              {option}
             </button>
           ))}
         </div>
-        {answers[currentQuestionIndex] && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${
-                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
-                  }`}
-            </h3>
+
+        {selectedOption && (
+          <div className="explanation-container">
+            <p className="explanation-text">
+              {questions[currentQuestion - 1].explanation}
+            </p>
           </div>
         )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
-          >
-            {currentQuestionIndex === questions.length - 1 ? "Selesai" : "Soal Selanjutnya →"}
-          </button>
-        </div>
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default KuisFutureContinuousTense;
+export default KuisFutureContinuous;
