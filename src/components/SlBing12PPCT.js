@@ -176,7 +176,7 @@ const KuisPastPerfectContinuousTense = () => {
     return (
       <div className="latihan-soal1-container">
         <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Kuis Past Perfect Continuous Tense</h1>
+          <h1 className="latihan-soal1-title">Past Perfect Continuous Tense</h1>
           <h2>Quiz Selesai!</h2>
           <p>Skor Anda: {score}/{questions.length}</p>
           <button className="finish-button" onClick={handleRestartQuiz}>
@@ -190,7 +190,7 @@ const KuisPastPerfectContinuousTense = () => {
   return (
     <div className="latihan-soal1-container">
       <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Kuis Past Perfect Continuous Tense</h1>
+        <h1 className="latihan-soal1-title">Past Perfect Continuous Tense</h1>
         <div className="latihan-soal1-question">
           <p>{currentQuestion.question}</p>
         </div>

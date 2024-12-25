@@ -27,6 +27,7 @@ const Tryout = () => {
     { question: "19. What happens if stomata remain closed for too long in plants?", options: ["Photosynthesis decreases", "Water absorption increases", "Transpiration increases", "Gas exchange increases"], answer: "Photosynthesis decreases" },
     { question: "20. What is meristem tissue?", options: ["Tissue that actively divides", "Protective tissue", "Transport tissue", "Supportive tissue"], answer: "Tissue that actively divides" }
   ];
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
    const [score, setScore] = useState(0);
    const [showResult, setShowResult] = useState(false);
@@ -77,3 +78,4 @@ const Tryout = () => {
  };
  
  export default Tryout;
+

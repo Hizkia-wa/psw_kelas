@@ -219,9 +219,9 @@ import QzBing11b5 from './components/QzBing11b5';
 import QzBing11b6 from './components/QzBing11b6';
 import QzBing11b7 from './components/QzBing11b7';
 import QzBing11b8 from './components/QzBing11b8';
-import QzBing12Present from './components/QzBing12Future';
+import QzBing12Present from './components/QzBing12Past';
 import QzBing12Past from './components/QzBing12Past';
-import QzBing12Future from './components/QzBing12Present';
+import QzBing12Future from './components/QzBing12Future';
 import QzFisika11b1 from './components/QzFsk11b1';
 import QzFisika11b2 from './components/QzFsk11b2';
 import QzFisika11b3 from './components/QzFsk11b3';
@@ -769,6 +769,7 @@ function App() {
         <Route path="/QzBing11b7" element={<QzBing11b7 />} />
         <Route path="/QzBing11b8" element={<QzBing11b8 />} />
 
+        {/* Rute untuk kuis Inggris 12*/}
         <Route path="/qzpresenttense" element={<QzBing12Present />} />
         <Route path="/qzpasttense" element={<QzBing12Past />} />
         <Route path="/qzfuturetense" element={<QzBing12Future />} />
