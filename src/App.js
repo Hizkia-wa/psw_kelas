@@ -23,7 +23,6 @@ import BahasaInggrisKelas11 from './pages/MateriBing11';
 import BahasaInggrisKelas12 from './pages/MateriBing12';
 import EkonomiKelas10 from './pages/MateriEkonomi10';
 import EkonomiKelas11 from './pages/MateriEkonomi11';
-import EkonomiKelas12 from './pages/MateriEkonomi12';
 import SlMatematikaKelas10 from './pages/LatihanMTK10';
 import SlMatematikaKelas11 from './pages/LatihanMTK11';
 import SlMatematikaKelas12 from './pages/LatihanMTK12';
@@ -41,7 +40,6 @@ import SlBahasaInggrisKelas11 from './pages/LatihanBing11';
 import SlBahasaInggrisKelas12 from './pages/LatihanBing12';
 import SlEkonomiKelas10 from './pages/LatihanEkonomi10';
 import SlEkonomiKelas11 from './pages/LatihanEkonomi11';
-import SlEkonomiKelas12 from './pages/LatihanEkonomi12';
 import QzMatematikaKelas10 from './pages/kuisMTK10';
 import QzMatematikaKelas11 from './pages/kuisMTK11';
 import QzMatematikaKelas12 from './pages/kuisMTK12';
@@ -59,7 +57,6 @@ import QzBahasaInggrisKelas11 from './pages/kuisBing11';
 import QzBahasaInggrisKelas12 from './pages/kuisBing12';
 import QzEkonomiKelas10 from './pages/kuisEkonomi10';
 import QzEkonomiKelas11 from './pages/kuisEkonomi11';
-import QzEkonomiKelas12 from './pages/kuisEkonomi12';
 
 // Import komponen tambahan
 import Fisika10b1 from './components/Fsk10b1';
@@ -417,8 +414,7 @@ function App() {
         {/* Rute untuk materi Ekonomi */}
         <Route path="materi/ekonomi/kelas-10" element={<EkonomiKelas10 />} />
         <Route path="materi/ekonomi/kelas-11" element={<EkonomiKelas11 />} />
-        <Route path="materi/ekonomi/kelas-12" element={<EkonomiKelas12 />} />
-        {/* Rute untuk latihan Matematika */}
+    {/* Rute untuk latihan Matematika */}
         <Route path="latihan/matematika/kelas-10" element={<SlMatematikaKelas10 />} />
         <Route path="latihan/matematika/kelas-11" element={<SlMatematikaKelas11 />} />
         <Route path="latihan/matematika/kelas-12" element={<SlMatematikaKelas12 />} />
@@ -441,7 +437,6 @@ function App() {
         {/* Rute untuk latihan Ekonomi */}
         <Route path="latihan/ekonomi/kelas-10" element={<SlEkonomiKelas10 />} />
         <Route path="latihan/ekonomi/kelas-11" element={<SlEkonomiKelas11 />} />
-        <Route path="latihan/ekonomi/kelas-12" element={<SlEkonomiKelas12 />} />
         {/* Rute untuk kuis Matematika */}
         <Route path="kuis/matematika/kelas-10" element={<QzMatematikaKelas10 />} />
         <Route path="kuis/matematika/kelas-11" element={<QzMatematikaKelas11 />} />
@@ -465,8 +460,7 @@ function App() {
         {/* Rute untuk kuis Ekonomi */}
         <Route path="kuis/ekonomi/kelas-10" element={<QzEkonomiKelas10 />} />
         <Route path="kuis/ekonomi/kelas-11" element={<QzEkonomiKelas11 />} />
-        <Route path="kuis/ekonomi/kelas-12" element={<QzEkonomiKelas12 />} />
-        {/* Rute untuk Materi Fisika 10 */}
+   {/* Rute untuk Materi Fisika 10 */}
         <Route path="/Fsk10b1" element={<Fisika10b1 />} />
         <Route path="/Fsk10b2" element={<Fisika10b2 />} />
         <Route path="/Fsk10b3" element={<Fisika10b3 />} />
