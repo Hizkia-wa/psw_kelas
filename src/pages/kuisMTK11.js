@@ -8,15 +8,13 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/Bing10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/Bing10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: 'Bing10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: 'Bing10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: 'Bing10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/Bing10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/Bing10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/Bing10b8' },
-    ];
+      { id: 1, name: 'Matriks',description: 'Matriks adalah susunan bilangan dalam baris dan kolom.',image: 'https://itbox.id/wp-content/uploads/2022/11/maxresdefault.jpeg', category: 'Bab 1', link: '/QzMtk11b1' },
+      { id: 2, name: 'Transformasi Geometri',description: 'Transformasi geometri mempelajari perubahan posisi, bentuk, atau ukuran objek pada bidang.', image: 'https://cdn.pixabay.com/photo/2023/08/20/21/39/menger-8203238_640.png', category: 'Bab 2', link: '/QzMtk11b2' },
+      { id: 3, name: 'Induksi Matematika', description: 'Induksi matematika membuktikan pernyataan untuk semua bilangan bulat positif melalui dua langkah: basis dan induksi.', image: 'https://cdn.pixabay.com/photo/2015/10/11/11/20/banner-982162_640.jpg', category: 'Bab 3', link: '/QzMtk11b3' },
+      { id: 4, name: 'Pemograman Linear',description: 'Pemrograman linear mengoptimalkan fungsi linear dengan batasan linear.', image: 'https://cdn.pixabay.com/photo/2017/03/27/14/41/black-and-white-2179121_640.jpg', category: 'Bab 4', link: '/QzMtk11b4' },
+      { id: 5, name: 'Turunan Dalam Matematika',description: 'Turunan dalam matematika mengukur laju perubahan suatu fungsi terhadap variabelnya.', image: 'https://cdn.pixabay.com/photo/2015/12/22/08/10/board-1103721_640.jpg', category: 'Bab 5', link: '/QzMtk11b5' },
+      { id: 6, name: 'Integral',description: 'Integral menghitung luas area di bawah kurva atau akumulasi perubahan fungsi.', image: 'https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_640.jpg', category: 'Bab 6', link: '/QzMtk11b6' },
+   ];
 
     setBiologies(mockBiologies);
 
@@ -44,7 +42,7 @@ const Materi = () => {
       <div className="biologi-biology-section">
         <div className="container">
           <div className="section-header">
-            <h2>Kuis Matermatika 11</h2>
+            <h2>Kuis Matematika 11</h2>
           </div>
           <div className="biology-grid">
             {biologies.map((biology) => (

@@ -8,15 +8,12 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/QzKma10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzKma10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/QzKma10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzKma10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzKma10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzKma10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/QzKma10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/QzKma10b8' },
-    ];
+      { id: 1, name: ' Teori Atom',description: 'Teori Atom: Struktur materi terdiri dari atom.',image: 'https://i.pinimg.com/474x/3c/b8/9a/3cb89a8248e01a5ec3b849d4175f1b85.jpg', category: 'Bab 1', link: '/QzKma10b1' },
+      { id: 2, name: 'Tabel Periodik Unsur ', description: 'Tabel Periodik Unsur: Pengelompokan unsur berdasarkan sifatnya.',image: 'https://i.pinimg.com/736x/fc/5b/6c/fc5b6c3ad50cf16343cb46993bbbde1f.jpg', category: 'Bab 2', link: '/QzKma10b2' },
+      { id: 3, name: 'Stoikiometri',description: 'Stoikiometri: Perhitungan kuantitatif dalam reaksi kimia.',image: 'https://i.pinimg.com/474x/e6/ce/3c/e6ce3cc6bff00b696732ab8c21485410.jpg', category: 'Bab 3', link: '/QzKma10b1' },
+      { id: 4, name: ' Ikatan Kimia', description: 'Ikatan Kimia: Keterhubungan atom membentuk senyawa.',image: 'https://i.pinimg.com/474x/a4/21/48/a421483065f91372ed5f9112a9b3b19d.jpg', category: 'Bab 4', link: '/QzKma10b4' },
+      { id: 5, name: 'Reaksi Redoks', description: 'Reaksi Redoks: Reaksi transfer elektron oksidasi-reduksi.',image: 'https://i.pinimg.com/474x/69/87/fc/6987fc237c342cf5ded6de38b5201cde.jpg', category: 'Bab 5', link: '/QzKma10b5' },
+   ];
 
     setBiologies(mockBiologies);
 

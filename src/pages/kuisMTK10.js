@@ -8,15 +8,15 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/Bing10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/Bing10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: 'Bing10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: 'Bing10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: 'Bing10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/Bing10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/Bing10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/Bing10b8' },
-    ];
+      { id: 1, name: 'Eksponen dan Logaritma' ,description: 'Eksponen dan logaritma membahas perpangkatan dan inversnya dalam matematika.',image: 'https://cdn.pixabay.com/photo/2020/10/22/10/05/formula-5675604_640.jpg', category: 'Bab 1', link: '/QzMtk10b1' },
+      { id: 2, name: 'Barisan dan Deret', description: 'Barisan dan deret mempelajari pola bilangan dan jumlahnya dalam matematika.', image: 'https://cdn.pixabay.com/photo/2023/01/10/03/57/digits-7708860_640.jpg', category: 'Bab 2', link: '/QzMtk10b2' },
+      { id: 3, name: 'Sistem Persamaan Linear dan Kuadrat', description: 'Sistem persamaan linear dan kuadrat membahas solusi persamaan garis dan parabola.', image: 'https://cdn.pixabay.com/photo/2021/11/20/06/22/stationery-6810985_640.jpg', category: 'Bab 3', link: '/QzMtk10b3' },
+      { id: 4, name: 'Persamaan Kuadrat', description: 'Persamaan kuadrat mempelajari solusi dari persamaan berpangkat dua.', image: 'https://cdn.pixabay.com/photo/2020/09/29/12/53/laptop-5612751_640.jpg', category: 'Bab 4', link: '/QzMtk10b4' },
+      { id: 5, name: 'Fungsi Kuadrat',  description: 'Fungsi kuadrat menggambarkan hubungan matematis berbentuk parabola.',image: 'https://cdn.pixabay.com/photo/2014/04/05/11/39/people-316506_640.jpg', category: 'Bab 5', link: '/QzMtk10b5' },
+      { id: 6, name: 'Transformasi Geometri', description: 'Transformasi geometri mempelajari perubahan posisi, bentuk, atau ukuran objek pada bidang.', image: 'https://cdn.pixabay.com/photo/2015/11/05/08/21/geometry-1023846_640.jpg', category: 'Bab 6', link: '/QzMtk10b6' },
+      { id: 7, name: 'Trigonometri',  description: 'Trigonometri mempelajari hubungan sudut dan panjang sisi dalam segitiga.',image: 'https://cdn.pixabay.com/photo/2019/02/24/11/17/ruler-4017378_640.jpg', category: 'Bab 7', link: '/QzMtk10b7' },
+      { id: 8, name: 'Peluang',  description: 'Peluang mempelajari kemungkinan terjadinya suatu peristiwa.',image : 'https://cdn.pixabay.com/photo/2016/11/29/01/16/abacus-1866497_640.jpg', category: 'Bab 8', link: '/QzMtk10b8' },
+     ];
 
     setBiologies(mockBiologies);
 

@@ -16,7 +16,7 @@ const Materi = () => {
       { id: 6, name: 'Tenses', description:'Waktu kejadian: sekarang, lalu, depan.',image: 'https://i.pinimg.com/236x/cd/c3/38/cdc338f3b83d8d0e8f73fcbd9e42ac77.jpg', category: 'Bab 6', link: '/Bing11b6' },
       { id: 7, name: 'Modals',description:' Kata bantu menyatakan kemungkinan, izin.', image:'https://i.pinimg.com/236x/06/2c/36/062c36c5a447d78d353aa0c6b292f5c7.jpg', category: 'Bab 7', link: '/Bing11b7' },
       { id: 8, name: 'Adverbs',description:'Kata keterangan menjelaskan kata kerja.', image : 'https://i.pinimg.com/236x/3c/76/6c/3c766c1b4a371ae077c03d709c8e3f96.jpg', category: 'Bab 8', link: '/Bing11b8' },
-];
+ ];
 
     setBiologies(mockBiologies);
 

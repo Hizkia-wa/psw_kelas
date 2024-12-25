@@ -8,11 +8,11 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/Eko10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/Eko10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/Eko10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/Eko10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/Eko10b5' },
+      { id: 1, name: 'Masalah Ekonomi Dasar',image: 'https://i.pinimg.com/236x/56/08/e2/5608e2eeff5815aae2538bb0e7307e9a.jpg', category: 'Bab 1', link: '/Eko10b1' },
+      { id: 2, name: 'Kebijakan Moneter', image: 'https://i.pinimg.com/236x/66/b8/ec/66b8ec5ddd6b5b2b105b8ad6985f4e9d.jpg', category: 'Bab 2', link: '/Eko10b2' },
+      { id: 3, name: 'Perdagangan Internasional', description: 'Medan Magnetik', image: 'https://i.pinimg.com/236x/59/8c/a7/598ca77457c7a331051431952fa72ab1.jpg', category: 'Bab 3', link: '/Eko10b3' },
+      { id: 4, name: 'Permintaan dan Penawaran', image: 'https://i.pinimg.com/236x/2d/b5/e6/2db5e665af3ac6a9181f9fd9d75b6da5.jpg', category: 'Bab 4', link: '/Eko10b4' },
+      { id: 5, name: 'Siklus Ekonomi', image: 'https://i.pinimg.com/236x/79/1c/6a/791c6a92c0813bf564daf7277f3599ed.jpg', category: 'Bab 5', link: '/Eko10b5' },
     ];
 
     setBiologies(mockBiologies);

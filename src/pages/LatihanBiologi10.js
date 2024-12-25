@@ -8,15 +8,12 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/SlBgl10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/SlBgl10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/SlBgl10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/SlBgl10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/SlBgl10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/SlBgl10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/SlBgl10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/SlBgl10b8' },
-    ];
+      { id: 1, name: 'Keanekaragaman Hayati',description:'Keanekaragaman hayati adalah variasi makhluk hidup di bumi yang saling mendukung kehidupan.',image: 'https://i.pinimg.com/474x/f2/24/f0/f224f0ba48016419fd718f4d6b35830e.jpg', category: 'Bab 1', link: '/SlBgl10b1' },
+      { id: 2, name: 'Virus', description:'Virus adalah mikroorganisme parasit berukuran sangat kecil yang berkembang biak dalam sel inang hidup.',image: 'https://i.pinimg.com/474x/6d/4c/2d/6d4c2d0ffb7ffdb33280f8bbb96b3fd1.jpg', category: 'Bab 2', link: '/SlBgl10b2' },
+      { id: 3, name: 'Fungi',description:'Fungi adalah organisme eukariotik yang tidak berklorofil.',image: 'https://i.pinimg.com/474x/26/a8/ef/26a8efda8b67f8711a85854df95bb759.jpg', category: 'Bab 3', link: '/SlBgl10b3' },
+      { id: 4, name: 'Plantae', description:'Plantae adalah kingdom organisme eukariotik berklorofil.',image: 'https://i.pinimg.com/474x/18/c2/92/18c292c28d0ce2474045ac2fd6e94c0e.jpg', category: 'Bab 4', link: '/SlBgl10b4' },
+      { id: 5, name: 'Animalia', description:'Animalia adalah kingdom organisme eukariotik multiseluler yang heterotrof.',image: 'https://i.pinimg.com/474x/6f/1a/e4/6f1ae49cb7d34df6b61290fed6c3e55d.jpg', category: 'Bab 5', link: '/SlBgl10b5' },
+ ];
 
     setBiologies(mockBiologies);
 

@@ -8,14 +8,12 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/QzFsk11b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzFsk11b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/QzFsk11b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzFsk11b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzFsk11b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzFsk11b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/QzFsk11b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/QzFsk11b8' },
+      { id: 1, name: 'DINAMIKA ROTASI DAN BENDA TEGAR',description: 'Dinamika rotasi mempelajari gerak putar, sementara benda tegar tidak berubah bentuk saat diberi gaya.',image: 'https://i.pinimg.com/236x/07/32/5d/07325dc7d1b245d41a9af11ce91e78d8.jpg', category: 'Bab 1', link: '/QzFsk11b1' },
+      { id: 2, name: 'Elastisitas Bahan',description: 'Elastisitas Bahan: Kemampuan bahan kembali bentuk.', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzFsk11b2' },
+      { id: 3, name: 'Fluida Statis', description: 'Fluida Statis: Fluida diam, tekanan seragam.', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/QzFsk11b3' },
+      { id: 4, name: 'Fluida dinamis', description: 'Fluida Dinamis: Fluida bergerak, aliran dan energi.',image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzFsk11b4' },
+      { id: 5, name: 'Suhu dan Kalor', description: 'Suhu dan Kalor: Panas, energi, dan perpindahan kalor.',image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzFsk11b5' },
+      { id: 6, name: 'Teori Kinetik Gas', description: 'Teori Kinetik Gas: Gerak partikel, tekanan, dan suhu.',image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzFsk11b6' },
     ];
 
     setBiologies(mockBiologies);

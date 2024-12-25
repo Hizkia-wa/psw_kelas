@@ -8,15 +8,14 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/QzFsk10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzFsk10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/QzFsk10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzFsk10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzFsk10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzFsk10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/QzFsk10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/QzFsk10b8' },
-    ];
+      { id: 1, name: 'Hukum Hooke',description: 'Hukum Hooke: Gaya elastis berbanding lurus dengan perubahan panjang pegas.',image: 'https://i.pinimg.com/236x/73/31/c3/7331c37d7cdc6998b75d5f99a5f0c61e.jpg', category: 'Bab 1', link: '/QzFsk10b1' },
+      { id: 2, name: 'Arus Bolak-Balik', description: 'Medan Magnetik',image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzFsk10b2' },
+      { id: 3, name: 'Usaha', description: 'Usaha adalah gaya kali perpindahan, energi adalah kemampuan melakukan usaha.k', image: 'https://i.pinimg.com/236x/cc/e6/4f/cce64fee10da0d125f31fe4c9c31d1f1.jpg', category: 'Bab 3', link: '/QzFsk10b3' },
+      { id: 4, name: 'Gerak Lurus',description: 'Gerak lurus adalah gerak benda pada lintasan garis lurus dengan kecepatan tetap atau berubah.', image: 'https://i.pinimg.com/736x/b8/33/78/b83378d25897ac1e4c3ea888cd7010af.jpg', category: 'Bab 4', link: '/QzFsk10b4' },
+      { id: 5, name: 'Gerak Melingkar',description: 'Gerak melingkar adalah gerak benda pada lintasan melingkar dengan kecepatan sudut tertentu.', image: 'https://i.pinimg.com/474x/d5/81/8a/d5818ac6b5230c50436c98c1f183840b.jpg', category: 'Bab 5', link: '/QzFsk10b5' },
+      { id: 6, name: 'Fluida',description: 'Fluida adalah zat yang dapat mengalir, baik cairan maupun gas, yang memiliki sifat mudah berubah bentuk sesuai wadahnya.', image: 'https://i.pinimg.com/236x/b7/71/25/b771258426940b788084ab5535cb38a5.jpg', category: 'Bab 6', link: '/QzFsk10b6' },
+      { id: 7, name: 'Suhu dan Kalor',description: 'Suhu adalah ukuran derajat panas benda, sedangkan kalor adalah energi panas yang berpindah akibat perbedaan suhu.', image: 'https://i.pinimg.com/236x/de/50/68/de50686e9cb96131f9321057dbec1a0b.jpg', category: 'Bab 7', link: '/QzFsk10b7' },
+      ];
 
     setBiologies(mockBiologies);
 

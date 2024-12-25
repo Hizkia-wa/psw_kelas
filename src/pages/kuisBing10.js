@@ -8,14 +8,14 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/QzBing10b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzBing10b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: '/QzBab 3', link: 'Bing10b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzBing10b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzBing10b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzBing10b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/QzBing10b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/QzBing10b8' },
+      { id: 1, name: 'Descriptive Text',description:'Menyapa dan memperkenalkan diri singkat.',image: 'https://asset.kompas.com/crops/HE4LCWiESa-Xmp9NrBRiNXd_Bcw=/0x75:1748x1240/750x500/data/photo/2021/11/23/619cbf67028b5.png', category: 'Bab 1', link: '/QzBing10b1' },
+      { id: 2, name: 'Simple Present Tense',description:'Menggambarkan objek secara detail.', image: 'https://tse3.mm.bing.net/th?id=OIP.axHXqa7Yo1y_PIp7UO8sDwHaEK&pid=Api&P=0&h=180', category: 'Bab 2', link: '/QzBing10b2' },
+      { id: 3, name: 'Informal Letters',description:'Menyatakan fakta atau kebiasaan rutin.', image: 'https://tse3.mm.bing.net/th?id=OIP.9ufSVGjNqFUNF2GW45gbbgHaEK&pid=Api&P=0&h=180', category: 'Bab 3', link: '/QzBing10b3' },
+      { id: 4, name: 'Greeting and Introduction',description:'Surat pribadi dengan bahasa santai.', image: 'https://tse1.mm.bing.net/th?id=OIP.sG4uL_vpFuD6bdArtKoB6AHaFP&pid=Api&P=0&h=180', category: 'Bab 4', link: '/QzBing10b4' },
+      { id: 5, name: 'Narrative Text', description:'Cerita berurutan dengan pesan moral.',image: 'https://asset.kompas.com/crops/Kcc13x3XOXncXeQZxgf1XmDw1ec=/0x56:1440x1016/750x500/data/photo/2023/05/08/6458ae9127b15.png', category: 'Bab 5', link: '/QzBing10b5' },
+      { id: 6, name: 'Procedural Text',description:'Langkah-langkah membuat atau melakukan sesuatu.', image: 'https://tse1.mm.bing.net/th?id=OIP.4iIbSsvhGIryyZv7uQQqtAHaFI&pid=Api&P=0&h=180', category: 'Bab 6', link: '/QzBing10b6' },
+      { id: 7, name: 'Exposition Text',description:'Pendapat logis mendukung argumen tertentu.', image: 'https://tse3.mm.bing.net/th?id=OIP.a6eyXW5jF8uU_8Yf0ddsLAHaFj&pid=Api&P=0&h=180', category: 'Bab 7', link: '/QzBing10b7' },
+      { id: 8, name: 'Report Text',description:'Menyampaikan informasi berdasarkan fakta.', image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfDSVVCUHv25VYiDWp2Xj0trCzM5nNNP_kg&s', category: 'Bab 8', link: '/QzBing10b8' },
     ];
 
     setBiologies(mockBiologies);

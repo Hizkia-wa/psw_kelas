@@ -8,14 +8,14 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/SlBgl11b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/SlBgl11b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/SlBgl11b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/SlBgl11b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/SlBgl11b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/SlBgl11b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/SlBgl11b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/SlBgl11b8' },
+      { id: 1, name: 'Sel',description:'Sel adalah unit dasar kehidupan yang menyusun semua makhluk hidup.',image: 'https://i.pinimg.com/474x/03/e5/05/03e5059f8a150eeebd85db2711f5c514.jpg', category: 'Bab 1', link: '/SlBgl11b1' },
+      { id: 2, name: 'Pergerakan zat melalui membran sel', description:'Pergerakan sel melalui membran sel melibatkan transportasi aktif dan pasif untuk mengatur masuk keluarnya molekul.',image: 'https://i.pinimg.com/474x/67/31/de/6731dee81aa2c36bdb382f75bd14b435.jpg', category: 'Bab 2', link: '/SlBgl11b2' },
+      { id: 3, name: 'proses pengaturan pada tumbuhan',description:'Proses pengaturan pada tumbuhan untuk mengatur pertumbuhan pada lingkungan.',image: 'https://i.pinimg.com/474x/51/7d/a7/517da7cdbe895bb2a0b0b82adc291159.jpg', category: 'Bab 3', link: '/SlBgl11b3' },
+      { id: 4, name: 'transport dan pertukaran zat pada manusia', description:'Transport dan pertukaran zat untuk mengangkut oksigen dan membuang karbon dioksida.',image: 'https://i.pinimg.com/474x/bb/64/27/bb6427958a87b188d9642b0d2c1ece35.jpg', category: 'Bab 4', link: '/SlBgl11b4' },
+      { id: 5, name: 'sistem pertahanan tubuh terhadap penyakit', description:'Sistem pertahanan tubuh melawan penyakit  untuk mengenali serta menghancurkan patogen.',image: 'https://i.pinimg.com/474x/dc/2e/68/dc2e685b4a45551fb2cb04a8ecd1dedf.jpg', category: 'Bab 5', link: '/SlBgl11b5' },
+      { id: 6, name: 'mobilitas pada manusia', description:'Mobilitas pada manusia merujuk pada kemampuan tubuh bergerak.',image: 'https://i.pinimg.com/474x/b8/85/7e/b8857e56b18a5635ae2fb43d32fd9814.jpg', category: 'Bab 6', link: '/SlBgl11b6' },
+      { id: 7, name: 'hormon dalam reproduksi manusia',description:'Hormon dalam reproduksi manusia mengatur perkembangan seksual, siklus menstruasi, dan proses pembuahan.', image: 'https://i.pinimg.com/736x/7e/c0/4a/7ec04a04c6a06a855c92d0cddf1dbc35.jpg', category: 'Bab 7', link: '/SlBgl11b7' },
+      { id: 8, name: 'tumbuh kembang makhluk hidup', description:'Tumbuh kembang makhluk hidup melibatkan proses pertumbuhan yang diatur oleh genetik dan lingkungan.',image : 'https://i.pinimg.com/474x/50/f7/3a/50f73afc8aef892e1c897c8a8cdcc7b9.jpg',category: 'Bab 8', link: '/SlBgl11b8' },
     ];
 
     setBiologies(mockBiologies);
