@@ -2,236 +2,247 @@ import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
 const LatihanSoal = () => {
-  const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
       question: "Apa yang dimaksud dengan larutan penyangga?",
       options: [
-        { label: "A. Larutan yang pH-nya berubah drastis saat ditambah air", value: "A" },
-        { label: "B. Larutan yang dapat mempertahankan pH meskipun ditambahkan asam atau basa", value: "B", isCorrect: true },
-        { label: "C. Larutan yang dapat mempercepat reaksi kimia", value: "C" },
-        { label: "D. Larutan yang hanya mengandung air dan garam", value: "D" },
+        "Larutan yang pH-nya berubah drastis saat ditambah air",
+        "Larutan yang dapat mempertahankan pH meskipun ditambahkan asam atau basa",
+        "Larutan yang dapat mempercepat reaksi kimia",
+        "Larutan yang hanya mengandung air dan garam"
       ],
+      correctOption: "Larutan yang dapat mempertahankan pH meskipun ditambahkan asam atau basa",
       explanation: "Larutan penyangga dapat mempertahankan pH-nya meskipun ditambahkan sedikit asam atau basa."
     },
     {
       question: "Komponen utama larutan penyangga adalah?",
       options: [
-        { label: "A. Air dan garam", value: "A" },
-        { label: "B. Asam lemah dan basa kuat", value: "B" },
-        { label: "C. Asam lemah dan garamnya, atau basa lemah dan garamnya", value: "C", isCorrect: true },
-        { label: "D. Asam kuat dan basa kuat", value: "D" },
+        "Air dan garam",
+        "Asam lemah dan basa kuat",
+        "Asam lemah dan garamnya, atau basa lemah dan garamnya",
+        "Asam kuat dan basa kuat"
       ],
+      correctOption: "Asam lemah dan garamnya, atau basa lemah dan garamnya",
       explanation: "Larutan penyangga terdiri dari asam lemah dan garamnya, atau basa lemah dan garamnya."
     },
     {
       question: "pH larutan penyangga asam dapat dihitung menggunakan rumus?",
       options: [
-        { label: "A. pH = -log[H+]", value: "A" },
-        { label: "B. pH = pKa + log([garam]/[asam])", value: "B", isCorrect: true },
-        { label: "C. pH = pKa - log([garam]/[asam])", value: "C" },
-        { label: "D. pH = -log[OH-]", value: "D" },
+        "pH = -log[H+]",
+        "pH = pKa + log([garam]/[asam])",
+        "pH = pKa - log([garam]/[asam])",
+        "pH = -log[OH-]"
       ],
+      correctOption: "pH = pKa + log([garam]/[asam])",
       explanation: "pH larutan penyangga asam dihitung dengan rumus pH = pKa + log([garam]/[asam])."
     },
     {
       question: "Larutan yang termasuk larutan penyangga basa adalah?",
       options: [
-        { label: "A. HCl dan NaCl", value: "A" },
-        { label: "B. CH3COOH dan CH3COONa", value: "B" },
-        { label: "C. NH3 dan NH4Cl", value: "C", isCorrect: true },
-        { label: "D. HNO3 dan NaNO3", value: "D" },
+        "HCl dan NaCl",
+        "CH3COOH dan CH3COONa",
+        "NH3 dan NH4Cl",
+        "HNO3 dan NaNO3"
       ],
+      correctOption: "NH3 dan NH4Cl",
       explanation: "NH3 dan NH4Cl merupakan larutan penyangga basa karena terdiri dari basa lemah dan garamnya."
     },
     {
       question: "Apa fungsi larutan penyangga dalam tubuh manusia?",
       options: [
-        { label: "A. Meningkatkan kecepatan reaksi metabolisme", value: "A" },
-        { label: "B. Menjaga kestabilan pH darah", value: "B", isCorrect: true },
-        { label: "C. Menguraikan zat-zat makanan", value: "C" },
-        { label: "D. Menghancurkan racun dalam tubuh", value: "D" },
+        "Meningkatkan kecepatan reaksi metabolisme",
+        "Menjaga kestabilan pH darah",
+        "Menguraikan zat-zat makanan",
+        "Menghancurkan racun dalam tubuh"
       ],
+      correctOption: "Menjaga kestabilan pH darah",
       explanation: "Larutan penyangga menjaga kestabilan pH darah agar tetap sekitar 7,4."
     },
     {
       question: "Larutan penyangga dapat mengatur pH pada rentang pH?",
       options: [
-        { label: "A. 0-7", value: "A" },
-        { label: "B. 7-14", value: "B" },
-        { label: "C. 4-7", value: "C" },
-        { label: "D. 3-12", value: "D", isCorrect: true },
+        "0-7",
+        "7-14",
+        "4-7",
+        "3-12"
       ],
+      correctOption: "3-12",
       explanation: "Larutan penyangga dapat mengatur pH pada rentang 3-12 tergantung pada komponen asam-basa yang digunakan."
     },
     {
       question: "Apa yang terjadi jika larutan penyangga ditambahkan dengan asam kuat?",
       options: [
-        { label: "A. pH tidak berubah", value: "A" },
-        { label: "B. pH akan turun sedikit", value: "B", isCorrect: true },
-        { label: "C. pH akan meningkat", value: "C" },
-        { label: "D. pH akan berubah drastis", value: "D" },
+        "pH tidak berubah",
+        "pH akan turun sedikit",
+        "pH akan meningkat",
+        "pH akan berubah drastis"
       ],
+      correctOption: "pH akan turun sedikit",
       explanation: "Larutan penyangga akan sedikit menurunkan pH ketika ditambahkan asam kuat, tetapi pH tetap relatif stabil."
     },
     {
       question: "Larutan penyangga dapat digunakan untuk?",
       options: [
-        { label: "A. Mempercepat reaksi kimia", value: "A" },
-        { label: "B. Menjaga kestabilan pH dalam reaksi biologi", value: "B", isCorrect: true },
-        { label: "C. Mengurangi suhu reaksi", value: "C" },
-        { label: "D. Meningkatkan konsentrasi ion H+", value: "D" },
+        "Mempercepat reaksi kimia",
+        "Menjaga kestabilan pH dalam reaksi biologi",
+        "Mengurangi suhu reaksi",
+        "Meningkatkan konsentrasi ion H+"
       ],
+      correctOption: "Menjaga kestabilan pH dalam reaksi biologi",
       explanation: "Larutan penyangga membantu menjaga kestabilan pH dalam reaksi biologi, seperti proses metabolisme."
     },
     {
       question: "Larutan penyangga dapat dipersiapkan dengan mencampurkan?",
       options: [
-        { label: "A. Asam kuat dengan basa kuat", value: "A" },
-        { label: "B. Asam lemah dengan basa lemah", value: "B" },
-        { label: "C. Asam lemah dengan garamnya", value: "C", isCorrect: true },
-        { label: "D. Basa kuat dengan garam", value: "D" },
+        "Asam kuat dengan basa kuat",
+        "Asam lemah dengan basa lemah",
+        "Asam lemah dengan garamnya",
+        "Basa kuat dengan garam"
       ],
+      correctOption: "Asam lemah dengan garamnya",
       explanation: "Larutan penyangga dapat dipersiapkan dengan mencampurkan asam lemah dengan garamnya atau basa lemah dengan garamnya."
     },
     {
       question: "pH larutan penyangga dapat berubah jika?",
       options: [
-        { label: "A. Ditambahkan banyak asam atau basa", value: "A", isCorrect: true },
-        { label: "B. Didinginkan", value: "B" },
-        { label: "C. Ditambah air", value: "C" },
-        { label: "D. Ditingkatkan konsentrasi garam", value: "D" },
+        "Ditambahkan banyak asam atau basa",
+        "Didinginkan",
+        "Ditambah air",
+        "Ditingkatkan konsentrasi garam"
       ],
+      correctOption: "Ditambahkan banyak asam atau basa",
       explanation: "pH larutan penyangga akan berubah jika ditambahkan banyak asam atau basa, melebihi kapasitas penyangga."
     }
   ];
+  
 
-  const currentQuestion = questions[currentQuestionIndex];
 
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] !== undefined);
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      resetSelection();
     }
   };
 
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] !== undefined);
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 1) {
+      setCurrentQuestion(currentQuestion - 1);
+      resetSelection();
     }
   };
 
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
   };
 
-  const resetQuiz = () => {
-    setAnswers([]);
-    setIsAnswered(false);
-    setIsCorrect(false);
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setIsFinished(false);
+  const resetSelection = () => {
+    setSelectedOption(null);
   };
 
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Mode Bionik</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>
-            Skor Anda: {score}/{questions.length}
-          </p>
-          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const handleDropdownChange = (e) => {
+    const selectedNumber = parseInt(e.target.value);
+    setCurrentQuestion(selectedNumber);
+    resetSelection();
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      setSelectedOption(true); // Tampilkan pembahasan
+    }
+    setShowConfirmation(false); // Hilangkan pesan
+  };
 
   return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
+    <div className="question-page">
+      <div className="question-container">
+        <button
+          className="oval-button previous-button"
+          onClick={handlePreviousQuestion}
+          disabled={currentQuestion === 1}
+        >
+          &larr; Soal Sebelumnya
+        </button>
+        <div className="question-box">
+          <h2>Soal {currentQuestion}</h2>
+          <p>{questions[currentQuestion - 1].question}</p>
         </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
+        <button
+          className="oval-button next-button"
+          onClick={handleNextQuestion}
+          disabled={currentQuestion === questions.length}
+        >
+          Soal Berikutnya &rarr;
+        </button>
+      </div>
+
+      <div className="interactive-section">
+        <div className="dropdown-container">
+          <label htmlFor="question-dropdown">Pilih Soal:</label>
+          <select
+            id="question-dropdown"
+            value={currentQuestion}
+            onChange={handleDropdownChange}
+          >
+            {questions.map((_, index) => (
+              <option key={index} value={index + 1}>
+                Soal {index + 1}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="options-container">
+          {questions[currentQuestion - 1].options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value
-                  ? "latihan-soal1-selected-answer"
+              className={`option-button ${
+                selectedOption === option
+                  ? option === questions[currentQuestion - 1].correctOption
+                    ? "correct"
+                    : "incorrect"
                   : ""
               }`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex] !== undefined}
+              onClick={() => handleOptionSelect(option)}
             >
-              {option.label}
+              {option}
             </button>
           ))}
         </div>
-        {answers[currentQuestionIndex] !== undefined && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${
-                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
-                  }`}
-            </h3>
-            <p>{currentQuestion.explanation}</p>
+
+        {selectedOption && (
+          <div className="explanation-container">
+            <p className="explanation-text">
+              {questions[currentQuestion - 1].explanation}
+            </p>
           </div>
         )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={
-              currentQuestionIndex === questions.length - 1
-                ? handleFinishQuiz
-                : goToNextQuestion
-            }
-          >
-            {currentQuestionIndex === questions.length - 1
-              ? "Selesai"
-              : "Soal Selanjutnya →"}
-          </button>
-        </div>
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
