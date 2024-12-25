@@ -1,24 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
     { question: "1. Mengapa larutan asam dapat mengubah warna indikator universal, tetapi larutan basa tidak mengubah warna dengan cara yang sama?", options: ["Karena asam memiliki pH lebih rendah dan basa memiliki pH lebih tinggi", "Karena asam menghasilkan ion H+ yang dapat bereaksi dengan indikator", "Karena basa tidak dapat bereaksi dengan indikator universal", "Karena hanya larutan asam yang memiliki ion H+"], answer: "Karena asam menghasilkan ion H+ yang dapat bereaksi dengan indikator" },
@@ -62,9 +47,6 @@ const Tryout = () => {
     { question: "20. Dalam larutan penyangga, apa yang akan terjadi jika terjadi penambahan ion H+?", options: ["Basa dalam larutan akan bereaksi dengan ion H+ untuk mengurangi perubahan pH", "Asam dalam larutan akan bereaksi dengan ion H+ untuk meningkatkan pH", "Basa dalam larutan akan bertambah banyak", "Asam dalam larutan akan bertambah banyak"], answer: "Basa dalam larutan akan bereaksi dengan ion H+ untuk mengurangi perubahan pH" }
   ];
   
-  
-  
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
@@ -81,36 +63,33 @@ const Tryout = () => {
     }
   };
 
-  const handleTimeUp = () => {
-    setShowResult(true);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <div className="app">
-      <h1>Tryout Kimia Kelas XI: Hukum Termokimia</h1>
+      <h1>Kuis Kimia Kelas XII</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
         </div>
       ) : (
-        <>
-          {/* <Timer duration={600} onTimeUp={handleTimeUp} />
-          <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
-          /> */}
-        </>
+        <div className="question-container">
+          <h2>{questions[currentQuestion].question}</h2>
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className="option-button"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
       <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>

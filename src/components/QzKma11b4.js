@@ -1,24 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
     { question: "1. Dalam suatu reaksi kesetimbangan, perubahan konsentrasi suatu reaktan dan produk terjadi dalam waktu yang sama. Apa yang dimaksud dengan fenomena ini?", options: ["Kesetimbangan dinamis", "Kesetimbangan statis", "Reaksi berbalik", "Reaksi irreversible"], answer: "Kesetimbangan dinamis" },
@@ -62,8 +47,6 @@ const Tryout = () => {
     { question: "20. Apa yang dimaksud dengan reaksi kesetimbangan yang mencapai posisi kesetimbangan yang stabil?", options: ["Konsentrasi produk dan reaktan tidak berubah lagi seiring waktu", "Produk terus meningkat tanpa batas", "Reaktan terus berkurang tanpa batas", "Reaksi berhenti total setelah mencapai kesetimbangan"], answer: "Konsentrasi produk dan reaktan tidak berubah lagi seiring waktu" }
   ];
   
-  
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
@@ -80,36 +63,33 @@ const Tryout = () => {
     }
   };
 
-  const handleTimeUp = () => {
-    setShowResult(true);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <div className="app">
-      <h1>Tryout Kimia Kelas XI: Hukum Termokimia</h1>
+      <h1>Kuis Kimia Kelas XII</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
         </div>
       ) : (
-        <>
-          {/* <Timer duration={600} onTimeUp={handleTimeUp} />
-          <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
-          /> */}
-        </>
+        <div className="question-container">
+          <h2>{questions[currentQuestion].question}</h2>
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className="option-button"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
       <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>

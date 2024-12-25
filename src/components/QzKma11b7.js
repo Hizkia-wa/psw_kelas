@@ -1,24 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
     { question: "1. Mengapa larutan penyangga dapat mempertahankan pH meskipun ada penambahan asam atau basa?", options: ["Karena larutan penyangga mengandung asam kuat", "Karena larutan penyangga mengandung asam lemah dan basa konjugat", "Karena larutan penyangga mengandung garam dan air", "Karena larutan penyangga mengandung air dan gas"], answer: "Karena larutan penyangga mengandung asam lemah dan basa konjugat" },
@@ -62,7 +47,6 @@ const Tryout = () => {
     { question: "20. Dalam larutan penyangga, apa yang terjadi jika konsentrasi basa konjugat lebih tinggi daripada asam lemah?", options: ["pH larutan akan meningkat", "pH larutan akan menurun", "pH larutan akan tetap konstan", "pH larutan akan bergantung pada suhu"], answer: "pH larutan akan meningkat" }
   ];
   
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
@@ -79,36 +63,33 @@ const Tryout = () => {
     }
   };
 
-  const handleTimeUp = () => {
-    setShowResult(true);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <div className="app">
-      <h1>Tryout Kimia Kelas XI: Hukum Termokimia</h1>
+      <h1>Kuis Kimia Kelas XII</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
         </div>
       ) : (
-        <>
-          {/* <Timer duration={600} onTimeUp={handleTimeUp} />
-          <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
-          /> */}
-        </>
+        <div className="question-container">
+          <h2>{questions[currentQuestion].question}</h2>
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className="option-button"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
       <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>

@@ -104,8 +104,8 @@ const Tryout = () => {
     {
       question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
       options: ["12%", "15%", "18%", "20%"],
-      answer: "15%"
-    }
+      answer:"15%"
+  }
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
