@@ -1,21 +1,21 @@
 import React from 'react';
 import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import tm1 from '../images/Fsk12p1.jpg';
+import tm2 from '../images/Fsk12p2.jpg';
+import tm3 from '../images/Fsk12p3.jpg';
+import tm4 from '../images/Fsk12p4.jpg';
+import tm5 from '../images/Fsk12p5.jpg';
+import tm6 from '../images/Fsk12p6.jpg';
+import tm7 from '../images/Fsk12p7.jpg';
+import tm8 from '../images/Fsk12p8.jpg';
+import tm9 from '../images/Fsk12p9.jpg';
+import tm10 from '../images/Fsk12p10.jpg';
+import tm11 from '../images/Fsk12p11.jpg';
+import tm12 from '../images/Fsk12p12.jpg';
+import tm13 from '../images/Fsk12p13.jpg';
+import tm14 from '../images/Fsk12p14.jpg';
+import tm15 from '../images/Fsk12p15.jpg';
+import tm16 from '../images/Fsk12p16.jpg';
 
 const teamData = [
   { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },

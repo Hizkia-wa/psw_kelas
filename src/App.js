@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
+import Referensi from './pages/Referensi';
 
 // Import page kelas dari berbagai mata pelajaran
 import MatematikaKelas10 from './pages/MateriMTK10';
@@ -391,6 +392,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/referensi" element={<Referensi />} />
         {/* Rute untuk materi Matematika */}
         <Route path="materi/matematika/kelas-10" element={<MatematikaKelas10 />} />
         <Route path="materi/matematika/kelas-11" element={<MatematikaKelas11 />} />

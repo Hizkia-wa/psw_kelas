@@ -29,23 +29,23 @@ const Footer = () => {
             <h3 className="text-primary">Link Cepat</h3>
             <ul className="list-unstyled">
               <li>
-                <Link to="/beranda" className="text-dark">
+                <Link to="/" className="text-dark">
                   Beranda
-                </Link>
-              </li>
-              <li>
-                <Link to="/materi" className="text-dark">
-                  Materi
-                </Link>
-              </li>
-              <li>
-                <Link to="/kuis" className="text-dark">
-                  Kuis
                 </Link>
               </li>
               <li>
                 <Link to="/kontak" className="text-dark">
                   Kontak Kami
+                </Link>
+              </li>
+              <li>
+                <Link to="/referensi" className="text-dark">
+                  Referensi
+                </Link>
+              </li>
+              <li>
+                <Link to="/kontak" className="text-dark">
+                  developer
                 </Link>
               </li>
             </ul>
