@@ -8,15 +8,16 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Arus Searah',image: 'https://i.pinimg.com/736x/7c/2c/67/7c2c67684955d720f682d16116ce0fcd.jpg', category: 'Bab 1', link: '/QzKma11b1' },
-      { id: 2, name: 'Arus Bolak-Balik', image: 'https://i.pinimg.com/474x/0d/fd/2b/0dfd2b67c99789fbf28dcce47b7aa610.jpg', category: 'Bab 2', link: '/QzKma11b2' },
-      { id: 3, name: 'Medan Magnetik', description: 'Medan Magnetik', image: 'https://i.pinimg.com/474x/98/27/1f/98271f317b127d0a6ebb53b892287da2.jpg', category: 'Bab 3', link: '/QzKma11b3' },
-      { id: 4, name: 'Gelombang Elektromagnetik', image: 'https://i.pinimg.com/474x/38/74/aa/3874aa4fde49d4d3ed9b1659f1f358c8.jpg', category: 'Bab 4', link: '/QzKma11b4' },
-      { id: 5, name: 'Induksi Elektromagnetik', image: 'https://i.pinimg.com/474x/a4/1b/78/a41b78e761c2b0bb8fddc935c640f18a.jpg', category: 'Bab 5', link: '/QzKma11b5' },
-      { id: 6, name: 'Fisika Modern', image: 'https://i.pinimg.com/736x/89/ae/ea/89aeea116fa6a5979e5fd60dc9cb9344.jpg', category: 'Bab 6', link: '/QzKma11b6' },
-      { id: 7, name: 'Teknologi Digital', image: 'https://i.pinimg.com/474x/13/74/70/137470180a1cdd04ab71177a98eafcaa.jpg', category: 'Bab 7', link: '/QzKma11b7' },
-      { id: 8, name: 'Sumber Energi', image : 'https://i.pinimg.com/736x/1f/62/62/1f6262428ab8700cefc54a6fdf92aac2.jpg', category: 'Bab 8', link: '/QzKma11b8' },
-    ];
+      { id: 1, name: 'Hidrokarbon dan minyak bumi',description:'Hidrokarbon dan Minyak Bumi: Senyawa karbon, bahan bakar utama.',image: 'https://i.pinimg.com/474x/23/eb/cf/23ebcf11d3438495d96ac9f129e99490.jpg', category: 'Bab 1', link: '/QzKma11b1' },
+      { id: 2, name: 'hukum termokimia', description:'Hukum Termokimia: Energi perubahan dalam reaksi kimia.',image: 'https://i.pinimg.com/474x/17/a8/55/17a85519af1fa01d573633b271e0fa7a.jpg', category: 'Bab 2', link: '/QzKma11b2' },
+      { id: 3, name: 'laju reaksi',description:'Laju Reaksi: Kecepatan perubahan zat dalam reaksi.',image: 'https://i.pinimg.com/474x/97/f3/78/97f37849f5273d692f3442ee7bd3efe6.jpg', category: 'Bab 3', link: '/QzKma11b3' },
+      { id: 4, name: ' kesetimbangan kimia', description:'Kesetimbangan Kimia: Kondisi reaksi maju dan balik seimbang.',image: 'https://i.pinimg.com/474x/e0/d3/68/e0d368d0da7b6b865f3eef7feb9b4e73.jpg', category: 'Bab 4', link: '/QzKma11b4' },
+      { id: 5, name: 'larutan asam dan basa',description:'Larutan Asam dan Basa: pH, reaksi ion H+ dan OH-.', image: 'https://i.pinimg.com/736x/c5/39/46/c53946de25d266e727e15b2affa3b1d9.jpg', category: 'Bab 5', link: '/QzKma11b5' },
+      { id: 6, name: 'hidrolisis garam',description:'Hidrolisis Garam: Reaksi garam dengan air menghasilkan ion.', image: 'https://i.pinimg.com/474x/b6/dd/2d/b6dd2d529ef9a0cd91bc00298b7fa9d5.jpg', category: 'Bab 6', link: '/QzKma11b6' },
+      { id: 7, name: 'larutan penyangga', description:'Larutan Penyangga: Menstabilkan pH terhadap perubahan kecil.',image: 'https://i.pinimg.com/474x/e3/ce/f1/e3cef17de28f8d37de6c957179ed469a.jpg', category: 'Bab 7', link: '/QzKma11b7' },
+      { id: 8, name: 'kelarutan dan hasil kali kelarutan', description:'Kelarutan dan Hasil Kali Kelarutan: Batas zat larut dalam larutan.',image : 'https://i.pinimg.com/474x/99/be/7e/99be7ea5f9b41b6d1445b9c87ba52912.jpg', category: 'Bab 8', link: '/QzKma11b8' },
+      { id: 9, name: 'koloid',description:'Koloid: Campuran dengan partikel tersuspensi stabil.', image : 'https://i.pinimg.com/474x/73/f6/cf/73f6cf738251a56a75d6aa150aba4dd9.jpg', category: 'Bab 9', link: '/QzKma11b9' },
+      ];
 
     setBiologies(mockBiologies);
 
@@ -44,7 +45,7 @@ const Materi = () => {
       <div className="biologi-biology-section">
         <div className="container">
           <div className="section-header">
-            <h2>Kuis Kimia 11</h2>
+            <h2>Kuis Kimia 12</h2>
           </div>
           <div className="biology-grid">
             {biologies.map((biology) => (
