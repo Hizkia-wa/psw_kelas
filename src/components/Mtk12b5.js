@@ -133,7 +133,7 @@ const Bab5 = () => {
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal5"}
+          onClick={() => window.location.href = "/SlMtk12b5"}
         >
           Mulai Latihan Soal
         </button>

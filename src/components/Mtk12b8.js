@@ -48,7 +48,7 @@ const Bab8 = () => {
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal8"}
+          onClick={() => window.location.href = "/SlMtk12b8"}
         >
           Mulai Latihan Soal
         </button>
