@@ -307,7 +307,7 @@ const Bab1 = () => {
    <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/Kma12b1")}
         >
           Kembali ke Halaman Sebelumnya
         </button>

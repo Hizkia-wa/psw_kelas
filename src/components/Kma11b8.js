@@ -238,7 +238,7 @@ Mg(OH)2.</p>
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal7"}
+          onClick={() => window.location.href = "/SlKma11b8"}
         >
           Mulai Latihan Soal
         </button>
@@ -247,13 +247,13 @@ Mg(OH)2.</p>
    <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab7")}
+          onClick={() => navigate("/Kma11b7")}
         >
           Kembali ke Bab Sebelumnya
         </button>
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab9")}
+          onClick={() => navigate("/Kma11b9")}
         >
           Lanjut ke Bab Selanjutnya
         </button>
