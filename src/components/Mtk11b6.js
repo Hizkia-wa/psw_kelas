@@ -123,7 +123,7 @@ const Bab6 = () => {
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal6"}
+          onClick={() => window.location.href = "/SlMtk11b6"}
         >
           Mulai Latihan Soal
         </button>
@@ -132,9 +132,15 @@ const Bab6 = () => {
       <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab5")}
+          onClick={() => navigate("/Mtk11b5")}
         >
           Kembali ke Bab Sebelumnya
+        </button>
+        <button 
+          className="btn-navigate"
+          onClick={() => navigate("/Mtk11b1")}
+        >
+          Lanjut ke Bab Selanjutnya
         </button>
       </div>
     </div>

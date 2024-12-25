@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,24 +29,24 @@ const Footer = () => {
             <h3 className="text-primary">Link Cepat</h3>
             <ul className="list-unstyled">
               <li>
-                <a href="#beranda" className="text-dark">
+                <Link to="/beranda" className="text-dark">
                   Beranda
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#materi" className="text-dark">
+                <Link to="/materi" className="text-dark">
                   Materi
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#kuis" className="text-dark">
+                <Link to="/kuis" className="text-dark">
                   Kuis
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#kontak" className="text-dark">
+                <Link to="/kontak" className="text-dark">
                   Kontak Kami
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

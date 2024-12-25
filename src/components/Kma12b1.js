@@ -960,7 +960,7 @@ const Bab1 = () => {
       <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/materi/kimia/kelas-11")}
         >
           Kembali ke Halaman Sebelumnya
         </button>

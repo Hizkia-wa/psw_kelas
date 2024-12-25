@@ -45,16 +45,6 @@ function Home() {
           Bergabunglah dengan kami untuk pengalaman belajar yang menyenangkan!
         </p>
       </header>
-      {/* Call to Action Button */}
-      <footer className="mt-4 mb-5">
-        <button
-          className="btn btn-primary btn-lg px-5 py-2 shadow"
-          onClick={() => (window.location.href = "/navbar")}
-        >
-          Mulai Belajar
-        </button>
-      </footer>
-
       {/* Feature Section */}
       <section className="text-center">
         <div className="row g-4">

@@ -111,7 +111,7 @@ const Bab5 = () => {
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => navigate("/latihansoal1")}
+          onClick={() => navigate("/SlKma11b5")}
         >
           Mulai Latihan Soal
         </button>
@@ -121,13 +121,13 @@ const Bab5 = () => {
       <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/materi")}
+          onClick={() => navigate("/Kma11b4")}
         >
           Kembali ke Halaman Sebelumnya
         </button>
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab6")}
+          onClick={() => navigate("/Kma11b6")}
         >
           Lanjut ke Bab Selanjutnya
         </button>

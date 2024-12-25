@@ -100,7 +100,7 @@ Selain itu terdapat manfaat lain berupa <strong>Memahami Sifat Sebuah Fungsi Tri
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal4"}
+          onClick={() => window.location.href = "/SlMtk12b4"}
         >
           Mulai Latihan Soal
         </button>

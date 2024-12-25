@@ -68,7 +68,7 @@ Jika larutan tersebut ditambahkan asam (ion H+), maka sesuai dengan prinsip kese
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal8"}
+          onClick={() => window.location.href = "/SlKma11b7"}
         >
           Mulai Latihan Soal
         </button>
@@ -77,13 +77,13 @@ Jika larutan tersebut ditambahkan asam (ion H+), maka sesuai dengan prinsip kese
    <div className="navigation-container">
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab6")}
+          onClick={() => navigate("/Kma11b6")}
         >
           Kembali ke Bab Sebelumnya
         </button>
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/bab8")}
+          onClick={() => navigate("/Kma11b8")}
         >
           Lanjut ke Bab Selanjutnya
         </button>
