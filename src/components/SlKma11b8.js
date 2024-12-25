@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
-const LatihanSoal = () => {
+const LatihanSoal3 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -119,6 +119,7 @@ const LatihanSoal = () => {
     }
   ];
  
+  
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
@@ -244,4 +245,4 @@ const LatihanSoal = () => {
     </div>
   );
 };
-export default LatihanSoal;
+export default LatihanSoal3;
