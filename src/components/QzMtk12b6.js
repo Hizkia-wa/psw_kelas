@@ -7,9 +7,9 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Jika \( f(x) = x^3 - 4x^2 + 6x - 2 \), berapakah turunan pertama \( f'(x) \)?",
-      options: ["\( 3x^2 - 8x + 6 \)", "\( 3x^2 - 8x \)", "\( 2x - 4 \)", "\( 3x^2 + 4x - 6 \)"],
-      answer: "\( 3x^2 - 8x + 6 \)"
+      question: "1. Jika ( f(x) = x^3 - 4x^2 + 6x - 2 ), berapakah turunan pertama \( f'(x) \)?",
+      options: ["( 3x^2 - 8x + 6 )", "( 3x^2 - 8x )", "\( 2x - 4 \)", "\( 3x^2 + 4x - 6 \)"],
+      answer: "( 3x^2 - 8x + 6 )"
     },
     {
       question: "2. Tentukan turunan pertama dari \( f(x) = 5x^4 - 3x^3 + 2x^2 - x + 7 \).",
@@ -63,11 +63,11 @@ const Tryout = () => {
     },
     {
       question: "12. Jika \( f(x) = x^2e^x \), tentukan turunan pertama \( f'(x) \) menggunakan aturan hasil kali.",
-      options: ["\( 2xe^x + x^2e^x \)", "\( 2xe^x - x^2e^x \)", "\( e^x(x + 2x^2) \)", "\( 2x^2e^x \)"],
+      options: ["( 2xe^x + x^2e^x )", "( 2xe^x - x^2e^x )", "( e^x(x + 2x^2) )", "( 2x^2e^x )"],
       answer: "\( 2xe^x + x^2e^x \)"
     },
     {
-      question: "13. Tentukan turunan pertama dari \( f(x) = \\cos(3x) \).",
+      question: "13. Tentukan turunan pertama dari ( f(x) = \\cos(3x) ).",
       options: ["\( -3\\sin(3x) \)", "\( 3\\cos(3x) \)", "\( \\sin(3x) \)", "\( -\\cos(3x) \)"],
       answer: "\( -3\\sin(3x) \)"
     },

@@ -3,7 +3,7 @@ import "../css/QuestionPage.css";
 
 const KuisPastContinuousTense = () => {
   const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
+  const [setIsAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
