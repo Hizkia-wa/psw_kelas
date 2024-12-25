@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
 const LatihanSoal = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(1);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [answers, setAnswers] = useState([]);
+  const [isAnswered, setIsAnswered] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [isFinished, setIsFinished] = useState(false);
 
   const questions = [
     {
@@ -66,6 +70,7 @@ const LatihanSoal = () => {
       explanation:
         "Asam kuat dan basa kuat menghasilkan larutan yang netral, sehingga tidak terjadi hidrolisis dan tidak ada perubahan pH.",
     },
+
     {
       question: "Apa yang dimaksud dengan hidrolisis garam yang menyebabkan pembentukan ion H+?",
       options: [
@@ -128,94 +133,126 @@ const LatihanSoal = () => {
     },
   ];
 
-  const handleNextQuestion = () => {
-    if (currentQuestion < questions.length) {
-      setCurrentQuestion(currentQuestion + 1);
-      setSelectedOption(null); // Reset the selection for the next question
+
+  const currentQuestion = questions[currentQuestionIndex];
+
+  const handleAnswerClick = (option) => {
+    const updatedAnswers = [...answers];
+    updatedAnswers[currentQuestionIndex] = option.value;
+    setAnswers(updatedAnswers);
+
+    if (option.isCorrect) {
+      setScore((prevScore) => prevScore + 1);
+    }
+
+    setIsCorrect(option.isCorrect || false);
+    setIsAnswered(true);
+  };
+
+  const goToNextQuestion = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+      setIsAnswered(answers[currentQuestionIndex + 1] !== undefined);
     }
   };
 
-  const handlePreviousQuestion = () => {
-    if (currentQuestion > 1) {
-      setCurrentQuestion(currentQuestion - 1);
-      setSelectedOption(null); // Reset the selection for the previous question
+  const goToPreviousQuestion = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
+      setIsAnswered(answers[currentQuestionIndex - 1] !== undefined);
     }
   };
 
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
+  const handleFinishQuiz = () => {
+    setIsFinished(true);
   };
 
-  const handleDropdownChange = (e) => {
-    const selectedNumber = parseInt(e.target.value);
-    setCurrentQuestion(selectedNumber);
-    setSelectedOption(null); // Reset selection when question is changed from dropdown
+  const resetQuiz = () => {
+    setAnswers([]);
+    setIsAnswered(false);
+    setIsCorrect(false);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setIsFinished(false);
   };
+
+  if (isFinished) {
+    return (
+      <div className="latihan-soal1-container">
+        <div className="latihan-soal1-question-box">
+          <h1 className="latihan-soal1-title">Mode Bionik</h1>
+          <h2>Quiz Selesai!</h2>
+          <p>
+            Skor Anda: {score}/{questions.length}
+          </p>
+          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
+            Ulangi Latihan
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="question-page">
-      <div className="question-container">
-        <button
-          className="oval-button previous-button"
-          onClick={handlePreviousQuestion}
-          disabled={currentQuestion === 1}
-        >
-          &larr; Soal Sebelumnya
-        </button>
-        <div className="question-box">
-          <h2>Soal {currentQuestion}</h2>
-          <p>{questions[currentQuestion - 1].question}</p>
+    <div className="latihan-soal1-container">
+      <div className="latihan-soal1-question-box">
+        <h1 className="latihan-soal1-title">Mode Bionik</h1>
+        <div className="latihan-soal1-question">
+          <h2>
+            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
+          </h2>
+          <p>{currentQuestion.question}</p>
         </div>
-        <button
-          className="oval-button next-button"
-          onClick={handleNextQuestion}
-          disabled={currentQuestion === questions.length}
-        >
-          Soal Berikutnya &rarr;
-        </button>
-      </div>
-
-      <div className="interactive-section">
-        <div className="dropdown-container">
-          <label htmlFor="question-dropdown">Pilih Soal:</label>
-          <select
-            id="question-dropdown"
-            value={currentQuestion}
-            onChange={handleDropdownChange}
-          >
-            {questions.map((_, index) => (
-              <option key={index} value={index + 1}>
-                Soal {index + 1}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="options-container">
-          {questions[currentQuestion - 1].options.map((option, index) => (
+        <div className="latihan-soal1-answers">
+          {currentQuestion.options.map((option, index) => (
             <button
               key={index}
-              className={`option-button ${
-                selectedOption === option
-                  ? option === questions[currentQuestion - 1].correctOption
-                    ? "correct"
-                    : "incorrect"
+              className={`latihan-soal1-answer-button ${
+                answers[currentQuestionIndex] === option.value
+                  ? "latihan-soal1-selected-answer"
                   : ""
               }`}
-              onClick={() => handleOptionSelect(option)}
+              onClick={() => handleAnswerClick(option)}
+              disabled={answers[currentQuestionIndex] !== undefined}
             >
-              {option}
+              {option.label}
             </button>
           ))}
         </div>
-
-        {selectedOption && (
-          <div className="explanation-container">
-            <p className="explanation-text">
-              {questions[currentQuestion - 1].explanation}
-            </p>
+        {answers[currentQuestionIndex] !== undefined && (
+          <div className="latihan-soal1-explanation-box">
+            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
+            <h3>
+              {isCorrect
+                ? "Jawaban Anda Benar!"
+                : `Jawaban Benar: ${
+                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
+                  }`}
+            </h3>
+            <p>{currentQuestion.explanation}</p>
           </div>
         )}
+        <div className="latihan-soal1-navigation-buttons">
+          <button
+            className="latihan-soal1-nav-button prev"
+            onClick={goToPreviousQuestion}
+            disabled={currentQuestionIndex === 0}
+          >
+            ← Soal Sebelumnya
+          </button>
+          <button
+            className="latihan-soal1-nav-button next"
+            onClick={
+              currentQuestionIndex === questions.length - 1
+                ? handleFinishQuiz
+                : goToNextQuestion
+            }
+          >
+            {currentQuestionIndex === questions.length - 1
+              ? "Selesai"
+              : "Soal Selanjutnya →"}
+          </button>
+        </div>
       </div>
     </div>
   );

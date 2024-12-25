@@ -1,239 +1,199 @@
 import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
-const LatihanSoal = () => {
-  const [answers, setAnswers] = useState([]);
-  const [setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+const LatihanSoal3 = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(1);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
       question: "Apa yang dimaksud dengan koloid?",
-      options: [
-        { label: "A. Campuran homogen dari dua zat", value: "A" },
-        { label: "B. Campuran heterogen dengan partikel yang berukuran antara larutan dan suspensi", value: "B", isCorrect: true },
-        { label: "C. Campuran heterogen dengan partikel besar yang mudah terlihat", value: "C" },
-        { label: "D. Campuran dua zat yang tidak dapat bercampur", value: "D" },
-      ],
+      options: ["Campuran homogen dari dua zat", "Campuran heterogen dengan partikel yang berukuran antara larutan dan suspensi", "Campuran heterogen dengan partikel besar yang mudah terlihat", "Campuran dua zat yang tidak dapat bercampur"],
+      correctOption: "Campuran heterogen dengan partikel yang berukuran antara larutan dan suspensi",
       explanation: "Koloid adalah campuran heterogen dengan partikel berukuran antara larutan dan suspensi, biasanya 1-100 nm."
     },
     {
       question: "Manakah dari berikut ini yang termasuk koloid?",
-      options: [
-        { label: "A. Air garam", value: "A" },
-        { label: "B. Udara", value: "B" },
-        { label: "C. Susu", value: "C", isCorrect: true },
-        { label: "D. Minyak mentah", value: "D" },
-      ],
+      options: ["Air garam", "Udara", "Susu", "Minyak mentah"],
+      correctOption: "Susu",
       explanation: "Susu adalah contoh koloid jenis emulsi karena terdiri dari lemak yang terdispersi dalam air."
     },
     {
       question: "Fenomena apa yang menunjukkan bahwa koloid dapat menyebarkan cahaya?",
-      options: [
-        { label: "A. Efek Doppler", value: "A" },
-        { label: "B. Efek Tyndall", value: "B", isCorrect: true },
-        { label: "C. Efek Compton", value: "C" },
-        { label: "D. Efek Fotoelektrik", value: "D" },
-      ],
+      options: ["Efek Doppler", "Efek Tyndall", "Efek Compton", "Efek Fotoelektrik"],
+      correctOption: "Efek Tyndall",
       explanation: "Efek Tyndall adalah fenomena di mana koloid menyebarkan cahaya yang melewatinya, membuat berkas cahaya terlihat."
     },
     {
       question: "Apa metode utama untuk memisahkan koloid?",
-      options: [
-        { label: "A. Filtrasi", value: "A" },
-        { label: "B. Destilasi", value: "B" },
-        { label: "C. Dialisis", value: "C", isCorrect: true },
-        { label: "D. Sublimasi", value: "D" },
-      ],
+      options: ["Filtrasi", "Destilasi", "Dialisis", "Sublimasi"],
+      correctOption: "Dialisis",
       explanation: "Dialisis adalah metode untuk memisahkan partikel koloid dari ion-ion atau molekul kecil melalui membran semipermeabel."
     },
     {
       question: "Apa fungsi zat pengemulsi dalam koloid?",
-      options: [
-        { label: "A. Mempercepat reaksi kimia", value: "A" },
-        { label: "B. Membantu mencampurkan dua zat yang tidak bercampur", value: "B", isCorrect: true },
-        { label: "C. Mengendapkan partikel dalam koloid", value: "C" },
-        { label: "D. Menurunkan tekanan uap campuran", value: "D" },
-      ],
+      options: ["Mempercepat reaksi kimia", "Membantu mencampurkan dua zat yang tidak bercampur", "Mengendapkan partikel dalam koloid", "Menurunkan tekanan uap campuran"],
+      correctOption: "Membantu mencampurkan dua zat yang tidak bercampur",
       explanation: "Zat pengemulsi digunakan untuk membantu mencampurkan dua zat yang tidak bercampur, seperti minyak dan air."
     },
     {
       question: "Apa yang dimaksud dengan aerosols dalam konteks koloid?",
-      options: [
-        { label: "A. Koloid gas dalam gas", value: "A", isCorrect: true },
-        { label: "B. Koloid cair dalam gas", value: "B" },
-        { label: "C. Koloid padat dalam gas", value: "C" },
-        { label: "D. Koloid gas dalam padat", value: "D" },
-      ],
+      options: ["Koloid gas dalam gas", "Koloid cair dalam gas", "Koloid padat dalam gas", "Koloid gas dalam padat"],
+      correctOption: "Koloid gas dalam gas",
       explanation: "Aerosol adalah koloid yang terdiri dari partikel padat atau cair yang terdispersi dalam gas, seperti kabut atau asap."
     },
     {
       question: "Manakah dari berikut ini yang merupakan contoh koloid jenis sol?",
-      options: [
-        { label: "A. Gelatin", value: "A" },
-        { label: "B. Susu", value: "B" },
-        { label: "C. Cat", value: "C", isCorrect: true },
-        { label: "D. Mayones", value: "D" },
-      ],
+      options: ["Gelatin", "Susu", "Cat", "Mayones"],
+      correctOption: "Cat",
       explanation: "Cat adalah contoh koloid jenis sol, yang terdiri dari partikel padat yang terdispersi dalam cairan."
     },
     {
       question: "Apakah yang dimaksud dengan emulsi?",
-      options: [
-        { label: "A. Koloid gas dalam cairan", value: "A" },
-        { label: "B. Koloid cair dalam cairan", value: "B", isCorrect: true },
-        { label: "C. Koloid cair dalam padat", value: "C" },
-        { label: "D. Koloid padat dalam cairan", value: "D" },
-      ],
+      options: ["Koloid gas dalam cairan", "Koloid cair dalam cairan", "Koloid cair dalam padat", "Koloid padat dalam cairan"],
+      correctOption: "Koloid cair dalam cairan",
       explanation: "Emulsi adalah koloid yang terdiri dari dua cairan yang tidak dapat bercampur, seperti minyak dalam air."
     },
     {
       question: "Koloid dapat menyebarkan cahaya karena",
-      options: [
-        { label: "A. Ukuran partikel yang sangat kecil", value: "A" },
-        { label: "B. Ukuran partikel yang besar", value: "B", isCorrect: true },
-        { label: "C. Partikel tidak dapat bergerak", value: "C" },
-        { label: "D. Partikel sangat besar dan berat", value: "D" },
-      ],
+      options: ["Ukuran partikel yang sangat kecil", "Ukuran partikel yang besar", "Partikel tidak dapat bergerak", "Partikel sangat besar dan berat"],
+      correctOption: "Ukuran partikel yang besar",
       explanation: "Partikel koloid yang berukuran besar dapat menyebarkan cahaya yang melewatinya, yang disebut Efek Tyndall."
     },
     {
       question: "Bagaimana koloid berbeda dengan larutan?",
-      options: [
-        { label: "A. Koloid adalah campuran homogen, sedangkan larutan adalah campuran heterogen", value: "A" },
-        { label: "B. Koloid memiliki partikel yang lebih besar dan dapat menyebarkan cahaya", value: "B", isCorrect: true },
-        { label: "C. Koloid tidak dapat disaring, sedangkan larutan dapat disaring", value: "C" },
-        { label: "D. Koloid memiliki partikel yang sangat kecil", value: "D" },
-      ],
+      options: ["Koloid adalah campuran homogen, sedangkan larutan adalah campuran heterogen", "Koloid memiliki partikel yang lebih besar dan dapat menyebarkan cahaya", "Koloid tidak dapat disaring, sedangkan larutan dapat disaring", "Koloid memiliki partikel yang sangat kecil"],
+      correctOption: "Koloid memiliki partikel yang lebih besar dan dapat menyebarkan cahaya",
       explanation: "Koloid memiliki partikel yang lebih besar daripada larutan dan dapat menyebarkan cahaya, sedangkan larutan adalah campuran homogen dengan partikel kecil."
     }
   ];
+  
 
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] !== undefined);
+  const handleNextQuestion = () => {
+    if (currentQuestion < questions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+      resetSelection();
     }
   };
 
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] !== undefined);
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 1) {
+      setCurrentQuestion(currentQuestion - 1);
+      resetSelection();
     }
   };
 
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
   };
 
-  const resetQuiz = () => {
-    setAnswers([]);
-    setIsAnswered(false);
-    setIsCorrect(false);
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setIsFinished(false);
+  const resetSelection = () => {
+    setSelectedOption(null);
   };
 
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Mode Bionik</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>
-            Skor Anda: {score}/{questions.length}
-          </p> 
-          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
-  }
+  const handleDropdownChange = (e) => {
+    const selectedNumber = parseInt(e.target.value);
+    setCurrentQuestion(selectedNumber);
+    resetSelection();
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      setSelectedOption(true); // Tampilkan pembahasan
+    }
+    setShowConfirmation(false); // Hilangkan pesan
+  };
 
   return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
+    <div className="question-page">
+      <div className="question-container">
+        <button
+          className="oval-button previous-button"
+          onClick={handlePreviousQuestion}
+          disabled={currentQuestion === 1}
+        >
+          &larr; Soal Sebelumnya
+        </button>
+        <div className="question-box">
+          <h2>Soal {currentQuestion}</h2>
+          <p>{questions[currentQuestion - 1].question}</p>
         </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
+        <button
+          className="oval-button next-button"
+          onClick={handleNextQuestion}
+          disabled={currentQuestion === questions.length}
+        >
+          Soal Berikutnya &rarr;
+        </button>
+      </div>
+
+      <div className="interactive-section">
+        <div className="dropdown-container">
+          <label htmlFor="question-dropdown">Pilih Soal:</label>
+          <select
+            id="question-dropdown"
+            value={currentQuestion}
+            onChange={handleDropdownChange}
+          >
+            {questions.map((_, index) => (
+              <option key={index} value={index + 1}>
+                Soal {index + 1}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="options-container">
+          {questions[currentQuestion - 1].options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value
-                  ? "latihan-soal1-selected-answer"
+              className={`option-button ${
+                selectedOption === option
+                  ? option === questions[currentQuestion - 1].correctOption
+                    ? "correct"
+                    : "incorrect"
                   : ""
               }`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex] !== undefined}
+              onClick={() => handleOptionSelect(option)}
             >
-              {option.label}
+              {option}
             </button>
           ))}
         </div>
-        {answers[currentQuestionIndex] !== undefined && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${
-                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
-                  }`}
-            </h3>
-            <p>{currentQuestion.explanation}</p>
+
+        {selectedOption && (
+          <div className="explanation-container">
+            <p className="explanation-text">
+              {questions[currentQuestion - 1].explanation}
+            </p>
           </div>
         )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={
-              currentQuestionIndex === questions.length - 1
-                ? handleFinishQuiz
-                : goToNextQuestion
-            }
-          >
-            {currentQuestionIndex === questions.length - 1
-              ? "Selesai"
-              : "Soal Selanjutnya →"}
-          </button>
-        </div>
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default LatihanSoal;
+export default LatihanSoal3;
