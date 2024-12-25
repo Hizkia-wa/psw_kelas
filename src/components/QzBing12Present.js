@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
-const Tryout = () => {
+const QzBing12Present = () => {
   const navigate = useNavigate();
 
   const questions = [
@@ -77,5 +77,5 @@ const Tryout = () => {
    );
  };
  
- export default Tryout;
+ export default QzBing12Present;
 
