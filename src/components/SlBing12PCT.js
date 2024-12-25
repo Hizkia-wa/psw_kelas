@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
+<<<<<<< HEAD
 const KuisPastContinuous = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
+=======
+const KuisPastContinuousTense = () => {
+  const [answers, setAnswers] = useState([]);
+  const [setIsAnswered] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [score, setScore] = useState(0);
+  const [isFinished, setIsFinished] = useState(false);
+>>>>>>> ea361d86f2aa7bcdb6e82fc37fc05a780d3b1789
 
   const questions = [
     {
