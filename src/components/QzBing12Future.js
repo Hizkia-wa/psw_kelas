@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
 const QzBing12Future = () => {
-
 
   const questions = [
     { question: "1. I _____ (help) you with your homework later", options: ["help", "will help", "am helping", "helped"], answer: "will help" },
