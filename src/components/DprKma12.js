@@ -1,27 +1,27 @@
 import React from 'react';
 import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import tm1 from '../images/Kma121.jpg';
+import tm2 from '../images/Kma122.jpg';
+import tm3 from '../images/Kma123.jpg';
+import tm4 from '../images/Kma124.jpg';
+import tm5 from '../images/Kma125.jpg';
+import tm6 from '../images/Kma126.jpg';
+import tm7 from '../images/Kma127.jpg';
+import tm8 from '../images/Kma128.jpg';
+import tm9 from '../images/Kma129.jpg';
+import tm10 from '../images/Kma1210.jpg';
+import tm11 from '../images/Kma1211.jpg';
+import tm12 from '../images/Kma1212.jpg';
+import tm13 from '../images/Kma1213.jpg';
+import tm14 from '../images/Kma1214.jpg';
+import tm15 from '../images/Kma1215.jpg';
+import tm16 from '../images/Kma1216.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "DAVID GIAN FILBERT SINURAT", img: tm1, about: "..." },
+  { id: 2, name: "RAMADHANI SIHOTANG", img: tm5, about: "..." },
+  { id: 3, name: "ARIMBI ANGELICA SITOHANG", img: tm9, about: "..." },
+  { id: 4, name: "BINTANG JESISCA TANJUNG", img: tm13, about: "..." },
 ];
 
 const myTeamImages = [

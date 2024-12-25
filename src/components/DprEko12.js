@@ -1,21 +1,21 @@
 import React from 'react';
 import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import tm1 from '../images/Eko121.jpg';
+import tm2 from '../images/Eko122.jpg';
+import tm3 from '../images/Eko123.jpg';
+import tm4 from '../images/Eko124.jpg';
+import tm5 from '../images/Eko125.jpg';
+import tm6 from '../images/Eko126.jpg';
+import tm7 from '../images/Eko127.jpg';
+import tm8 from '../images/Eko128.jpg';
+import tm9 from '../images/Eko129.jpg';
+import tm10 from '../images/Eko1210.jpg';
+import tm11 from '../images/Eko1211.jpg';
+import tm12 from '../images/Eko1212.jpg';
+import tm13 from '../images/Eko1213.jpg';
+import tm14 from '../images/Eko1214.jpg';
+import tm15 from '../images/Eko1215.jpg';
+import tm16 from '../images/Eko1216.jpg';
 
 const teamData = [
   { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
