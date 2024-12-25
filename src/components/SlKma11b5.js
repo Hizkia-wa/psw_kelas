@@ -1,47 +1,48 @@
 import React, { useState } from "react";
 import "./../css/QuestionPage.css";
 
-const LatihanSoalStatistika = () => {
+const LatihanSoal5 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [showExplanation, setShowExplanation] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
-      question: "Rata-rata dari data berikut: 5, 7, 8, 10, 12 adalah?",
-      options: ["7", "8", "9", "10"],
-      correctOption: "8",
-      explanation: "Rata-rata dihitung dengan Σx/n = (5+7+8+10+12)/5 = 42/5 = 8.",
+      question: "Apa yang dimaksud dengan hidrolisis garam?",
+      options: ["A. Reaksi garam dengan basa", "B. Reaksi garam dengan air", "C. Reaksi garam dengan asam", "D. Reaksi garam dengan logam"],
+      correctOption: "B",
+      explanation:
+        "Hidrolisis garam adalah reaksi antara garam dengan air yang menghasilkan ion H+ atau OH-.",
+    },
+    {
+      question: "Garam dari asam lemah dan basa kuat akan menghasilkan larutan dengan sifat apa?",
+      options: ["A. Asam", "B. Basa", "C. Netral", "D. Tidak bereaksi"],
+      correctOption: "B",
+      explanation:
+        "Garam dari asam lemah dan basa kuat menghasilkan larutan yang bersifat basa karena ion OH- lebih dominan.",
+    },
+    {
+      question: "Apa yang terjadi jika larutan NaCl dilarutkan dalam air?",
+      options: ["A. Bersifat asam", "B. Bersifat basa", "C. Bersifat netral", "D. Tidak larut"],
+      correctOption: "C",
+      explanation:
+        "NaCl merupakan garam dari asam kuat (HCl) dan basa kuat (NaOH), sehingga larutannya bersifat netral.",
     },
     {
       question: "Modus dari data berikut: 2, 3, 4, 3, 5, 3, 6 adalah?",
-      options: ["2", "3", "4", "6"],
-      correctOption: "3",
+      options: ["A. 2", "B. 3", "C. 4", "D. 6"],
+      correctOption: "B",
       explanation:
         "Modus adalah data yang paling sering muncul. Pada data ini, angka 3 muncul sebanyak 3 kali, lebih banyak dari yang lain.",
     },
     {
-      question: "Median dari data berikut: 12, 14, 15, 16, 20 adalah?",
-      options: ["14", "15", "16", "20"],
-      correctOption: "15",
+      question: "Rata-rata dari data berikut: 5, 7, 8, 10, 12 adalah?",
+      options: ["A. 7", "B. 8", "C. 9", "D. 10"],
+      correctOption: "B",
       explanation:
-        "Median adalah nilai tengah setelah data diurutkan. Data yang diurutkan: 12, 14, 15, 16, 20. Nilai tengahnya adalah 15.",
+        "Rata-rata dihitung dengan Σx/n = (5+7+8+10+12)/5 = 42/5 = 8.",
     },
-    {
-      question: "Variansi dari data berikut: 2, 4, 6 adalah?",
-      options: ["2.67", "4", "6", "8"],
-      correctOption: "2.67",
-      explanation:
-        "Rata-rata = 4. Variansi = [(2-4)² + (4-4)² + (6-4)²] / 3 = (4 + 0 + 4) / 3 = 2.67.",
-    },
-    {
-      question: "Kuartil ketiga dari data: 10, 15, 20, 25, 30, 35 adalah?",
-      options: ["25", "27.5", "30", "32.5"],
-      correctOption: "30",
-      explanation:
-        "Kuartil ketiga (Q3) berada di posisi 3/4(n+1). Data diurutkan: 10, 15, 20, 25, 30, 35. Q3 = data ke-5, yaitu 30.",
-    },
-    // Add more questions as needed
+    // Tambahkan soal lainnya sesuai kebutuhan
   ];
 
   const handleNextQuestion = () => {
@@ -60,18 +61,23 @@ const LatihanSoalStatistika = () => {
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
-    setShowExplanation(true); // Show explanation after an option is selected
   };
 
   const resetSelection = () => {
     setSelectedOption(null);
-    setShowExplanation(false); // Hide explanation when moving to the next question
   };
 
   const handleDropdownChange = (e) => {
     const selectedNumber = parseInt(e.target.value);
     setCurrentQuestion(selectedNumber);
     resetSelection();
+  };
+
+  const handleConfirmationResponse = (response) => {
+    if (response === "yes") {
+      setSelectedOption(true); // Tampilkan pembahasan
+    }
+    setShowConfirmation(false); // Hilangkan pesan
   };
 
   return (
@@ -131,16 +137,43 @@ const LatihanSoalStatistika = () => {
           ))}
         </div>
 
-        {showExplanation && selectedOption && (
+        {selectedOption && (
           <div className="explanation-container">
+            <p className="explanation-text">
+              {selectedOption === questions[currentQuestion - 1].correctOption
+                ? "Jawaban Anda Benar!"
+                : `Jawaban Benar: ${questions[currentQuestion - 1].correctOption}`}
+            </p>
             <p className="explanation-text">
               {questions[currentQuestion - 1].explanation}
             </p>
           </div>
         )}
       </div>
+
+      {showConfirmation && (
+        <div className="confirmation-popup">
+          <div className="popup-content">
+            <p>Yakin mau melihat pembahasan sekarang?</p>
+            <div className="popup-buttons">
+              <button
+                className="popup-button no-button"
+                onClick={() => handleConfirmationResponse("no")}
+              >
+                Tidak
+              </button>
+              <button
+                className="popup-button yes-button"
+                onClick={() => handleConfirmationResponse("yes")}
+              >
+                Iya
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default LatihanSoalStatistika;
+export default LatihanSoal5;
