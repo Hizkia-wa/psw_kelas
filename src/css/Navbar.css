@@ -13,6 +13,12 @@
    font-family: 'Poppins', sans-serif;
 }
 
+.nav-menu ul {
+  list-style: none; /* Removes bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
 /* Navbar Title */
 .navbar-left h1 {
   margin: 0;
