@@ -18,7 +18,7 @@ zat ke seluruh tubuh manusia. Organ-organ tempat terjadinya
 pertukaran zat, seperti usus halus, paru-paru, dan ginjal memiliki 
 jumlah pembuluh darah yang lebih banyak. 
  </p>
-        <img src="bab4.1.png" alt="Struktur Pembuluh Darah" className="section-image" />
+        <img src="/image/bab4.1.png" alt="Struktur Pembuluh Darah" className="section-image" />
         <p>
           <strong>Usus Halus:</strong> Memiliki banyak pembuluh kapiler dan pembuluh lakteal (limfa) untuk penyerapan zat makanan.
         </p>
@@ -47,7 +47,7 @@ jumlah pembuluh darah yang lebih banyak.
             <strong>Plasma darah:</strong> Membawa zat makanan, hormon, dan sisa metabolisme. Cairan infus digunakan untuk pasien karena memiliki komposisi yang mirip plasma darah.
           </li>
         </ul>
-        <img src="bab4.2.png" alt="Komponen Darah" className="section-image" />
+        <img src="/image/bab4.2.png" alt="Komponen Darah" className="section-image" />
       </section>
 
       <section>
@@ -68,7 +68,7 @@ jumlah pembuluh darah yang lebih banyak.
           karena itu, pada setiap jonjot usus, tepatnya di lapisan jaringan ikat, 
           Kalian dapat menemukan banyak pembuluh darah dan limfa.
 </p>
-        <img src="bab4.3.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+        <img src="/image/bab4.3.png" alt="Struktur Penyerapan Makanan" className="section-image" />
       </section>
 
       <section>
@@ -94,7 +94,7 @@ jumlah pembuluh darah yang lebih banyak.
           menangkap kuman dan kotoran yang masuk ke alveolus, untuk 
           kemudian dihancurkannya
 </p>
-        <img src="bab4.4.png" alt="Struktur Pertukaran Gas" className="section-image" />
+        <img src="/image/bab4.4.png" alt="Struktur Pertukaran Gas" className="section-image" />
       </section>
 
       <section>
@@ -114,7 +114,7 @@ jumlah pembuluh darah yang lebih banyak.
           ekskresi pada ginjal tediri atas glomerulus dan tubulus (saluran) yang 
           bersinggungan secara langsung dengan pembuluh darah.
           </p>
-        <img src="bab4.5.png" alt="Struktur Ginjal" className="section-image" />
+        <img src="/image/bab4.5.png" alt="Struktur Ginjal" className="section-image" />
       </section>
 
       <section>
@@ -146,7 +146,7 @@ jumlah pembuluh darah yang lebih banyak.
         yang hidropobik akan diserap secara difusi ke dalam sel epitel usus 
         untuk kemudian ditransfer ke pembuluh limfa.
 </p>
-        <img src="bab4.6.png" alt="Penyerapan Zat Makanan" className="section-image" />
+        <img src="/image/bab4.6.png" alt="Penyerapan Zat Makanan" className="section-image" />
 
         <h3>2. Proses Pertukaran Gas di Paru-Paru</h3>
         <p>
@@ -170,7 +170,7 @@ sebagai hasil reaksi dengan air. Reaksi ini dikatalis oleh enzim
 karbonat anhidrase yang ada dalam sel darah merah. Sebagian kecil 
 karbon dioksida juga diangkut sebagai gas terlarut di plasma darah. 
  </p>
-        <img src="bab4.7.png" alt="Pertukaran Gas" className="section-image" />
+        <img src="/image/bab4.7.png" alt="Pertukaran Gas" className="section-image" />
 
         <h3>3. Proses Pembentukan Urin di Ginjal</h3>
         <p>
@@ -181,7 +181,7 @@ mengembalikan zat-zat yang masih diperlukan tubuh. Kedua proses
 tersebut dapat berlangsung bersamaan karena proses pertukaran zat 
 di ginjal yang adaptif, menyesuaikan dengan perubahan kondisi tubuh 
 terutama kadar air dan zat sisa metabolisme.</p>
-        <img src="bab4.8.png" alt="Pembentukan Urin" className="section-image" />
+        <img src="/image/bab4.8.png" alt="Pembentukan Urin" className="section-image" />
       </section>
 
       <section>
@@ -204,7 +204,7 @@ terutama kadar air dan zat sisa metabolisme.</p>
           dan peningkatan suhu (kalor) pada jaringan. Kondisi ini menyebabkan 
           fungsi jaringan yang mengalami peradangan akan terganggu, termasuk 
           fungsi dalam mengatur pertukaran zat</p>
-        <img src="bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
+        <img src="/image/bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
       </section>
       <div className="bottom-container">
         <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>

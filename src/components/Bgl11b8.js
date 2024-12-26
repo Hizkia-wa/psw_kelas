@@ -20,7 +20,7 @@ const Bab8 = () => {
           atau kecambah kacang hijau adalah kotiledon. Kotiledon menyediakan 
           sumber makanan bagi kecambah sampai daun tanaman tumbuh.
         </p>
-        <img src="bab8.1.png" alt="Dua Tipe Perkecambahan" className="section-image" />
+        <img src="/image/bab8.1.png" alt="Dua Tipe Perkecambahan" className="section-image" />
 
         <h3>2. Pertumbuhan dan Perkembangan pada Hewan</h3>
         <p>
@@ -31,7 +31,7 @@ const Bab8 = () => {
           zygote dan akan melakukan pembelahan diri/pembelahan sel 
           (cleavage) menuju pertumbuhan dan perkembangan menjadi embrio. 
         </p>
-        <img src="bab8.2.png" alt="Hewan" className="section-image" />
+        <img src="/image/bab8.2.png" alt="Hewan" className="section-image" />
       </section>
 
       <section>
@@ -42,7 +42,7 @@ const Bab8 = () => {
           tinggi badan, lingkar kepala dan indikator anggota tubuh lainnya. 
           Pertumbuhan pada manusia akan berhenti saat dewasa.
         </p>
-        <img src="bab8.3.png" alt="Manusia" className="section-image" />
+        <img src="/image/bab8.3.png" alt="Manusia" className="section-image" />
       </section>
 
       <section>
@@ -55,7 +55,7 @@ const Bab8 = () => {
           tersebut dipengaruhi oleh gen. Gen merupakan substansi pembawa 
           sifat yang diturunkan dari induk ke generasi selanjutnya. 
         </p>
-        <img src="bab8.4.png" alt="Mangga" className="section-image" />
+        <img src="/image/bab8.4.png" alt="Mangga" className="section-image" />
 
         <h3>b. Faktor Eksternal</h3>
         <h4>1. Nutrisi</h4>
@@ -69,7 +69,7 @@ const Bab8 = () => {
           Tumbuhan membutuhkan cahaya matahari untuk fotosintesis. Cahaya 
           juga berpengaruh terhadap pertumbuhan karena dapat merusak hormon auksin yang terdapat pada ujung batang.
         </p>
-        <img src="bab8.5.png" alt="Tumbuhan Segar" className="section-image" />
+        <img src="/image/bab8.5.png" alt="Tumbuhan Segar" className="section-image" />
       </section>
 
       <section>
@@ -87,14 +87,14 @@ const Bab8 = () => {
           Hormon yang paling berpengaruh terhadap pertumbuhan mamalia 
           adalah hormon somatotropin atau HGH (Human Growth Hormone).
         </p>
-        <img src="bab8.6.png" alt="Hormon" className="section-image" />
+        <img src="/image/bab8.6.png" alt="Hormon" className="section-image" />
 
         <h3>b. Faktor Eksternal</h3>
         <p>
           Selain faktor genetik, pertumbuhan pada hewan dan manusia 
           sangat dipengaruhi oleh faktor eksternal seperti nutrisi, cahaya, dan suhu.
         </p>
-        <img src="bab8.7.png" alt="Faktor Eksternal" className="section-image" />
+        <img src="/image/bab8.7.png" alt="Faktor Eksternal" className="section-image" />
       </section>
       <div className="bottom-container">
         <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>

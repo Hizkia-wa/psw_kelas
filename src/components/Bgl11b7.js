@@ -16,7 +16,7 @@ const Bab7 = () => {
           Bagaimana peran hormon dalam mengatur dan menyiapkan sistem
           reproduksi yang sehat?
         </p>
-        <img src="bab7.1.jpg" alt="Hormon dalam Reproduksi" className="section-image" />
+        <img src="/image/bab7.1.jpg" alt="Hormon dalam Reproduksi" className="section-image" />
       </section>
       
       <section>
@@ -61,7 +61,7 @@ const Bab7 = () => {
           berfungsi mengatur produksi sperma, merangsang perkembangan dan pemeliharaan 
           karakteristik kelamin sekunder laki-laki, seperti pertumbuhan janggut dan membesarnya suara.
         </p>
-        <img src="bab7.2.png" alt="Hormon reproduksi" className="section-image" />
+        <img src="/image/bab7.2.png" alt="Hormon reproduksi" className="section-image" />
       </section>
 
       <section>
@@ -73,7 +73,7 @@ const Bab7 = () => {
           proses itu akan membentuk zigot yang umumnya terjadi pada sepertiga dari panjang 
           saluran telur atau tuba fallopi. Untuk lebih jelasnya mari kita lihat gambarnya dibawah ini.
         </p>
-        <img src="bab7.3.png" alt="Kehamilan" className="section-image" />
+        <img src="/image/bab7.3.png" alt="Kehamilan" className="section-image" />
       </section>
 
       <section>
@@ -96,7 +96,7 @@ const Bab7 = () => {
           ini dibutuhkan adanya penyaluran zat asam, asam amino, vitamin, dan mineral dari ibu ke janin, 
           dan pembuangan CO2 serta sampah metabolisme janin ke peredaran darah ibu.
         </p>
-        <img src="bab7.4.png" alt="Kehamilan" className="section-image" />
+        <img src="/image/bab7.4.png" alt="Kehamilan" className="section-image" />
       </section>
 
       <section>
@@ -131,12 +131,12 @@ const Bab7 = () => {
           terjadi dilatasi atau pelebaran pembuluh darah rahim sehingga bagian-bagian yang mati terlepas 
           berupa darah menstruasi.
         </p>
-        <img src="bab7.5.png" alt="Menstruasi" className="section-image" />
+        <img src="/image/bab7.5.png" alt="Menstruasi" className="section-image" />
       </section>
 
       <section>
         <h3>D. Struktur dan Fungsi Organ Reproduksi Perempuan</h3>
-        <img src="bab7.6.png" alt="Struktur dan fungsi organ reproduksi perempuan" className="section-image" />
+        <img src="/image/bab7.6.png" alt="Struktur dan fungsi organ reproduksi perempuan" className="section-image" />
         <strong>1. Ovarium</strong>
         <p>
           Ovarium sebagai gonad perempuan berfungsi untuk memproduksi sel telur. Organ ini merupakan 
@@ -159,7 +159,7 @@ const Bab7 = () => {
         <p>
           Vagina merupakan organ yang digunakan untuk menerima penis saat koitus dan untuk mengeluarkan darah menstruasi.
         </p>
-        <img src="bab7.7.png" alt="Struktur dan fungsi organ reproduksi perempuan" className="section-image" />
+        <img src="/image/bab7.7.png" alt="Struktur dan fungsi organ reproduksi perempuan" className="section-image" />
       </section>
 
       <section>
