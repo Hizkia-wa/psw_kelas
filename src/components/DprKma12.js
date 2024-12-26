@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../Team.css';
 import tm1 from '../images/Kma121.jpg';
 import tm2 from '../images/Kma122.jpg';
 import tm3 from '../images/Kma123.jpg';
@@ -20,7 +20,7 @@ import tm16 from '../images/Kma1216.jpg';
 const teamData = [
   { id: 1, name: "DAVID GIAN FILBERT SINURAT", img: tm1, about: "Aku bernama David. Aku dikenal sebagai sosok yang hangat dan selalu siap membantu orang di sekitarnya (asekkk). Selain sifatku yang ramah, aku juga memiliki dua hobi yang menjadi pelarian dari rutinitas: bermain tenis meja dan ngoding Kode yang gak jelas wkwk. Aku juga  punya harapan yang ingin kukabulkan yaitu bisa kerja di perusahaan besar yakalii menunggu kamu yang tak pasti-pasti." },
   { id: 2, name: "RAMADHANI SIHOTANG", img: tm5, about: "Namaku Ramadhani, seluruh aspek dalam kehidupanku overall biasa aja sih." },
-  { id: 3, name: "ARIMBI ANGELICA SITOHANG", img: tm9, about: "..." },
+  { id: 3, name: "ARIMBI ANGELICA SITOHANG", img: tm9, about: "Hi aku Arimbi Angelica Sitohang. Aku orangnya suka SKSD, kadang aku tau kalo orang itu ga suka sama ku, tapi tetap ku SKSD-in. Aku orangnya sering marah-marah walau kadang ga keliatan. Hal yang paling ku suka di Dunia ini adalah tidur. " },
   { id: 4, name: "BINTANG JESISCA TANJUNG", img: tm13, about: "Perkenalkan nama ku Bintang Jesisca Tanjung, aku orang nya bawa chill aja brayy, aku menghargai setiap orang yang baik terhadap ku, yang memberi feedbacknya yang sesuai juga dengan apa yang aku beri juga, aku orangnya keras kepalaa abiss(maklum brayy anak terakhir hehehww), tapi aku keras kepala yang ga bisa dikasarin, dengar nada tinggi sikit langsung ngerasa gedubrakk bwangett, aku juga orang nya gampang di bawa berbau" },
 ];
 
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprKma12 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprKma12;

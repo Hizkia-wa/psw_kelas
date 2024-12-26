@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../Team.css';
 import tm1 from '../images/Kma111.jpg';
 import tm2 from '../images/Kma112.jpg';
 import tm3 from '../images/Kma113.jpg';
@@ -20,8 +20,8 @@ import tm16 from '../images/Kma1116.jpg';
 const teamData = [
   { id: 1, name: "SAMUEL BONA TUA HUTAGAOL", img: tm1, about: "Aku orangnya baik (keknya), tatapan mata aing kadang tajam tapi dah bawaan lahir, tapi kek diawal, aku baik dan ramah( keknya ) , aku suka nonton film, dengar musik metal, punk, rock, math rock, classic, indie terkadang, suka gym, basket, sama nasi goreng dan beberapa makanan lainnya sama melihara kucing." },
   { id: 2, name: "NEUREE DANIELA GIANIK SIAGIAN", img: tm5, about: "Cheese, anime, game, and books that's all you need in life bud! Life is nice if your death." },
-  { id: 3, name: "IMMANUEL PARLIN SIMORANGKIR", img: tm9, about: "halo perkenalkan nama ku Immanuel Simorangkir dari D4 trpl dengan Nim 41424034, nah disini aku suka banget dengar musik, makan juga suka. kalau di pikir pikir, aku suka banget sama kucing yang kalau bukunya lebat. suara ku juga kadang tinggi kalau ada sesuatu yang kurang pas. Nah ini aku, terimakasih." },
-  { id: 4, name: "BINSAR IMMANUEL SIREGAR", img: tm13, about: "..." },
+  { id: 3, name: "IMMANUEL PARLIN SIMORANGKIR", img: tm9, about: "Halo perkenalkan nama ku Immanuel Simorangkir dari D4 trpl dengan Nim 41424034, nah disini aku suka banget dengar musik, makan juga suka. kalau di pikir pikir, aku suka banget sama kucing yang kalau bukunya lebat. suara ku juga kadang tinggi kalau ada sesuatu yang kurang pas. Nah ini aku, terimakasih." },
+  { id: 4, name: "BINSAR IMMANUEL SIREGAR", img: tm13, about: "Namaku Binsar Immanuel Siregar! Aku orang nya biasaa ajaa,Hidupku mungkin ngga sempurna,tapi aku percaya setiap langkah kecil bisa jadi besar.Udah dulu ya,takutnya makin kenal makin susah lupa." },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprKma11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprKma11;
