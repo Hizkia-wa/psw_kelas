@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../Team.css';
 import tm1 from '../images/Bgl121.jpg';
 import tm2 from '../images/Bgl122.jpg';
 import tm3 from '../images/Bgl123.jpg';
@@ -20,8 +20,8 @@ import tm16 from '../images/Bgl1216.jpg';
 const teamData = [
   { id: 1, name: "SHINTA ELDO MARPAUNG", img: tm1, about: "Halo, saya Shinta Eldo Marpaung dan saya adalah ketua kelompok Biologi Kelas 12. Saya suka belajar hal-hal baru dan menarik, seperti bahasa, memanah, berenang,  dan lain-lain." },
   { id: 2, name: "NOVA WINDYANA SIMANJUNTAK", img: tm5, about: "Ngikutin alur, tapi sering nyasar." },
-  { id: 3, name: "SHANDRA GRACE NAINGGOLAN", img: tm9, about: "saya orangnya baik hati dan hobi saya menggambar saya suka ngeluh kalo banyak tugas dan saya juga agak malas ya gess tapi tetap semangat dalam menjalani hidup dan juga perkuliahan saya, itulah saya shandra nainggolan" },
-  { id: 4, name: "NAHESSON SUGOS NAINGGOLAN", img: tm13, about: "..." },
+  { id: 3, name: "SHANDRA GRACE NAINGGOLAN", img: tm9, about: "Saya orangnya baik hati dan hobi saya menggambar saya suka ngeluh kalo banyak tugas dan saya juga agak malas ya gess tapi tetap semangat dalam menjalani hidup dan juga perkuliahan saya, itulah saya shandra nainggolan" },
+  { id: 4, name: "NAHESSON SUGOS NAINGGOLAN", img: tm13, about: "Namaku Nahesson Sugos Nainggolan! Aku orangnya tidak begitu tertarik dengan realita, namun terkadang saya juga sadar bahwa saya punya mimpi besar untuk menjadi orang hebat. Untuk itulah, seiring waktu, saya tergerak untuk mau berubah dan menapak ke jenjang yang lebih tinggi lagi. Sekian sinopsis singkat hidup saya yang mungkin tiada maknany, namun saya yakin ketika kian kita telah bertemu,kau pasti akan melihat sisi asikku yang tiada taranya." },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprBgl12 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBgl12;

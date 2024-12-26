@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../Team.css';
 import tm1 from '../images/Bgl111.jpg';
 import tm2 from '../images/Bgl112.jpg';
 import tm3 from '../images/Bgl113.jpg';
@@ -18,9 +18,9 @@ import tm15 from '../images/Bgl1115.jpg';
 import tm16 from '../images/Bgl1116.jpg';
 
 const teamData = [
-  { id: 1, name: "MAROJAHAN CHRISTIAN COKIRAY HUTAHAEAN", img: tm1, about: "..." },
+  { id: 1, name: "MAROJAHAN CHRISTIAN COKIRAY HUTAHAEAN", img: tm1, about: "Halo namaku Marojahan Coky Rait Hutahaean! Aku suka dengan lawan yang kuat dalam adu kekuatan otot, Panco. Ya setidaknya hanya beberapa yang dapat mengalahkanku setelah kemenanganku yang beruntun, oh ya, infokan permabaran terdekat, Mobile Legend adalah makanan sehari-hariku." },
   { id: 2, name: "INTAN SONIA SIREGAR", img: tm5, about: "Aku, orangnya selalu berusaha memberikan yang terbaik dalam segala hal. Meski jalannya kadang nggak mulus, aku percaya setiap usaha pasti ada hasilnya. aku juga punya sisi santai suka duduk sambil dengerin musik favorit saat ngerjain tugas. Tapi aku juga punya kekurangan, aku orangnya agak teledor dan suka lupa, apalagi kalau lagi banyak yang dipikirin. Dan kalau membuat kesalahan, aku pasti kepikiran terus, kadang sampai susah move on. Dalam pertemanan, aku cenderung canggung dan hati-hati saat pertama kenal. Tapi kalau sudah dekat, aku jadi orang yang terbuka dan perhatian, bahkan nggak ragu memberikan apa pun yang aku punya untuk orang-orang terdekatku. Itulah aku, Intan Sonia Siregar" },
-  { id: 3, name: "GRACESYA ANGELINA SIMANJUNTAK", img: tm9, about: "..." },
+  { id: 3, name: "GRACESYA ANGELINA SIMANJUNTAK", img: tm9, about: "Aku orang yang simpel, nggak suka ribet, dan selalu merasa hidup lebih ringan kalau dinikmati  wkwkw dengan bernyanyi atau mendengarkan musik. Musik itu kayak penghibur, yang bikin aku tenang atau semangat, tergantung lagunya. Apalagi kalo lagi Taylor Swift yang All too well wkwkw" },
   { id: 4, name: "CRISMAN OLIVER SIAGIAN", img: tm13, about: "Nama ku Crisman Siagian! Aku orangnya ramah dan asyik diajak ngobrol, meski awalnya terkesan sedikit introvert. Tapi tunggu sampai kita kenal lebih dekat, aku jamin kamu bakal nemuin sisi seruku yang nggak ada habisnya!" },
 ];
 
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprBgl11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBgl11;
