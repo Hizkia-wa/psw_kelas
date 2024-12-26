@@ -6,28 +6,7 @@ import basidiomycota from '../component/Basidiomycota';
 import deuteromycota from '../component/Deuteromycota';
 import zygomta1 from '../component/Zygomycota';
 import StrukturFungi from '../images/Fungi.jpg';
-import { motion } from 'framer-motion';
 
-const FungiCard = ({ image, title, description, link }) => {
-    return (
-        <motion.div
-            className="fungi-card"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-        >
-            <Link to={link} className="card-link">
-                <div className="card-image">
-                    <img src={image} alt={title} />
-                </div>
-                <div className="card-content">
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                    <span className="card-link-text">Pelajari Lebih Lanjut</span>
-                </div>
-            </Link>
-        </motion.div>
-    );
-};
 
 const Fungi = () => {
     const [activeSection, setActiveSection] = useState('definisi');
@@ -117,43 +96,6 @@ const Fungi = () => {
             </div>
         )
     };
-
-    return (
-        <motion.div
-            className="fungi-page"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-        >
-            <div className="fungi-header">
-                <h1>Dunia Fungi</h1>
-                <p>Menjelajahi Keunikan Dunia Jamur</p>
-            </div>
-
-            <div className="section-navigator">
-                {['definisi', 'ciri', 'struktur', 'fungsi'].map((section) => (
-                    <button
-                        key={section}
-                        className={activeSection === section ? 'active' : ''}
-                        onClick={() => setActiveSection(section)}
-                    >
-                        {section.charAt(0).toUpperCase() + section.slice(1)}
-                    </button>
-                ))}
-            </div>
-
-            <div className="main-content">{sectionContent[activeSection]}</div>
-
-            <div className="fungi-classification">
-                <h2>Klasifikasi Fungi</h2>
-                <div className="fungi-grid">
-                    {fungiTypes.map((fungi, index) => (
-                        <FungiCard key={index} {...fungi} />
-                    ))}
-                </div>
-            </div>
-        </motion.div>
-    );
 };
 
 export default Fungi;
