@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import '../css/Bgl10b1.css';
 import { Accordion, Card, Button, Badge } from 'react-bootstrap';
-
-
 function Keanekaragaman() {
    const [activeTab, setActiveTab] = useState('global');
-
-
 return (
      <div className="biodiversity-container">
         <div className="hero-section">
@@ -23,8 +19,7 @@ return (
 
       <div className="content-section detailed-material">
         <div className="text-content">
-          <h2>Uraian Materi Keanekaragaman Hayati</h2>
-          
+          <h2>Uraian Materi Keanekaragaman Hayati</h2>          
           <div className="material-section">
              <h3>Definisi Keanekaragaman Hayati</h3>
             <p>
@@ -35,7 +30,6 @@ return (
                variasi pada tingkat gen, jenis, dan ekosistem di suatu daerah.
              </p>
            </div>
-
            <div className="material-section">
              <h3>Faktor Pembentuk Keanekaragaman</h3>
              <p>
@@ -58,7 +52,6 @@ return (
                karena pengaruh lingkungan.
              </p>
            </div>
-
            <div className="material-section">
              <h3>Contoh Pengaruh Lingkungan</h3>
              <p>
@@ -78,7 +71,6 @@ return (
                </li>
              </ul>
            </div>
-
            <div className="material-section">
              <h3>Definisi Spesies</h3>
              <p>
@@ -92,7 +84,6 @@ return (
                <li>Menghasilkan keturunan subur (fertile)</li>
              </ul>
            </div>
-
            <div className="material-section">
              <h3>Tipe-Tipe Ekosistem Perairan (Akuatik)</h3>
              <p>
@@ -106,70 +97,60 @@ return (
                  <ul>
                    <li>Fitoplankton</li>
                   <li>Zooplankton</li>
-//                   <li>Bergerak pasif karena arus air</li>
-//                   <li>Contoh: ganggang uniseluler, protozoa</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Nekton</strong>
-//                 <ul>
-//                   <li>Organisme bergerak aktif (berenang)</li>
-//                   <li>Contoh: ikan, katak</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Neuston</strong>
-//                 <ul>
-//                   <li>Organisme yang mengapung di permukaan air</li>
-//                   <li>Contoh: serangga air, teratai, eceng gondok, ganggang</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Bentos</strong>
-//                 <ul>
-//                   <li>Organisme yang berada di dasar perairan</li>
-//                   <li>Contoh: udang, kepiting, cacing, ganggang</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Perifiton</strong>
-//                 <ul>
-//                   <li>Organisme yang melekat pada organisme lain</li>
-//                   <li>Contoh: ganggang, siput</li>
-//                 </ul>
-//               </li>
-//             </ol>
-//           </div>
-//         </div>
-//       </div>
-
-
-
-
-
-
-
-
-
-//       <div className="content-section tech-conservation">
-//         <div className="text-content">
-//           <h2>Teknologi Mutakhir dalam Konservasi</h2>
-//           <div className="tech-tabs">
-//             <button 
+                   <li>Bergerak pasif karena arus air</li>
+                   <li>Contoh: ganggang uniseluler, protozoa</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Nekton</strong>
+                 <ul>
+                   <li>Organisme bergerak aktif (berenang)</li>
+                   <li>Contoh: ikan, katak</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Neuston</strong>
+                 <ul>
+                   <li>Organisme yang mengapung di permukaan air</li>
+                   <li>Contoh: serangga air, teratai, eceng gondok, ganggang</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Bentos</strong>
+                 <ul>
+                   <li>Organisme yang berada di dasar perairan</li>
+                   <li>Contoh: udang, kepiting, cacing, ganggang</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Perifiton</strong>
+                 <ul>
+                   <li>Organisme yang melekat pada organisme lain</li>
+                   <li>Contoh: ganggang, siput</li>
+                 </ul>
+               </li>
+             </ol>
+           </div>
+         </div>
+       </div>
+       <div className="content-section tech-conservation">
+         <div className="text-content">
+           <h2>Teknologi Mutakhir dalam Konservasi</h2>
+           <div className="tech-tabs">
+             <button 
               className={activeTab === 'global' ? 'active' : ''}
               onClick={() => setActiveTab('global')}
             >
-//               Teknologi Global
-//             </button>
-//             <button 
+               Teknologi Global
+             </button>
+             <button 
               className={activeTab === 'lokal' ? 'active' : ''}
              onClick={() => setActiveTab('lokal')}
             >
               Teknologi Lokal
-//             </button>
-//           </div>
-
-//           {activeTab === 'global' && (
+             </button>
+           </div>
+           {activeTab === 'global' && (
            <div className="tech-content">
 //               <h3>Teknologi Konservasi Global</h3>
 //               <ul>
@@ -234,15 +215,9 @@ return (
 //           </div>
 //         </div>
 //       </div>
-
-    
-
-
-
 //       <div className="content-section download-materials">
 //   <div className="container">
-//     <h2 className="text-center mb-4">Unduh Materi Keanekaragaman Hayati</h2>
-    
+//     <h2 className="text-center mb-4">Unduh Materi Keanekaragaman Hayati</h2>   
 //     <div className="row">
 //       <div className="col-md-4 mb-3">
 //         <Card>
@@ -258,71 +233,64 @@ return (
                download
            >
              Unduh PDF
-//             </Button>
-//           </Card.Body>
+             </Button>
+           </Card.Body>
 //         </Card>
-//       </div>
-      
+       </div>     
 //       <div className="col-md-4 mb-3">
 //         <Card>
 //           <Card.Header>Materi Lanjutan</Card.Header>
 //           <Card.Body>
 //             <Card.Title>Ekosistem dan Konservasi</Card.Title>
-//             <Card.Text>
-//               Panduan komprehensif tentang ekosistem dan upaya konservasi
-//             </Card.Text>
-//             <Button 
+             <Card.Text>
+               Panduan komprehensif tentang ekosistem dan upaya konservasi
+             </Card.Text>
+             <Button 
               variant="success" 
                href="./materi3/materi.pdf" 
                download
            >
-//               Unduh PDF
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </div>
-      
-//       <div className="col-md-4 mb-3">
-//         <Card>
-//           <Card.Header>Presentasi</Card.Header>
-//           <Card.Body>
-//             <Card.Title>Slide Presentasi</Card.Title>
-//             <Card.Text>
-//               Slide presentasi lengkap untuk dipelajari atau dibagikan
-//             </Card.Text>
-//             <Button 
+               Unduh PDF
+             </Button>
+           </Card.Body>
+         </Card>
+       </div>      
+       <div className="col-md-4 mb-3">
+         <Card>
+           <Card.Header>Presentasi</Card.Header>
+           <Card.Body>
+             <Card.Title>Slide Presentasi</Card.Title>
+             <Card.Text>
+              Slide presentasi lengkap untuk dipelajari atau dibagikan
+            </Card.Text>
+             <Button 
               variant="info" 
                href="./materi2/materi.pdf" 
               download
             >
-//               Unduh Presentasi
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </div>
-//     </div>
-
-//     <div className="text-center mt-4">
-//       <Accordion>
-//         <Accordion.Item eventKey="0">
-//           <Accordion.Header>Informasi Unduhan</Accordion.Header>
-//           <Accordion.Body>
-//             <p>
-//               Semua materi yang disediakan untuk download bersifat gratis 
-//               dan dapat digunakan untuk kepentingan edukasi. Mohon 
-//               mencantumkan sumber apabila menggunakan materi ini.
-//             </p>
-            
-//           </Accordion.Body>
-//         </Accordion.Item>
-//       </Accordion>
-//     </div>
+               Unduh Presentasi
+             </Button>
+           </Card.Body>
+        </Card>
+       </div>
+     </div>
+     <div className="text-center mt-4">
+       <Accordion>
+         <Accordion.Item eventKey="0">
+          <Accordion.Header>Informasi Unduhan</Accordion.Header>
+           <Accordion.Body>
+             <p>
+               Semua materi yang disediakan untuk download bersifat gratis 
+               dan dapat digunakan untuk kepentingan edukasi. Mohon 
+               mencantumkan sumber apabila menggunakan materi ini.
+             </p>            
+          </Accordion.Body>
+        </Accordion.Item>
+       </Accordion>
+     </div>
  </div>
- </div>
-
-      
+ </div>      
          </div>
    );
 }
-
 export default Keanekaragaman;

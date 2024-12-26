@@ -1,55 +1,53 @@
-// import React, { useState } from 'react';
-// import '../css/Bgl10b5.css';
+ import React, { useState } from 'react';
+ import '../css/Bgl10b5.css';
 
-// function Animalia() {
-//   const [activeSection, setActiveSection] = useState('home');
+ function Animalia() {
+  const [activeSection, setActiveSection] = useState('home');
 
-//   return (
-//     <div className="animalia-wrapper">
+   return (
+     <div className="animalia-wrapper">
 
-//       <div className="hero-section3">
-//         <div className="hero-content">
-//           <h1 className="hero-title">Kingdom Animalia</h1>
-//           <p className="hero-subtitle">Menjelajahi Keragaman Dunia Hewan</p>
-//         </div>
-//         <div className="hero-overlay"></div>
-//       </div>
-
-     
-//       <div className="nav-cards-container">
-//         <div 
-//           className={`nav-card ${activeSection === 'intro' ? 'active' : ''}`}
-//           onClick={() => setActiveSection('intro')}
-//         >
+       <div className="hero-section3">
+        <div className="hero-content">
+           <h1 className="hero-title">Kingdom Animalia</h1>
+           <p className="hero-subtitle">Menjelajahi Keragaman Dunia Hewan</p>
+         </div>
+         <div className="hero-overlay"></div>
+       </div>
+       <div className="nav-cards-container">
+         <div 
+           className={`nav-card ${activeSection === 'intro' ? 'active' : ''}`}
+           onClick={() => setActiveSection('intro')}
+         >
 //           <div className="card-icon">🔍</div>
 //           <h3>Pengenalan</h3>
 //         </div>
 //         <div 
-//           className={`nav-card ${activeSection === 'characteristics' ? 'active' : ''}`}
-//           onClick={() => setActiveSection('characteristics')}
-//         >
+          className={`nav-card ${activeSection === 'characteristics' ? 'active' : ''}`}
+          onClick={() => setActiveSection('characteristics')}
+        >
 //           <div className="card-icon">📋</div>
 //           <h3>Karakteristik</h3>
 //         </div>
 //         <div 
-//           className={`nav-card ${activeSection === 'classification' ? 'active' : ''}`}
-//           onClick={() => setActiveSection('classification')}
-//         >
+           className={`nav-card ${activeSection === 'classification' ? 'active' : ''}`}
+           onClick={() => setActiveSection('classification')}
+         >
 //           <div className="card-icon">🔰</div>
 //           <h3>Klasifikasi</h3>
 //         </div>
 //         <div 
-//           className={`nav-card ${activeSection === 'examples' ? 'active' : ''}`}
-//           onClick={() => setActiveSection('examples')}
-//         >
+           className={`nav-card ${activeSection === 'examples' ? 'active' : ''}`}
+           onClick={() => setActiveSection('examples')}
+         >
 //           <div className="card-icon">🦁</div>
 //           <h3>Contoh Hewan</h3>
 //         </div>
 //       </div>
 
 //       <div className="main-content">
-//         {activeSection === 'intro' && (
-//   <div className="content-section intro-section">
+         {activeSection === 'intro' && (
+   <div className="content-section intro-section">
 //     <div className="section-header">
 //       <h2>Mengenal Kingdom Animalia</h2>
 //       <div className="separator"></div>
@@ -148,11 +146,11 @@
 //       </div>
 //     </div>
 //   </div>
-// )}
+ )}
 
 
-// {activeSection === 'characteristics' && (
-//   <div className="content-section characteristics-section">
+ {activeSection === 'characteristics' && (
+   <div className="content-section characteristics-section">
 //     <div className="section-header">
 //       <h2>Karakteristik Kingdom Animalia</h2>
 //       <div className="separator"></div>
@@ -278,11 +276,11 @@
 //       </div>
 //     </div>
 //   </div>
-// )}
+ )}
 
 
 // {activeSection === 'classification' && (
-//   <div className="content-section classification-section">
+   <div className="content-section classification-section">
 //     <div className="section-header">
 //       <h2>Klasifikasi Kingdom Animalia</h2>
 //       <div className="separator"></div>
@@ -552,10 +550,9 @@
 //       </div>
 //     </div>
 //   </div>
-// )}
-
-// {activeSection === 'examples' && (
-//   <div className="content-section examples-section">
+ )}
+ {activeSection === 'examples' && (
+   <div className="content-section examples-section">
 //     <div className="section-header">
 //       <h2>Galeri dan Contoh Hewan</h2>
 //       <div className="separator"></div>
@@ -724,10 +721,10 @@
 //       </section>
 //     </div>
 //   </div>
-// )}
+ )}
 //       </div>
 //     </div>
-//   );
-// }
+   );
+ }
 
-// export default Animalia;
+ export default Animalia;

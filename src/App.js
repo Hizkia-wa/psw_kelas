@@ -81,11 +81,11 @@ import Fisika12b5 from './components/Fsk12b5';
 import Fisika12b6 from './components/Fsk12b6';
 import Fisika12b7 from './components/Fsk12b7';
 import Fisika12b8 from './components/Fsk12b8';
-// import Bgl10b1 from './components/Bgl10b1';
-// import Bgl10b2 from './components/Bgl10b2';
-// import Bgl10b3 from './components/Bgl10b3';
-// import Bgl10b4 from './components/Bgl10b4';
-// import Bgl10b5 from './components/Bgl10b5';
+import Bgl10b1 from './components/Bgl10b1';
+import Bgl10b2 from './components/Bgl10b2';
+import Bgl10b3 from './components/Bgl10b3';
+import Bgl10b4 from './components/Bgl10b4';
+import Bgl10b5 from './components/Bgl10b5';
 import Bgl11b1 from './components/Bgl11b1';
 import Bgl11b2 from './components/Bgl11b2';
 import Bgl11b3 from './components/Bgl11b3';
@@ -487,11 +487,11 @@ function App() {
         <Route path="/Fsk12b7" element={<Fisika12b7 />} />
         <Route path="/Fsk12b8" element={<Fisika12b8 />} />
         {/* Rute untuk Materi Biologi 10 */}
-        {/* <Route path="/Bgl10b1" element={<Bgl10b1 />} />
+        <Route path="/Bgl10b1" element={<Bgl10b1 />} />
         <Route path="/Bgl10b2" element={<Bgl10b2 />} />
         <Route path="/Bgl10b3" element={<Bgl10b3 />} />
         <Route path="/Bgl10b4" element={<Bgl10b4 />} />
-        <Route path="/Bgl10b5" element={<Bgl10b5 />} /> */}
+        <Route path="/Bgl10b5" element={<Bgl10b5 />} />
         {/* Rute untuk Materi Biologi 11 */}
         <Route path="/Bgl11b1" element={<Bgl11b1 />} />
         <Route path="/Bgl11b2" element={<Bgl11b2 />} />
