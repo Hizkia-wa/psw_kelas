@@ -8,114 +8,114 @@ const SlKma12b2 = () => {
 
   const questions = [
     {
-      question: "Apa yang dimaksud dengan sifat koligatif larutan?",
+      question: "Dalam sel elektrolisis, mengapa elektroda grafit lebih sering digunakan dibandingkan elektroda logam?",
       options: [
-        "Sifat larutan yang hanya bergantung pada jenis zat terlarut",
-        "Sifat larutan yang hanya bergantung pada jumlah partikel zat terlarut",
-        "Sifat larutan yang bergantung pada volume larutan",
-        "Sifat larutan yang bergantung pada tekanan larutan"
+        "Grafit memiliki massa jenis lebih kecil",
+        "Grafit memiliki konduktivitas listrik yang tinggi",
+        "Grafit tidak bereaksi dengan elektrolit",
+        "Grafit mudah diperoleh di alam"
       ],
-      correctOption: "Sifat larutan yang hanya bergantung pada jumlah partikel zat terlarut",
-      explanation: "Sifat koligatif larutan adalah sifat larutan yang bergantung pada jumlah partikel zat terlarut, bukan jenisnya.",
+      correctOption: "Grafit tidak bereaksi dengan elektrolit",
+      explanation: "Elektroda grafit lebih sering digunakan karena sifatnya yang inert, sehingga tidak bereaksi dengan elektrolit atau produk elektrolisis.",
     },
     {
-      question: "Berikut ini yang termasuk sifat koligatif larutan adalah?",
+      question: "Sebuah larutan CuSO4 dielektrolisis menggunakan elektroda inert. Apa produk yang terbentuk di anoda?",
       options: [
-        "Massa jenis",
-        "Tekanan osmotik",
-        "Warna larutan",
-        "Kelarutan"
+        "Gas oksigen",
+        "Ion Cu²⁺",
+        "Gas hidrogen",
+        "Ion SO₄²⁻"
       ],
-      correctOption: "Tekanan osmotik",
-      explanation: "Tekanan osmotik merupakan salah satu sifat koligatif larutan selain penurunan tekanan uap, penurunan titik beku, dan kenaikan titik didih.",
+      correctOption: "Gas oksigen",
+      explanation: "Pada elektrolisis CuSO4 dengan elektroda inert, di anoda terjadi oksidasi ion OH⁻ dari air sehingga menghasilkan gas oksigen.",
     },
     {
-      question: "Penurunan tekanan uap jenuh larutan disebabkan oleh?",
+      question: "Bagaimana hubungan potensial sel dan spontanitas reaksi dalam sel galvanik?",
       options: [
-        "Penurunan suhu larutan",
-        "Adanya zat terlarut yang menghalangi pelarutan",
-        "Partikel zat terlarut yang menghalangi penguapan partikel pelarut",
-        "Peningkatan suhu larutan"
+        "Reaksi spontan jika potensial sel negatif",
+        "Reaksi spontan jika potensial sel nol",
+        "Reaksi spontan jika potensial sel positif",
+        "Reaksi spontan jika tidak ada arus listrik"
       ],
-      correctOption: "Partikel zat terlarut yang menghalangi penguapan partikel pelarut",
-      explanation: "Penurunan tekanan uap jenuh terjadi karena partikel zat terlarut menghalangi partikel pelarut untuk menguap.",
+      correctOption: "Reaksi spontan jika potensial sel positif",
+      explanation: "Potensial sel positif menunjukkan bahwa reaksi redoks dalam sel galvanik terjadi secara spontan.",
     },
     {
-      question: "Apa hubungan antara molalitas larutan dan penurunan titik beku?",
+      question: "Mengapa Zn digunakan sebagai anoda dalam sel Daniell?",
       options: [
-        "Semakin kecil molalitas, semakin besar penurunan titik beku",
-        "Semakin besar molalitas, semakin besar penurunan titik beku",
-        "Molalitas tidak memengaruhi titik beku",
-        "Molalitas hanya memengaruhi tekanan uap"
+        "Zn memiliki harga potensial reduksi standar lebih kecil",
+        "Zn mudah larut dalam larutan CuSO₄",
+        "Zn bersifat lebih inert dibandingkan Cu",
+        "Zn memiliki konduktivitas listrik yang lebih tinggi"
       ],
-      correctOption: "Semakin besar molalitas, semakin besar penurunan titik beku",
-      explanation: "Penurunan titik beku larutan sebanding dengan molalitas larutan, sesuai dengan rumus ∆Tf = Kf × m.",
+      correctOption: "Zn memiliki harga potensial reduksi standar lebih kecil",
+      explanation: "Zn digunakan sebagai anoda karena potensial reduksi standarnya lebih kecil daripada Cu, sehingga lebih mudah teroksidasi.",
     },
     {
-      question: "Rumus untuk menghitung tekanan osmotik adalah?",
+      question: "Diberikan pasangan redoks berikut: Fe³⁺/Fe²⁺ (+0,77 V) dan Sn⁴⁺/Sn²⁺ (+0,15 V). Apa yang terjadi jika Fe²⁺ dicampur dengan Sn⁴⁺?",
       options: [
-        "π = M × R × T",
-        "π = m × R × T",
-        "π = P × V × T",
-        "π = n × R × T"
+        "Fe²⁺ akan teroksidasi menjadi Fe³⁺",
+        "Sn⁴⁺ akan tereduksi menjadi Sn",
+        "Fe³⁺ akan tereduksi menjadi Fe²⁺",
+        "Tidak terjadi reaksi"
       ],
-      correctOption: "π = M × R × T",
-      explanation: "Tekanan osmotik (π) dihitung menggunakan rumus π = M × R × T, di mana M adalah molaritas, R adalah konstanta gas, dan T adalah suhu dalam Kelvin.",
+      correctOption: "Fe²⁺ akan teroksidasi menjadi Fe³⁺",
+      explanation: "Fe²⁺ memiliki potensial reduksi yang lebih besar dibandingkan Sn⁴⁺, sehingga Fe²⁺ akan teroksidasi menjadi Fe³⁺.",
     },
     {
-      question: "Kenaikan titik didih larutan dipengaruhi oleh?",
+      question: "Mengapa logam alkali tidak digunakan sebagai elektroda pada sel elektrolisis air?",
       options: [
-        "Jumlah partikel zat terlarut",
-        "Jenis pelarut",
-        "Warna larutan",
-        "Kecepatan pengadukan"
+        "Logam alkali bereaksi dengan air menghasilkan gas hidrogen",
+        "Logam alkali tidak menghantarkan listrik",
+        "Logam alkali terlalu mahal untuk digunakan",
+        "Logam alkali memiliki massa molar tinggi"
       ],
-      correctOption: "Jumlah partikel zat terlarut",
-      explanation: "Kenaikan titik didih larutan merupakan sifat koligatif yang dipengaruhi oleh jumlah partikel zat terlarut dalam larutan.",
+      correctOption: "Logam alkali bereaksi dengan air menghasilkan gas hidrogen",
+      explanation: "Logam alkali sangat reaktif dengan air, sehingga tidak cocok digunakan sebagai elektroda pada elektrolisis air.",
     },
     {
-      question: "Apa yang dimaksud dengan faktor van 't Hoff?",
+      question: "Pada sel galvanik, mengapa jembatan garam diperlukan?",
       options: [
-        "Rasio antara massa pelarut dan massa larutan",
-        "Jumlah partikel zat terlarut dalam larutan",
-        "Faktor yang menunjukkan jumlah partikel hasil ionisasi atau disosiasi zat terlarut",
-        "Faktor yang menunjukkan molaritas larutan"
+        "Untuk mempercepat reaksi redoks",
+        "Untuk menjaga kesetimbangan ion dalam larutan",
+        "Untuk meningkatkan potensial sel",
+        "Untuk menggantikan elektroda"
       ],
-      correctOption: "Faktor yang menunjukkan jumlah partikel hasil ionisasi atau disosiasi zat terlarut",
-      explanation: "Faktor van 't Hoff digunakan untuk menghitung jumlah partikel sebenarnya dalam larutan elektrolit.",
+      correctOption: "Untuk menjaga kesetimbangan ion dalam larutan",
+      explanation: "Jembatan garam berfungsi menjaga kesetimbangan ion di kedua elektroda dengan mengalirkan ion untuk mencegah penghentian reaksi.",
     },
     {
-      question: "Jika suatu larutan memiliki molaritas 0,5 M dan suhu 300 K, tekanan osmotiknya adalah? (Gunakan R = 0,0821 atm·L/mol·K)",
+      question: "Berikut ini yang bukan merupakan aplikasi sel elektrolisis adalah?",
       options: [
-        "12,315 atm",
-        "10,215 atm",
-        "8,215 atm",
-        "15,315 atm"
+        "Penyepuhan logam",
+        "Pemurnian logam",
+        "Produksi gas klorin",
+        "Produksi arus listrik"
       ],
-      correctOption: "12,315 atm",
-      explanation: "Tekanan osmotik dihitung menggunakan rumus π = M × R × T = 0,5 × 0,0821 × 300 = 12,315 atm.",
+      correctOption: "Produksi arus listrik",
+      explanation: "Sel elektrolisis digunakan untuk penyepuhan, pemurnian logam, dan produksi gas seperti klorin, tetapi tidak untuk menghasilkan arus listrik.",
     },
     {
-      question: "Penurunan tekanan uap larutan non-elektrolit ditentukan oleh?",
+      question: "Dalam proses pemurnian tembaga, mengapa tembaga murni terbentuk di katoda?",
       options: [
-        "Jenis pelarut",
-        "Fraksi mol zat terlarut",
-        "Suhu larutan",
-        "Jenis zat terlarut"
+        "Tembaga memiliki potensial oksidasi yang besar",
+        "Tembaga di katoda mengalami oksidasi",
+        "Ion Cu²⁺ mengalami reduksi menjadi Cu",
+        "Ion Cu²⁺ dihasilkan di anoda"
       ],
-      correctOption: "Fraksi mol zat terlarut",
-      explanation: "Penurunan tekanan uap larutan non-elektrolit sebanding dengan fraksi mol zat terlarut, sesuai dengan hukum Raoult.",
+      correctOption: "Ion Cu²⁺ mengalami reduksi menjadi Cu",
+      explanation: "Dalam pemurnian tembaga, ion Cu²⁺ dari anoda direduksi menjadi tembaga murni di katoda.",
     },
     {
-      question: "Larutan NaCl 1 M memiliki sifat koligatif lebih tinggi dibandingkan larutan urea 1 M karena?",
+      question: "Pada elektrolisis larutan NaCl, gas klorin dihasilkan di anoda. Mengapa hal ini terjadi?",
       options: [
-        "NaCl memiliki massa molar lebih kecil",
-        "NaCl mengalami disosiasi menjadi dua partikel",
-        "Urea memiliki massa jenis lebih tinggi",
-        "NaCl memiliki tekanan uap lebih rendah"
+        "Ion Na⁺ lebih mudah teroksidasi",
+        "Ion Cl⁻ lebih mudah teroksidasi dibandingkan ion OH⁻",
+        "Air mengalami elektrolisis lebih cepat",
+        "Ion Cl⁻ tidak larut dalam larutan"
       ],
-      correctOption: "NaCl mengalami disosiasi menjadi dua partikel",
-      explanation: "NaCl sebagai elektrolit mengalami disosiasi menjadi ion Na+ dan Cl-, sehingga jumlah partikel dalam larutan lebih banyak dibandingkan urea.",
+      correctOption: "Ion Cl⁻ lebih mudah teroksidasi dibandingkan ion OH⁻",
+      explanation: "Dalam larutan NaCl, ion Cl⁻ lebih mudah teroksidasi di anoda menghasilkan gas klorin dibandingkan ion OH⁻ dari air.",
     }
   ];
 

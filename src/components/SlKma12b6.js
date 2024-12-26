@@ -1,58 +1,125 @@
 import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
-const SlKma12b6 = () => {
+const SlKma12b2 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   const questions = [
     {
-      question: "Apa yang dimaksud dengan makromolekul?",
+      question: "Bagaimana hubungan antara struktur tiga dimensi protein dan fungsinya dalam tubuh?",
       options: [
-        "Molekul kecil",
-        "Molekul besar yang terdiri dari banyak atom",
-        "Molekul yang tidak larut dalam air",
-        "Molekul yang hanya terdiri dari karbon"
+        "Struktur tiga dimensi protein tidak memengaruhi fungsinya",
+        "Struktur tiga dimensi protein sangat memengaruhi fungsinya",
+        "Struktur dua dimensi protein lebih penting daripada struktur tiga dimensi",
+        "Fungsi protein tidak bergantung pada strukturnya"
       ],
-      correctOption: "Molekul besar yang terdiri dari banyak atom",
-      explanation: "Makromolekul adalah molekul besar yang terdiri dari banyak atom, biasanya terdiri dari ribuan atom yang terikat bersama.",
+      correctOption: "Struktur tiga dimensi protein sangat memengaruhi fungsinya",
+      explanation: "Struktur tiga dimensi protein menentukan bagaimana protein berinteraksi dengan molekul lain, sehingga sangat penting untuk fungsi biologisnya.",
     },
     {
-      question: "Karbohidrat terdiri dari unit dasar yang disebut?",
-      options: ["Asam amino", "Gula", "Nukleotida", "Asam lemak"],
-      correctOption: "Gula",
-      explanation: "Karbohidrat terdiri dari unit dasar yang disebut gula, yang dapat berupa monosakarida, disakarida, atau polisakarida.",
-    },
-    {
-      question: "Apa fungsi utama protein dalam tubuh?",
+      question: "Apa yang terjadi ketika protein denaturasi?",
       options: [
-        "Sumber energi",
-        "Penyimpanan genetik",
-        "Katalisator dalam reaksi biokimia",
-        "Pengatur suhu"
+        "Protein menjadi lebih aktif secara biologis",
+        "Struktur tiga dimensi protein rusak, mengubah fungsinya",
+        "Protein menjadi lebih stabil",
+        "Tidak ada perubahan dalam aktivitas biologis protein"
       ],
-      correctOption: "Katalisator dalam reaksi biokimia",
-      explanation: "Protein berfungsi sebagai katalisator dalam reaksi biokimia, membantu mempercepat reaksi tanpa terlibat secara permanen.",
+      correctOption: "Struktur tiga dimensi protein rusak, mengubah fungsinya",
+      explanation: "Denaturasi protein merusak struktur tiga dimensi, yang menyebabkan hilangnya fungsi biologisnya.",
     },
     {
-      question: "Lipid yang memiliki satu ikatan rangkap disebut?",
-      options: ["Asam lemak jenuh", "Asam lemak tak jenuh", "Trigliserida", "Fosfolipid"],
-      correctOption: "Asam lemak tak jenuh",
-      explanation: "Asam lemak tak jenuh memiliki satu atau lebih ikatan rangkap dalam rantai karbonnya, yang membuatnya lebih cair pada suhu kamar.",
-    },
-    {
-      question: "Nukleotida terdiri dari tiga komponen utama, yaitu?",
+      question: "Mengapa molekul DNA memiliki dua untai?",
       options: [
-        "Gula, asam lemak, dan gliserol",
-        "Asam amino, gula, dan fosfat",
-        "Gula, basa nitrogen, dan fosfat",
-        "Asam lemak, gliserol, dan basa nitrogen"
+        "Untuk meningkatkan stabilitas dan memungkinkan replikasi",
+        "Untuk mempermudah translasi",
+        "Agar dapat mengurangi kesalahan dalam replikasi",
+        "Untuk mempercepat transkripsi"
       ],
-      correctOption: "Gula, basa nitrogen, dan fosfat",
-      explanation: "Nukleotida terdiri dari tiga komponen utama: gula, basa nitrogen, dan kelompok fosfat, yang membentuk DNA dan RNA.",
+      correctOption: "Untuk meningkatkan stabilitas dan memungkinkan replikasi",
+      explanation: "Molekul DNA memiliki dua untai untuk menciptakan struktur heliks ganda yang stabil, yang memungkinkan mekanisme replikasi dan perbaikan yang efisien.",
+    },
+    {
+      question: "Bagaimana ikatan hidrogen berperan dalam pembentukan struktur tiga dimensi protein?",
+      options: [
+        "Ikatan hidrogen tidak berperan dalam pembentukan struktur protein",
+        "Ikatan hidrogen membantu menjaga struktur sekunder protein seperti heliks alfa dan lembaran beta",
+        "Ikatan hidrogen hanya berperan dalam stabilitas DNA",
+        "Ikatan hidrogen mempercepat sintesis protein"
+      ],
+      correctOption: "Ikatan hidrogen membantu menjaga struktur sekunder protein seperti heliks alfa dan lembaran beta",
+      explanation: "Ikatan hidrogen membantu menjaga struktur sekunder protein, seperti heliks alfa dan lembaran beta, yang penting untuk fungsinya.",
+    },
+    {
+      question: "Apa yang dimaksud dengan polimerisasi dalam konteks makromolekul?",
+      options: [
+        "Proses pemecahan makromolekul menjadi unit-unit monomer",
+        "Proses pembentukan makromolekul dari unit monomer",
+        "Proses pemisahan molekul besar menjadi molekul kecil",
+        "Proses pembentukan ikatan kovalen antar molekul kecil"
+      ],
+      correctOption: "Proses pembentukan makromolekul dari unit monomer",
+      explanation: "Polimerisasi adalah proses penyusunan unit-unit monomer untuk membentuk makromolekul yang lebih besar, seperti protein, DNA, dan polimer sintetik.",
+    },
+    {
+      question: "Mengapa enzim disebut sebagai katalis biologi?",
+      options: [
+        "Karena enzim mempercepat reaksi kimia tanpa terlibat langsung dalam reaksi tersebut",
+        "Karena enzim hanya bekerja dalam kondisi suhu tinggi",
+        "Karena enzim membutuhkan energi eksternal untuk bekerja",
+        "Karena enzim dapat merubah produk reaksi menjadi molekul lain"
+      ],
+      correctOption: "Karena enzim mempercepat reaksi kimia tanpa terlibat langsung dalam reaksi tersebut",
+      explanation: "Enzim mempercepat reaksi kimia dengan menurunkan energi aktivasi tanpa berubah dalam proses reaksi, bertindak sebagai katalis.",
+    },
+    {
+      question: "Apa yang menyebabkan protein menjadi lebih stabil di lingkungan asam atau basa ekstrim?",
+      options: [
+        "Interaksi hidrofobik antara sisi samping asam amino",
+        "Penyusunan ulang ikatan hidrogen",
+        "Denaturasi protein",
+        "Kehadiran garam"
+      ],
+      correctOption: "Interaksi hidrofobik antara sisi samping asam amino",
+      explanation: "Lingkungan asam atau basa ekstrim dapat menyebabkan perubahan dalam interaksi antara sisi samping asam amino, yang dapat mengubah struktur dan stabilitas protein.",
+    },
+    {
+      question: "Bagaimana cara kerja DNA ligase dalam replikasi DNA?",
+      options: [
+        "Menghentikan proses replikasi dengan memutuskan ikatan fosfodiester",
+        "Menambahkan nukleotida ke rantai DNA",
+        "Menghubungkan fragmen-fragmen Okazaki pada strand lagging",
+        "Memperbaiki kesalahan dalam rantai DNA"
+      ],
+      correctOption: "Menghubungkan fragmen-fragmen Okazaki pada strand lagging",
+      explanation: "DNA ligase menghubungkan fragmen-fragmen Okazaki pada strand lagging selama replikasi DNA, memastikan kontinuitas rantai DNA.",
+    },
+    {
+      question: "Mengapa ikatan kovalen penting dalam struktur makromolekul seperti protein dan DNA?",
+      options: [
+        "Karena ikatan kovalen membantu stabilisasi interaksi non-kovalen",
+        "Karena ikatan kovalen lebih lemah daripada ikatan hidrogen",
+        "Karena ikatan kovalen memberikan kekuatan dan stabilitas struktural",
+        "Karena ikatan kovalen mudah diputuskan dalam kondisi ekstrim"
+      ],
+      correctOption: "Karena ikatan kovalen memberikan kekuatan dan stabilitas struktural",
+      explanation: "Ikatan kovalen memberikan kekuatan struktural yang diperlukan untuk stabilitas makromolekul seperti protein dan DNA.",
+    },
+    {
+      question: "Bagaimana struktur heliks ganda pada DNA mendukung mekanisme pewarisan genetik?",
+      options: [
+        "Dengan memungkinkan replikasi yang akurat melalui pembentukan pasangan basa",
+        "Dengan memungkinkan pembacaan urutan asam amino dalam protein",
+        "Dengan menyusun gen menjadi sekuens yang lebih kompleks",
+        "Dengan mencegah perubahan urutan basa dalam gen"
+      ],
+      correctOption: "Dengan memungkinkan replikasi yang akurat melalui pembentukan pasangan basa",
+      explanation: "Struktur heliks ganda pada DNA memungkinkan pasangan basa untuk saling berinteraksi, sehingga memfasilitasi replikasi yang akurat selama pembelahan sel.",
     },
   ];
+  
+  
 
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length) {
@@ -183,4 +250,4 @@ const SlKma12b6 = () => {
   );
 };
 
-export default SlKma12b6;
+export default SlKma12b2;

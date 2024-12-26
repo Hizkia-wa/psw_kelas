@@ -410,6 +410,7 @@ import SlKma12b2 from './components/SlKma12b2';
 import SlKma12b3 from './components/SlKma12b3';
 import SlKma12b4 from './components/SlKma12b4';
 import SlKma12b5 from './components/SlKma12b5';
+import SlKma12b6 from './components/SlKma12b6';
 import SlMtk10b1 from './components/SlMTK10b1';
 import SlMtk10b2 from './components/SlMTK10b2';
 import SlMtk10b3 from './components/SlMTK10b3';
@@ -834,6 +835,7 @@ function App() {
         <Route path="/SlKma12b3" element={<SlKma12b3 />} />
         <Route path="/SlKma12b4" element={<SlKma12b4 />} />
         <Route path="/SlKma12b5" element={<SlKma12b5 />} />
+        <Route path="/SlKma12b6" element={<SlKma12b6 />} />
         {/* Rute untuk Materi Matematika 10 */}
         <Route path="/SlMtk10b1" element={<SlMtk10b1 />} />
         <Route path="/SlMtk10b2" element={<SlMtk10b2 />} />
