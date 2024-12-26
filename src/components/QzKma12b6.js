@@ -1,109 +1,112 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./tryout.css";
-import Timer from "./Timer";
-import Question from "./Question";
+import "../css/TryOut.css";
 
-const QzKma12b6 = () => {
+const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
-    { question: "1. Dalam pembentukan polimer, ikatan kovalen terbentuk antara monomer-monomer yang berbeda. Proses ini disebut?", 
-      options: ["Polimerisasi kondensasi", "Polimerisasi adisi", "Reaksi substitusi", "Reaksi eliminasi"], 
-      answer: "Polimerisasi adisi" },
-    
-    { question: "2. Polimer termoplastik dapat melembek pada suhu tinggi. Fenomena ini terjadi karena?", 
-      options: ["Ikatan antar rantai polimer bersifat kovalen", "Ikatan antar rantai polimer bersifat ionik", "Ikatan antar rantai polimer bersifat van der Waals", "Ikatan antar rantai polimer bersifat hidrogen"], 
-      answer: "Ikatan antar rantai polimer bersifat van der Waals" },
-  
-    { question: "3. Polietilena, sebuah polimer plastik, memiliki rantai panjang yang terdiri dari monomer etilena. Apa jenis ikatan yang menghubungkan monomer dalam polietilena?", 
-      options: ["Ikatan ionik", "Ikatan hidrogen", "Ikatan kovalen", "Ikatan logam"], 
-      answer: "Ikatan kovalen" },
-    
-    { question: "4. Ketika selulosa dihidrolisis, senyawa yang terbentuk adalah?", 
-      options: ["Glukosa", "Fruktosa", "Sukrosa", "Maltosa"], 
-      answer: "Glukosa" },
-    
-    { question: "5. Manakah dari polimer berikut ini yang termasuk dalam kategori biopolimer?", 
-      options: ["Polietilena", "Polipropilena", "Nilon", "Selulosa"], 
-      answer: "Selulosa" },
-    
-    { question: "6. Protein terbuat dari asam amino yang terikat oleh ikatan peptida. Ikatan peptida tersebut terbentuk melalui proses?", 
-      options: ["Polimerisasi kondensasi", "Polimerisasi adisi", "Reaksi hidrolisis", "Reaksi sublimasi"], 
-      answer: "Polimerisasi kondensasi" },
-    
-    { question: "7. Proses pembentukan protein dari asam amino terjadi di bagian sel yang disebut?", 
-      options: ["Mitokondria", "Retikulum endoplasma kasar", "Nukleus", "Lisosom"], 
-      answer: "Retikulum endoplasma kasar" },
-    
-    { question: "8. Manakah dari berikut ini yang bukan merupakan contoh polimer alami?", 
-      options: ["Polietilena", "Selulosa", "Starch", "Protein"], 
-      answer: "Polietilena" },
-    
-    { question: "9. Reaksi pemecahan polimer menjadi monomer-penyusun disebut?", 
-      options: ["Polimerisasi", "Kondensasi", "Hidrolisis", "Eliminasi"], 
-      answer: "Hidrolisis" },
-    
-    { question: "10. Manakah yang bukan merupakan contoh dari polimer sintetis?", 
-      options: ["Polietilena", "Nylon", "Polistirena", "Selulosa"], 
-      answer: "Selulosa" },
-    
-    { question: "11. Pada polimer polietilen tereftalat (PET), kelompok ester terbentuk melalui reaksi kondensasi antara?", 
-      options: ["Asam tereftalat dan etilen glikol", "Asam benzoat dan etilen glikol", "Asam asetik dan etilen glikol", "Asam format dan glukosa"], 
-      answer: "Asam tereftalat dan etilen glikol" },
-    
-    { question: "12. Apa yang dimaksud dengan 'struktur primer' dalam protein?", 
-      options: ["Urutan asam amino dalam rantai polipeptida", "Struktur tiga dimensi protein", "Pengaturan subunit dalam protein", "Ikatan antara dua rantai polipeptida"], 
-      answer: "Urutan asam amino dalam rantai polipeptida" },
-    
-    { question: "13. Manakah yang merupakan contoh dari polimer yang digunakan dalam produksi plastik dan karet?", 
-      options: ["Polypropylene", "Selulosa", "Keratin", "Chitosan"], 
-      answer: "Polypropylene" },
-    
-    { question: "14. Bagaimana sifat mekanik dari polimer dengan struktur bercabang dibandingkan dengan polimer linier?", 
-      options: ["Lebih kuat dan lebih tahan panas", "Lebih mudah terurai", "Lebih lentur dan mudah terbentuk", "Lebih keras dan lebih kaku"], 
-      answer: "Lebih lentur dan mudah terbentuk" },
-    
-    { question: "15. Sebuah polimer yang terbuat dari dua jenis monomer disebut?", 
-      options: ["Homopolimer", "Heteropolimer", "Kopolimer", "Polimerik"], 
-      answer: "Kopolimer" },
-    
-    { question: "16. Dalam reaksi polimerisasi adisi, apa yang terjadi dengan ikatan rangkap pada monomer?", 
-      options: ["Ikatan rangkap terpecah dan membentuk ikatan tunggal", "Ikatan rangkap bertahan dan tidak berubah", "Ikatan rangkap berubah menjadi ikatan tripel", "Ikatan rangkap terpisah dan menjadi dua polimer"], 
-      answer: "Ikatan rangkap terpecah dan membentuk ikatan tunggal" },
-    
-    { question: "17. Polimer polivinil klorida (PVC) digunakan dalam berbagai produk. Proses yang digunakan untuk membuat PVC adalah?", 
-      options: ["Polimerisasi adisi", "Polimerisasi kondensasi", "Reaksi sublimasi", "Reaksi eliminasi"], 
-      answer: "Polimerisasi adisi" },
-    
-    { question: "18. Manakah dari protein berikut ini yang berfungsi sebagai enzim dalam tubuh?", 
-      options: ["Hemoglobin", "Amilase", "Keratin", "Kolagen"], 
-      answer: "Amilase" },
-    
-    { question: "19. Proses pembentukan enzim dari polipeptida yang terlipat menjadi struktur tiga dimensi disebut?", 
-      options: ["Denaturasi", "Lipogenesis", "Lipolisis", "Lipofisis"], 
-      answer: "Denaturasi" },
-    
-    { question: "20. Pada polimerisasi kondensasi, setiap monomer yang bergabung mengeluarkan molekul apa?", 
-      options: ["Air", "Amonia", "Karbon dioksida", "Oksigen"], 
-      answer: "Air" }
+    { 
+      question: "1. Sebuah polimer memiliki sifat yang dapat terurai secara alami oleh mikroorganisme. Berdasarkan sifat ini, apa kemungkinan aplikasi polimer tersebut dalam kehidupan sehari-hari?", 
+      options: ["Kantong plastik belanja", "Pembalut kabel listrik", "Komponen mesin industri", "Pengemas bahan kimia korosif"], 
+      answer: "Kantong plastik belanja" 
+    },
+    { 
+      question: "2. Salah satu keuntungan polimer sintetik adalah daya tahannya yang tinggi. Namun, apa dampak lingkungan dari sifat ini dan solusi yang dapat diusulkan?", 
+      options: ["Polusi plastik; menggunakan bioplastik", "Degradasi tanah; memanfaatkan plastik lebih banyak", "Eutrofikasi air; meningkatkan produksi plastik", "Pemanasan global; menggunakan plastik sintetis lebih lama"], 
+      answer: "Polusi plastik; menggunakan bioplastik" 
+    },
+    { 
+      question: "3. Asam poliaktat (PLA) adalah polimer yang dibuat dari sumber daya terbarukan seperti jagung. Apa kelebihan PLA dibandingkan polimer berbasis minyak bumi?", 
+      options: ["Lebih mudah terurai di lingkungan", "Lebih murah diproduksi", "Lebih tahan panas", "Lebih kuat secara mekanik"], 
+      answer: "Lebih mudah terurai di lingkungan" 
+    },
+    { 
+      question: "4. Dalam sintesis protein, urutan asam amino menentukan fungsi biologis protein. Jika terjadi mutasi pada urutan ini, apa dampaknya pada sifat protein?", 
+      options: ["Fungsi protein dapat berubah", "Protein menjadi lebih stabil", "Protein akan terhidrolisis", "Ikatan hidrogen pada protein meningkat"], 
+      answer: "Fungsi protein dapat berubah" 
+    },
+    { 
+      question: "5. Nylon-6,6 adalah polimer yang banyak digunakan dalam industri tekstil. Polimer ini dihasilkan dari reaksi kondensasi antara heksametilendiamina dan asam adipat. Apa molekul kecil yang dihasilkan selama reaksi ini?", 
+      options: ["Air", "Amonia", "Karbon dioksida", "Metana"], 
+      answer: "Air" 
+    },
+    { 
+      question: "6. Polimer dapat bersifat amorf atau kristalin. Bagaimana struktur kristalin memengaruhi sifat fisik polimer seperti kekuatan tarik dan titik leleh?", 
+      options: ["Kekuatan tarik meningkat dan titik leleh lebih tinggi", "Kekuatan tarik menurun dan titik leleh lebih rendah", "Kekuatan tarik tetap dan titik leleh lebih rendah", "Kekuatan tarik meningkat dan titik leleh lebih rendah"], 
+      answer: "Kekuatan tarik meningkat dan titik leleh lebih tinggi" 
+    },
+    { 
+      question: "7. Struktur sekunder protein, seperti alfa-heliks, distabilkan oleh jenis interaksi apa?", 
+      options: ["Ikatan hidrogen", "Ikatan ionik", "Ikatan kovalen", "Ikatan logam"], 
+      answer: "Ikatan hidrogen" 
+    },
+    { 
+      question: "8. Gelatin, yang digunakan dalam makanan, berasal dari kolagen yang terhidrolisis sebagian. Apa dampak suhu tinggi terhadap struktur gelatin?", 
+      options: ["Struktur terdenaturasi", "Struktur menjadi lebih stabil", "Ikatan hidrogen meningkat", "Ikatan kovalen menjadi lebih kuat"], 
+      answer: "Struktur terdenaturasi" 
+    },
+    { 
+      question: "9. Polimer seperti polipropilena sering digunakan dalam kemasan makanan. Apa alasan utama penggunaan polimer ini dalam kemasan makanan?", 
+      options: ["Tahan terhadap air dan bahan kimia", "Mudah terurai di lingkungan", "Memiliki sifat optik yang baik", "Dapat menyerap kelembapan"], 
+      answer: "Tahan terhadap air dan bahan kimia" 
+    },
+    { 
+      question: "10. Dalam pembuatan polimer sintetis, seperti polistirena, monomer stirena diubah menjadi polimer melalui mekanisme apa?", 
+      options: ["Polimerisasi adisi", "Polimerisasi kondensasi", "Reaksi substitusi", "Reaksi hidrolisis"], 
+      answer: "Polimerisasi adisi" 
+    },
+    { 
+      question: "11. Apa yang terjadi pada struktur primer protein jika terkena zat denaturan seperti asam kuat atau suhu ekstrem?", 
+      options: ["Struktur primer tetap utuh", "Terjadi hidrolisis ikatan peptida", "Ikatan hidrogen terbentuk", "Struktur menjadi lebih stabil"], 
+      answer: "Struktur primer tetap utuh" 
+    },
+    { 
+      question: "12. Kevlar, sebuah polimer tahan panas, banyak digunakan dalam rompi anti peluru. Apa sifat utama yang membuat Kevlar sangat kuat?", 
+      options: ["Adanya ikatan hidrogen yang kuat antar rantai polimer", "Adanya ikatan ionik antar rantai polimer", "Adanya ikatan logam dalam struktur polimer", "Adanya ikatan van der Waals yang besar"], 
+      answer: "Adanya ikatan hidrogen yang kuat antar rantai polimer" 
+    },
+    { 
+      question: "13. Karet alam memiliki elastisitas tinggi karena struktur polimernya. Apa yang terjadi jika karet alam divulkanisasi?", 
+      options: ["Elastisitasnya meningkat karena terbentuk ikatan silang", "Kekerasannya berkurang karena rantai polimer terputus", "Elastisitasnya menurun karena molekul menjadi linier", "Kekuatan tariknya berkurang karena degradasi"], 
+      answer: "Elastisitasnya meningkat karena terbentuk ikatan silang" 
+    },
+    { 
+      question: "14. Polyvinyl chloride (PVC) digunakan dalam berbagai aplikasi seperti pipa air. Apa dampak penambahan plasticizer pada sifat PVC?", 
+      options: ["PVC menjadi lebih fleksibel", "PVC menjadi lebih kaku", "PVC menjadi lebih rapuh", "PVC menjadi lebih ringan"], 
+      answer: "PVC menjadi lebih fleksibel" 
+    },
+    { 
+      question: "15. Monomer glukosa dapat bergabung membentuk polimer seperti selulosa dan pati. Apa perbedaan utama antara struktur selulosa dan pati?", 
+      options: ["Selulosa memiliki ikatan beta-glikosidik, pati memiliki ikatan alfa-glikosidik", "Selulosa memiliki ikatan ionik, pati memiliki ikatan kovalen", "Selulosa memiliki rantai bercabang, pati memiliki rantai linier", "Selulosa mengandung nitrogen, pati tidak"], 
+      answer: "Selulosa memiliki ikatan beta-glikosidik, pati memiliki ikatan alfa-glikosidik" 
+    },
+    { 
+      question: "16. Plastik polikarbonat digunakan dalam produksi botol air dan kaca anti pecah. Apa yang membuat polimer ini sangat transparan dan tahan lama?", 
+      options: ["Struktur amorf dan ikatan kovalen yang kuat", "Struktur kristalin dan ikatan hidrogen", "Struktur bercabang dan ikatan van der Waals", "Struktur linier dan ikatan ionik"], 
+      answer: "Struktur amorf dan ikatan kovalen yang kuat" 
+    },
+    { 
+      question: "17. Dalam polimer termoplastik, apa yang terjadi pada rantai polimer saat dipanaskan?", 
+      options: ["Rantai polimer menjadi lebih mudah bergerak", "Rantai polimer pecah menjadi monomer", "Rantai polimer menjadi lebih kaku", "Rantai polimer membentuk ikatan silang"], 
+      answer: "Rantai polimer menjadi lebih mudah bergerak" 
+    },
+    { 
+      question: "18. Apa yang menyebabkan protein kehilangan fungsinya jika strukturnya terdenaturasi?", 
+      options: ["Perubahan pada struktur tiga dimensi protein", "Hilangnya ikatan peptida dalam rantai primer", "Penambahan ikatan hidrogen", "Pengurangan berat molekul protein"], 
+      answer: "Perubahan pada struktur tiga dimensi protein" 
+    },
+    { 
+      question: "19. Polimer superabsorben, seperti yang digunakan dalam popok, memiliki kemampuan menyerap air yang tinggi. Apa yang memungkinkan polimer ini menyerap air?", 
+      options: ["Adanya gugus ionik yang menarik molekul air", "Struktur kristalin yang kaku", "Rantai bercabang yang rapat", "Adanya gugus hidrofobik yang menolak air"], 
+      answer: "Adanya gugus ionik yang menarik molekul air" 
+    },
+    { 
+      question: "20. Polimer komposit digunakan dalam pembuatan pesawat terbang. Apa kelebihan utama dari bahan komposit ini?", 
+      options: ["Ringan dan sangat kuat", "Murah dan mudah didaur ulang", "Tahan terhadap pelarut organik", "Fleksibel dan mudah terbakar"], 
+      answer: "Ringan dan sangat kuat" 
+    }
   ];
-  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -121,40 +124,37 @@ const QzKma12b6 = () => {
     }
   };
 
-  const handleTimeUp = () => {
-    setShowResult(true);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <div className="app">
-      <h1>Tryout Kimia Kelas XII: Benzena dan Turunannya</h1>
+      <h1>Kuis HOTS Makromolekul Kimia Kelas XII</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
         </div>
       ) : (
-        <>
-          <Timer duration={600} onTimeUp={handleTimeUp} />
-          <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
-          />
-        </>
+        <div className="question-container">
+          <h2>{questions[currentQuestion].question}</h2>
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className="option-button"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
       <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>
   );
 };
 
-export default QzKma12b6;
+export default Tryout;
