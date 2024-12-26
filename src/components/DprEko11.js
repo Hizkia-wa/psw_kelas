@@ -15,7 +15,7 @@ import tm12 from '../images/Eko1112.jpg';
 
 const teamData = [
   { id: 1, name: "JESLEY BRILLIAN SINAGA", img: tm1, about: "Nama aku Jesley Brillian Sinaga, biasa dipanggil Jesli. Hobby-ku olahraga, Sangat sering tertawa, Mungkin agak pemalu, tapi lebih suka bersikap apa adanya." },
-  { id: 2, name: "STEEVEN GENEROUS SIMARANGKIR", img: tm5, about: "Namaku Steveen Generous Simarangkir! Aku menyukai hal hal yang berkaitan dengan olahraga, bermain game dan bernyanyi, setidaknya itu cukup untuk mengusir rasa bosan ku, aku juga cukup percaya diri dengan kemampuanku." },
+  { id: 2, name: "STEEVEN GENEROUS SIMARANGKIR", img: tm5, about: "Saya orangnya formal dan tidak toxic. selalu bercanda ria dimanapun kapanpun tanpa tahu tempat dan kondisi. Sesuai dengan rumor yang telah tersebar, saya orangnya freak. Walaupun tatapan saya kadang mematikan dan sinis tidak karuan, saya orangnya baik dan ramah pake banget (maybe). Dengan segala esensi diatas terpadulah sifat freak dan berbagai kegiatan yang saya sukai yaitu bermain bola basket. Saya suka warna hitam dan putih seperti pantofel hitam dan air putih." },
   { id: 3, name: "SONIA AGATHA SIAHAAN", img: tm9, about: "I'm a quiet person dan aku malas mengurus masalah oranglain. Aku suka desain, segala hiasan, ide untuk hias call me, terutama lettering. Desain website atau mendesain hidupmu menjadi berwarna? Yap, it's me: Sonia Agatha Siahaan dengan nim 41424061. I like listening music. tanpa musik hidup tdk seperti dj, dari kelompok mata pelajaran Ekonomi kelas 11" },
 ];
 
