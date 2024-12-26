@@ -164,7 +164,7 @@ const Bab7 = () => {
 
       <section>
         <h3>E. Struktur dan Fungsi Organ Reproduksi Laki-Laki</h3>
-        <img src="bab7.8.png" alt="Struktur dan fungsi organ reproduksi laki-laki" className="section-image" />
+        <img src="/image/bab7.8.png" alt="Struktur dan fungsi organ reproduksi laki-laki" className="section-image" />
         <strong>1. Testis</strong>
         <p>
           Testis adalah organ yang menghasilkan spermatozoa (sel sperma) dan hormon testosteron.
