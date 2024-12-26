@@ -37,7 +37,7 @@ const Bab5 = () => {
         <p>
           Sistem pertahanan internal spesifik ditandai dengan pengenalan terhadap patogen spesifik oleh sejumlah tipe sel darah putih (leukosit). Tipe leukosit tertentu akan membedakan mana komponen yang “aman” untuk tubuh, serta mana komponen “asing” yang berpotensi membahayakan tubuh hingga perlu dihancurkan. Leukosit akan mengenali partikel khas dari patogen yang disebut antigen. Antigen dapat berupa protein, glikoprotein, lipid, polisakarida, dan berbagai zat yang dihasilkan oleh patogen tersebut. Antigen ditemukan sebagai bagian struktur sel patogen maupun partikel yang terpisah dari selnya. Saat suatu antigen terdeteksi atau bahkan dikenali keberadaannya di dalam jaringan tubuh, maka tubuh akan menciptakan respon imun. Respon imun yang bersifat bawaan (innate) akan berlaku umum untuk semua tipe antigen, misal respon demam dan peradangan. Beragam jenis infeksi virus dapat memicu terjadinya demam dan peradangan. Sementara itu respon imun yang adaptif akan memberikan respon yang lebih spesifik dengan pembentukan antibodi untuk setiap antigen yang dikenali.
         </p>
-        <img src="bab5.1.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+        <img src="/image/bab5.1.png" alt="Struktur Penyerapan Makanan" className="section-image" />
       </section>
 
       <section>
@@ -63,17 +63,17 @@ const Bab5 = () => {
         <p>
           Neutrofil adalah jenis fagosit yang paling banyak ditemukan dan 60% komposisi leukosit dalam darah. Mereka dapat berpindah tempat ke seluruh bagian tubuh melalui pembuluh darah. Pada kondisi tertentu, seringkali neutrofil meninggalkan pembuluh darah dengan cara menyusup melalui dinding kapiler untuk ‘berpatroli’ di jaringan ikat. Kemampuan "menembus" pembuluh darah ini disebut diapedesis.
         </p>
-        <img src="bab5.2.png" alt="Pertukaran Gas" className="section-image" />
+        <img src="/image/bab5.2.png" alt="Pertukaran Gas" className="section-image" />
         <p>
           Neutrofil memulai peran fagositiknya dengan menempel pada patogen. Membran permukaan sel neutrofil akan membentuk kantung vesikula yang membawa patogen (fagosom) masuk ke dalam sel secara endositosis. Enzim pencernaan akan disekresikan oleh Badan Golgi ke dalam lisosom. Lisosom kemudian bergabung dengan fagosom membentuk struktur vakuola fagositik atau vakuola makanan dan menghancurkan patogen. Secara keseluruhan, proses ini dikenal sebagai fagositosis.
         </p> 
-        <img src="bab5.3.png" alt="Pertukaran Gas" className="section-image" />
+        <img src="/image/bab5.3.png" alt="Pertukaran Gas" className="section-image" />
         <h4>b. Makrofag</h4>
         <p>
           Jenis sel fagosit berikutnya adalah makrofag. Makrofag memiliki ukuran lebih besar dibanding neutrofil. Daripada beredar di pembuluh darah, makrofag lebih sering menetap pada organ-organ tertentu seperti paru-paru, hati, limpa, ginjal, dan nodus limfa. Setelah dibentuk di dalam sumsum tulang, makrofag akan beredar dalam darah sebagai monosit, yang berkembang menjadi makrofag ketika meninggalkan darah dan menetap dalam organ. 
           Berbeda dengan neutrofil, makrofag adalah sel yang masa hidupnya cukup panjang dan memiliki peran penting dalam menginisiasi respons imun spesifik lainnya. Makrofag tidak menghancurkan patogen sepenuhnya, tapi memecahnya menjadi partikel kecil yang dijadikan sampel antigen. Partikel sampel tersebut akan menjadi bagian struktur luar dari membran sel makrofag untuk kemudian dikenali oleh limfosit. Dengan demikian antigen dapat terus dikenali sekaligus menjadi sinyal ‘membutuhkan bantuan’ yang dapat menstimulasi respon imun spesifik lainnya. Karena kemampuannya dalam menampilkan antigen di bagian permukaan sel ini makrofag disebut juga sebagai sel penyaji antigen (Antigen-Presenting Cells/APCs).
         </p>
-        <img src="bab5.4.png" alt="Pembentukan Urin" className="section-image" />
+        <img src="/image/bab5.4.png" alt="Pembentukan Urin" className="section-image" />
       </section>
 
       <section>
@@ -89,7 +89,7 @@ const Bab5 = () => {
         <p>
           Limfosit B memberikan respon imun dengan membentuk antibodi. Setiap sel B yang telah teraktivasi akan membentuk kelompok kecil (klon) berdasarkan jenis antibodi yang dibuatnya.
         </p>
-        <img src="bab5.5.png" alt="Kelainan Pertukaran Zat" className="section-image" />
+        <img src="/image/bab5.5.png" alt="Kelainan Pertukaran Zat" className="section-image" />
         <p>
           Pada awalnya molekul antibodi hanya menempel di permukaan membran sel B, hingga kemudian dapat dilepas dan beredar di plasma darah dan limfa. Antibodi beredar di plasma darah dan cairan tubuh lainnya untuk mengenali antigen spesifik yang masuk ke dalam tubuh. Atas dasar ini lah respon limfosit B disebut juga respon imun spesifik humoral (humor = cairan tubuh). Kehadiran antigen mengaktivasi limfosit B yang berdiferensiasi menjadi dua tipe sel, yaitu sel plasma dan sel B memori. Sel plasma dapat memroduksi molekul antibodi dengan cepat, hingga mencapai jumlah beberapa ribu dalam 1 detik. Pada infeksi pertama (respon primer), sel plasma memulai pengenalan antigen dan membentuk antibodi. Karena memiliki masa hidup yang singkat, respon sel plasma akan dilanjutkan oleh sel memori. Sel ini akan bersirkulasi dalam tubuh dalam waktu lama. Apabila terdapat antigen yang sama dan dikenali kembali (respon sekunder), sel memori akan membelah secara cepat dan berkembang menjadi sel plasma dan sel memori yang lebih banyak lagi. Hal ini terjadi berulang dalam setiap kehadiran antigen yang sama, yang berarti infeksi dapat ditanggulangi sebelum terus berkembang.
         </p>
@@ -99,7 +99,7 @@ const Bab5 = () => {
       <p>
         Tipe limfosit kedua adalah limfosit T. Dinamai sel T karena sel ini menjadi matang di timus. Berbeda dengan sel B yang menghasilkan antibodi sebagai respon imun spesifiknya, sel limfosit T memiliki reseptor permukaan sel yang spesifik disebut reseptor sel T. Meskipun demikian, reseptor sel T memiliki sifat yang mirip dengan antibodi dalam hal kemampuan mengenali antigen spesifik. Karena respon imun yang diberikan bertumpu pada reseptor permukaan sel, maka respon imun sel T disebut juga respon imun spesifik seluler.
       </p>
-      <img src="bab5.6.png" alt="Kelainan Pertukaran Zat" className="section-image" />
+      <img src="/image/bab5.6.png" alt="Kelainan Pertukaran Zat" className="section-image" />
 
       <h3>C. Imunitas Tubuh dan Kelainannya</h3>
       <p>
@@ -144,7 +144,7 @@ const Bab5 = () => {
                 kesehatan akibat penurunan fungsi sistem imun. Penyakit ringan pada 
                 orang dengan imunitas normal dapat menjadi mematikan jika terjadi 
                 pada penderita AIDS.  </p>
-      <img src="bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
+      <img src="/image/bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
                 <h3>c. Penyakit Autoimun</h3>
                 <p>Penyakit autoimun adalah kondisi ketika sistem pertahanan tubuh 
                     seseorang menyerang tubuhnya sendiri. Umumnya terjadi pada sistem 

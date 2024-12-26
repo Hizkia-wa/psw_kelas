@@ -18,7 +18,7 @@ const Bab6 = () => {
             terdiri atas otak dan sumsum tulang belakang. Sistem saraf perifer terdiri 
             atas 12 pasang saraf kranial dan 31 pasang saraf spinal. beberapa bagian 
             pada Sistem Saraf perifer terlibat dalam gerak refleks. </p>
-            <img src="bab6.1.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <img src="/image/bab6.1.png" alt="Struktur Penyerapan Makanan" className="section-image" />
             <h4>1. Otak Besar (Serebrum)</h4>
             <p>Otak besar atau serebrum merupakan bagian terbesar dari otak. Otak 
                 besar berperan sebagai saraf pusat yang mengontrol aktivitas sensorik 
@@ -50,7 +50,7 @@ const Bab6 = () => {
             vertikal, atau traktus (kumpulan serabut saraf). Dengan kata lain, 
             semua akson yang menyusun satu saluran melayani satu fungsi umum, 
             seperti sentuhan, gerakan, nyeri, dan tekanan. </p>
-            <img src="bab6.2a.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <img src="/image/bab6.2a.png" alt="Struktur Penyerapan Makanan" className="section-image" />
         <h2>3. Sistem Saraf Tepi/Perifer</h2>
         <p>
             Sistem Saraf Tepi merupakan bagian dari sistem saraf, dimana 
@@ -62,7 +62,7 @@ const Bab6 = () => {
         Sistem saraf tepi terdiri atas saraf kranial dan saraf tulang belakang. 
         Sekarang Kalian akan membahas lebih terperinci tentang saraf kranial 
         dan saraf tulang belakang. </p>
-        <img src="bab6.3.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+        <img src="/image/bab6.3.png" alt="Struktur Penyerapan Makanan" className="section-image" />
         <h3>a. Saraf Kranial/Saraf Otak</h3>
         <p>Saraf kranial adalah kumpulan saraf sensorik dan serabut motorik 
             yang mempersarafi otot atau kelenjar, membawa impuls dari reseptor 
@@ -79,7 +79,7 @@ const Bab6 = () => {
                 aferen (sensorik) dan neuron eferen (motorik), yang membawa pesan 
                 ke dan dari daerah tubuh tertentu, yang disebut area kulit yg dipersarafi 
                 serabut saraf spinal.</p>
-                <img src="bab6.4.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+                <img src="/image/bab6.4.png" alt="Struktur Penyerapan Makanan" className="section-image" />
             <h2>4. Proses Impuls Saraf</h2>
             <p>Rangsangan merupakan segala sesuatu yang mengalami perubahan 
             yang dapat mempengaruhi polaritas sel saraf. Misalkan perubahan 
@@ -123,13 +123,13 @@ const Bab6 = () => {
         <p>Berdasarkan bentuknya, tulang dibedakan menjadi empat jenis meliputi 
             tulang pipa, tulang pipih, tulang pendek, dan tulang tak beraturan, 
             tetapi yang berperan langsung untuk mobilitas adalah tulang pipa,</p>
-            <img src="bab6.5.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <img src="/image/bab6.5.png" alt="Struktur Penyerapan Makanan" className="section-image" />
         <h3>c. Macam-macam Rangka</h3>
         <p>Rangka tubuh manusia dikelompokkan menjadi 2 bagian, yaitu rangka 
             aksial dan rangka apendikular. Penjelasan terkait rangka aksial dapat 
             kalian lihat pada Gambar</p>
-            <img src="bab6.6.png" alt="Struktur Penyerapan Makanan" className="section-image" />
-            <img src="bab6.7.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <img src="/image/bab6.6.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <img src="/image/bab6.7.png" alt="Struktur Penyerapan Makanan" className="section-image" />
             <h4>1) Rangka aksial (rangka sumbu)</h4>
             <p>Rangka aksial merupakan jenis rangka yang tidak langsung terkait 
                 dengan sistem gerak. Rangka aksial manusia terdiri atas tengkorak, 
@@ -145,9 +145,9 @@ const Bab6 = () => {
                 adalah lordosis, yaitu melengkungnya tulang belakang di arah pinggang 
                 ke arah depan sehingga kepala tertarik ke arah belakang, perhatikan 
                 Gambar 6.9 pada halaman berikut</p>
-                <img src="bab6.8.png" alt="Struktur Penyerapan Makanan" className="section-image" />
-                 <img src="bab6.9.png" alt="Struktur Penyerapan Makanan" className="section-image" />
-            <h4>2) Rangka apendikular (rangka anggota badan)</h4>
+                <img src="/image/bab6.8.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+                 <img src="/image/bab6.9.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+            <h4>2. Rangka apendikular (rangka anggota badan)</h4>
             <p>Rangka apendikular terkait langsung dengan sistem gerak. Rangka 
                 apendikular tersusun atas tulang anggota gerak atas dan tulang anggota 
                 gerak bawah.
@@ -161,7 +161,7 @@ const Bab6 = () => {
                 atau sendi. Berdasarkan sifat geraknya, artikulasi dapat dibedakan atas 
                 sinartrosis (sendi mati) amfiartrosis (sendi kaku), dan diartrosis (sendi 
                 gerak).</p>
-                <img src="bab6.a.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+                <img src="/image/bab6.a.png" alt="Struktur Penyerapan Makanan" className="section-image" />
              <p>1. Sinartrosis, adalah hubungan antara kedua ujung tulang yang 
                 direkatkan oleh suatu jaringan ikat, yang kemudian mengalami 
                 osifikasi (penulangan), sehingga tidak memungkinkan adanya 
@@ -185,16 +185,16 @@ const Bab6 = () => {
                     kasar terdiri dari protein miosin dan yang halus terdiri dari protein 
                     aktin.
                     </p>
-                    <img src="bab6.b.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+                    <img src="/image/bab6.b.png" alt="Struktur Penyerapan Makanan" className="section-image" />
                     <p>sifat kerja otot yang dibedakan atas : </p>
                     <h3>a. Antagonis</h3>
-          <p>1) Ekstensor (meluruskan) dan fleksor (membengkokkan), misalnya 
+          <p>1. Ekstensor (meluruskan) dan fleksor (membengkokkan), misalnya 
                     otot trisep dan otot bisep.
-                    2) Abduktor (menjauhi badan) dan adduktor (mendekati badan) 
+                    2. Abduktor (menjauhi badan) dan adduktor (mendekati badan) 
                     misalnya gerak tangan sejajar bahu dan sikap sempurna
-                    3) Depresor (ke bawah) dan elevator (ke atas), misalnya gerak kepala 
+                    3. Depresor (ke bawah) dan elevator (ke atas), misalnya gerak kepala 
                     merunduk dan menengadah.
-                    4) Supinator (menengadah) dan pronator (menelungkup), misalnya 
+                    4. Supinator (menengadah) dan pronator (menelungkup), misalnya 
                     gerak telapak tangan menengadah dan gerak telapak tangan 
                     menelungkup</p>
                     <h3>b. Sinergis</h3>
@@ -215,7 +215,7 @@ const Bab6 = () => {
         bagian terang diantara dua pita gelap). Dengan demikian serabut otot 
         memendek, yang tetap panjangnya ialah pita A (pita gelap) sedangkan 
         pita I (pita terang) dan zona H bertambah pendek waktu kontraksi<br />
-        <img src="bab6.c.png" alt="Struktur Penyerapan Makanan" className="section-image" />
+        <img src="/image/bab6.c.png" alt="Struktur Penyerapan Makanan" className="section-image" />
         Berikut contoh kelainan dan gangguan yang terjadi pada otot, 
         antara lain: <br />
         a. Trofi. yaitu keadaan otot mengecil sehingga menghilangkan 

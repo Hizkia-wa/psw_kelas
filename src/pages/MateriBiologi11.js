@@ -44,7 +44,7 @@ const Materi = () => {
       <div className="biologi-biology-section">
         <div className="container">
           <div className="section-header">
-            <h2>MMateri Biologi 11</h2>
+            <h2>Materi Biologi 11</h2>
           </div>
           <div className="biology-grid">
             {biologies.map((biology) => (

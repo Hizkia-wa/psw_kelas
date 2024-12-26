@@ -25,13 +25,13 @@ const Bab3 = () => {
         <p>
           Auksin adalah hormon tumbuhan yang berperan dalam mengatur pertumbuhan sel, terutama pada ujung batang dan akar. Auksin dapat memicu pemanjangan sel dan berperan penting dalam fototropisme dan gravitropisme.
         </p>
-        <img src="bab3.1.png" alt="Auksin" className="section-image" />
+        <img src="/image/bab3.1.png" alt="Auksin" className="section-image" />
 
         <h3>b. Giberelin</h3>
         <p>
           Giberelin berfungsi untuk merangsang pertumbuhan batang, pembungaan, serta perkecambahan biji. Hormon ini juga membantu meningkatkan panjang sel.
         </p>
-        <img src="bab3.2.png" alt="Giberelin" className="section-image" />
+        <img src="/image/bab3.2.png" alt="Giberelin" className="section-image" />
 
         <h3>c. Sitokinin</h3>
         <p>
@@ -45,7 +45,7 @@ const Bab3 = () => {
         <p>
           Stomata adalah pori-pori kecil yang terdapat pada daun tumbuhan, yang berfungsi untuk pertukaran gas (karbondioksida dan oksigen) serta pengaturan transpirasi (penguapan air). Pengaturan pembukaan dan penutupan stomata sangat penting untuk mengurangi kehilangan air berlebih serta mendukung fotosintesis.
         </p>
-        <img src="bab3.4.jpg" alt="Stomata" className="section-image" />
+        <img src="/image/bab3.4.jpg" alt="Stomata" className="section-image" />
       </section>
 
       <section>
@@ -58,13 +58,13 @@ const Bab3 = () => {
         <p>
           Pada fototropisme positif, tumbuhan tumbuh menuju sumber cahaya untuk meningkatkan efisiensi fotosintesis. Hal ini dipengaruhi oleh hormon auksin yang mengatur pertumbuhan sel pada sisi yang tidak terkena cahaya.
         </p>
-        <img src="bab3.5.jpg" alt="Fototropisme" className="section-image" />
+        <img src="/image/bab3.5.jpg" alt="Fototropisme" className="section-image" />
 
         <h3>b. Gravitropisme</h3>
         <p>
           Gravitropisme mengatur arah pertumbuhan tumbuhan terhadap gravitasi. Akar tumbuh ke bawah (gravitropisme positif) untuk mencari air dan nutrisi, sementara batang tumbuh ke atas (gravitropisme negatif) untuk mencapai cahaya.
         </p>
-        <img src="bab3.6.jpg" alt="Gravitropisme" className="section-image" />
+        <img src="/image/bab3.6.jpg" alt="Gravitropisme" className="section-image" />
       </section>
 
       <section>
@@ -72,7 +72,7 @@ const Bab3 = () => {
         <p>
           Transpirasi adalah proses penguapan air dari tumbuhan, terutama melalui stomata pada daun. Pengaturan transpirasi sangat penting untuk menjaga keseimbangan air dalam tubuh tumbuhan, terutama dalam kondisi lingkungan yang panas atau kekurangan air.
         </p>
-        <img src="bab3.7.jpg" alt="Transpirasi" className="section-image" />
+        <img src="/image/bab3.7.jpg" alt="Transpirasi" className="section-image" />
       </section>
 
       <section>
@@ -85,13 +85,13 @@ const Bab3 = () => {
         <p>
           Pembentukan bunga dipengaruhi oleh hormon fitohormon yang merangsang pembentukan bunga pada tanaman. Beberapa hormon yang terlibat adalah auksin dan giberelin.
         </p>
-        <img src="bab3.8.jpg" alt="Pembentukan Bunga" className="section-image" />
+        <img src="/image/bab3.8.jpg" alt="Pembentukan Bunga" className="section-image" />
 
         <h3>b. Pembuahan dan Perkecambahan</h3>
         <p>
           Setelah pembuahan, biji mulai berkembang dan berkecambah menjadi tumbuhan baru. Proses ini juga dipengaruhi oleh hormon seperti giberelin yang merangsang perkecambahan.
         </p>
-        <img src="bab3.9.PNG" alt="Pembuahan dan Perkecambahan" className="section-image" />
+        <img src="/image/bab3.9.PNG" alt="Pembuahan dan Perkecambahan" className="section-image" />
       </section>
       <div className="bottom-container">
         <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
