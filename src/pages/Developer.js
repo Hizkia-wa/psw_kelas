@@ -53,7 +53,7 @@ const Materi = () => {
       <div className="biologi-biology-section">
         <div className="container">
           <div className="section-header">
-            <h2>Kuis Bahasa Inggris 10</h2>
+            <h2>Developer</h2>
           </div>
           <div className="biology-grid">
             {biologies.map((biology) => (
