@@ -21,7 +21,7 @@ const teamData = [
   { id: 1, name: "MAROJAHAN CHRISTIAN COKIRAY HUTAHAEAN", img: tm1, about: "..." },
   { id: 2, name: "INTAN SONIA SIREGAR", img: tm5, about: "Aku, orangnya selalu berusaha memberikan yang terbaik dalam segala hal. Meski jalannya kadang nggak mulus, aku percaya setiap usaha pasti ada hasilnya. aku juga punya sisi santai suka duduk sambil dengerin musik favorit saat ngerjain tugas. Tapi aku juga punya kekurangan, aku orangnya agak teledor dan suka lupa, apalagi kalau lagi banyak yang dipikirin. Dan kalau membuat kesalahan, aku pasti kepikiran terus, kadang sampai susah move on. Dalam pertemanan, aku cenderung canggung dan hati-hati saat pertama kenal. Tapi kalau sudah dekat, aku jadi orang yang terbuka dan perhatian, bahkan nggak ragu memberikan apa pun yang aku punya untuk orang-orang terdekatku. Itulah aku, Intan Sonia Siregar" },
   { id: 3, name: "GRACESYA ANGELINA SIMANJUNTAK", img: tm9, about: "..." },
-  { id: 4, name: "CRISMAN OLIVER SIAGIAN", img: tm13, about: "..." },
+  { id: 4, name: "CRISMAN OLIVER SIAGIAN", img: tm13, about: "Nama ku Crisman Siagian! Aku orangnya ramah dan asyik diajak ngobrol, meski awalnya terkesan sedikit introvert. Tapi tunggu sampai kita kenal lebih dekat, aku jamin kamu bakal nemuin sisi seruku yang nggak ada habisnya!" },
 ];
 
 const myTeamImages = [
