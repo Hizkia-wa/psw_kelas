@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Team.css';
-import tm1 from '../images/Kma121.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Kma121.JPG';
 import tm2 from '../images/Kma122.jpg';
 import tm3 from '../images/Kma123.jpg';
 import tm4 from '../images/Kma124.jpg';
@@ -8,7 +8,7 @@ import tm5 from '../images/Kma125.jpg';
 import tm6 from '../images/Kma126.jpg';
 import tm7 from '../images/Kma127.jpg';
 import tm8 from '../images/Kma128.jpg';
-import tm9 from '../images/Kma129.jpg';
+import tm9 from '../images/Kma129.JPG';
 import tm10 from '../images/Kma1210.jpg';
 import tm11 from '../images/Kma1211.jpg';
 import tm12 from '../images/Kma1212.jpg';

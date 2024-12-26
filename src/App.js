@@ -5,6 +5,8 @@ import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
 import Home from './pages/Home';
 import Referensi from './pages/Referensi';
+import Kontak from './pages/Contact';
+import Developer from './pages/Developer';
 
 // Import page kelas dari berbagai mata pelajaran
 import MatematikaKelas10 from './pages/MateriMTK10';
@@ -81,11 +83,11 @@ import Fisika12b5 from './components/Fsk12b5';
 import Fisika12b6 from './components/Fsk12b6';
 import Fisika12b7 from './components/Fsk12b7';
 import Fisika12b8 from './components/Fsk12b8';
-// import Bgl10b1 from './components/Bgl10b1';
-// import Bgl10b2 from './components/Bgl10b2';
-// import Bgl10b3 from './components/Bgl10b3';
-// import Bgl10b4 from './components/Bgl10b4';
-// import Bgl10b5 from './components/Bgl10b5';
+import Bgl10b1 from './components/Bgl10b1';
+import Bgl10b2 from './components/Bgl10b2';
+import Bgl10b3 from './components/Bgl10b3';
+import Bgl10b4 from './components/Bgl10b4';
+import Bgl10b5 from './components/Bgl10b5';
 import Bgl11b1 from './components/Bgl11b1';
 import Bgl11b2 from './components/Bgl11b2';
 import Bgl11b3 from './components/Bgl11b3';
@@ -385,6 +387,24 @@ import SlMtk12b6 from './components/SlMTK12b6';
 import SlMtk12b7 from './components/SlMTK12b7';
 import SlMtk12b8 from './components/SlMTK12b8';
 
+import DprMtk10 from './components/DprMtk10';
+import DprMtk11 from './components/DprMtk11';
+import DprMtk12 from './components/DprMtk12';
+import DprFsk10 from './components/DprFsk10';
+import DprFsk11 from './components/DprFsk11';
+import DprFsk12 from './components/DprFsk12';
+import DprBgl10 from './components/DprBgl10';
+import DprBgl11 from './components/DprBgl11';
+import DprBgl12 from './components/DprBgl12';
+import DprKma10 from './components/DprKma10';
+import DprKma11 from './components/DprKma11';
+import DprKma12 from './components/DprKma12';
+import DprBing10 from './components/DprBing10';
+import DprBing11 from './components/DprBing11';
+import DprBing12 from './components/DprBing12';
+import DprEko10 from './components/DprEko10';
+import DprEko11 from './components/DprEko11';
+
 
 function App() {
   return (
@@ -393,6 +413,27 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/referensi" element={<Referensi />} />
+        <Route path="/kontak" element={<Kontak />} />
+        <Route path="/developer" element={<Developer />} />
+
+        <Route path="/Mtk10" element={<DprMtk10 />} />
+        <Route path="/Mtk11" element={<DprMtk11 />} />
+        <Route path="/Mtk12" element={<DprMtk12 />} />
+        <Route path="/Fsk10" element={<DprFsk10 />} />
+        <Route path="/Fsk11" element={<DprFsk11 />} />
+        <Route path="/Fsk12" element={<DprFsk12 />} />
+        <Route path="/Kma10" element={<DprKma10 />} />
+        <Route path="/Kma11" element={<DprKma11 />} />
+        <Route path="/Kma12" element={<DprKma12 />} />
+        <Route path="/Bgl10" element={<DprBgl10 />} />
+        <Route path="/Bgl11" element={<DprBgl11 />} />
+        <Route path="/Bgl12" element={<DprBgl12 />} />
+        <Route path="/Bing10" element={<DprBing10 />} />
+        <Route path="/Bing11" element={<DprBing11 />} />
+        <Route path="/Bing12" element={<DprBing12 />} />
+        <Route path="/Eko10" element={<DprEko10 />} />
+        <Route path="/Eko11" element={<DprEko11 />} />
+
         {/* Rute untuk materi Matematika */}
         <Route path="materi/matematika/kelas-10" element={<MatematikaKelas10 />} />
         <Route path="materi/matematika/kelas-11" element={<MatematikaKelas11 />} />
@@ -487,11 +528,11 @@ function App() {
         <Route path="/Fsk12b7" element={<Fisika12b7 />} />
         <Route path="/Fsk12b8" element={<Fisika12b8 />} />
         {/* Rute untuk Materi Biologi 10 */}
-        {/* <Route path="/Bgl10b1" element={<Bgl10b1 />} />
+        <Route path="/Bgl10b1" element={<Bgl10b1 />} />
         <Route path="/Bgl10b2" element={<Bgl10b2 />} />
         <Route path="/Bgl10b3" element={<Bgl10b3 />} />
         <Route path="/Bgl10b4" element={<Bgl10b4 />} />
-        <Route path="/Bgl10b5" element={<Bgl10b5 />} /> */}
+        <Route path="/Bgl10b5" element={<Bgl10b5 />} />
         {/* Rute untuk Materi Biologi 11 */}
         <Route path="/Bgl11b1" element={<Bgl11b1 />} />
         <Route path="/Bgl11b2" element={<Bgl11b2 />} />

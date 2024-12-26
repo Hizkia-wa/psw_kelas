@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../css/Team.css';
 import tm1 from '../images/Fsk10p1.jpg';
 import tm2 from '../images/Fsk10p2.jpg';
 import tm3 from '../images/Fsk10p3.jpg';
@@ -18,10 +18,10 @@ import tm15 from '../images/Fsk10p15.jpg';
 import tm16 from '../images/Fsk10p16.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "Andika Bartolomeus Purba", img: tm1, about: "Aku orangnya biasa aja, bisa bercanda dan juga bisa serius. Aku suka dunia teknologi yang menurutku sebagai senjata untuk menghadapi zaman. Kebiasaanku belajar hal baru yang belum aku tau. Terkadang aku bosan dan ga niat melakukan aktivitas. Jika aku bosan, Aku pun memutuskan untuk berolahraga di waktu kosong seperti bermain badminton, basket, easy run dll." },
+  { id: 2, name: "Rima Mutiara Gultom ", img: tm5, about: "halooo gaizz kenalin aku Rima Mutiara Gultom akuu tuh sukaa banget makeup jugaa sukaa koleksi baju lucuu gitu tapi karenaa aku tinggal di Del jadinyaa akuu tidakk lucuu dan jugaa aku tidak bisaa mengkoleksi baju baju lucuu apalagi makeup,ooiyaa akuu punyaa inspo makeup yaituu nauraa gituu ajaa deh cerita singkat dari akuu" },
+  { id: 3, name: "Monalisa Dea Anastasya", img: tm9, about: "Aku itu orangnya ceria, kata teman-teman aku selera humorku itu rendah banget, aku bisa ngetawain hal-hal kecil sampai lama banget. Terus aku juga suka banget memperhatikan hal-hal kecil, aku cukup teliti mengenai benda benda dan kesesuaiannya. Last but not least aku suka barang-barang vintage dan aku suka belajar mengenai sejarah Indonesia yang engga banyak orang tau. Salam hangat dariku, Monalisa Dea Anastasya." },
+  { id: 4, name: "Josep Mangasi Silaen", img: tm13, about: "Namaku Josep Mangasi Silaen! Aku orangnya biasa -biasa ajaa, Hidupku memang ga sebaik orang lain, tapi aku percaya setiap apa yang kulakukan itu yang terbaik bagiku. udah dulu yaa, mau balasin chat cewe-cewe duluu." },
 ];
 
 const myTeamImages = [

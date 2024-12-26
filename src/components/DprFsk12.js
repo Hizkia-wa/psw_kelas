@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../css/Team.css';
 import tm1 from '../images/Fsk12p1.jpg';
 import tm2 from '../images/Fsk12p2.jpg';
 import tm3 from '../images/Fsk12p3.jpg';
@@ -18,10 +18,10 @@ import tm15 from '../images/Fsk12p15.jpg';
 import tm16 from '../images/Fsk12p16.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "Stevani Rointan Nadeak", img: tm1, about: "Aku adalah orang yang sangat mencintai musik. Saat aku mendengarkan musik aku langsung menyanyi." },
+  { id: 2, name: "Jamot Togu Suryadi Sigiro", img: tm5, about: "Hi !, Perkenalkan namaku Jamot Togu Suryadi Sigiro Dari prodi DIV TRPL dengan NIM 41424017.Aku adalah orang yang mudah marah dan juga suka ngomong kasar,tapi sebenarnya aku punya hati yang baik dan suka membantu teman.aku suka membaca manga,manhwa dan manhua,karakter fiksi kesukaanku adalah Sun wukong,son Goku,Kamen Rider Decade,Van Helsing dan karakter sejarah Favoritku adalah LUBU FENGXIAN" },
+  { id: 3, name: "Lastri Anna Hutagalung", img: tm9, about: "Halo, saya Lastri Anna Hutagalung. Saya adalah pribadi yang menemukan semangat dalam hal-hal sederhana, seperti menikmati makanan manis favorit saya dan mendengarkan musik di waktu luang. Saya juga sangat menyukai anjing—makhluk menggemaskan dan setia." },
+  { id: 4, name: "Epelina Oktavia Pangaribuan", img: tm13, about: "Hobi mendengarkan musik dan film Korea. Memiliki pribadi yang disiplin,pemberani dan suka berbagi!" },
 ];
 
 const myTeamImages = [

@@ -106,42 +106,42 @@ return (
                  <ul>
                    <li>Fitoplankton</li>
                   <li>Zooplankton</li>
-//                   <li>Bergerak pasif karena arus air</li>
-//                   <li>Contoh: ganggang uniseluler, protozoa</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Nekton</strong>
-//                 <ul>
-//                   <li>Organisme bergerak aktif (berenang)</li>
-//                   <li>Contoh: ikan, katak</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Neuston</strong>
-//                 <ul>
-//                   <li>Organisme yang mengapung di permukaan air</li>
-//                   <li>Contoh: serangga air, teratai, eceng gondok, ganggang</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Bentos</strong>
-//                 <ul>
-//                   <li>Organisme yang berada di dasar perairan</li>
-//                   <li>Contoh: udang, kepiting, cacing, ganggang</li>
-//                 </ul>
-//               </li>
-//               <li>
-//                 <strong>Perifiton</strong>
-//                 <ul>
-//                   <li>Organisme yang melekat pada organisme lain</li>
-//                   <li>Contoh: ganggang, siput</li>
-//                 </ul>
-//               </li>
-//             </ol>
-//           </div>
-//         </div>
-//       </div>
+                   <li>Bergerak pasif karena arus air</li>
+                   <li>Contoh: ganggang uniseluler, protozoa</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Nekton</strong>
+                 <ul>
+                   <li>Organisme bergerak aktif (berenang)</li>
+                   <li>Contoh: ikan, katak</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Neuston</strong>
+                 <ul>
+                   <li>Organisme yang mengapung di permukaan air</li>
+                   <li>Contoh: serangga air, teratai, eceng gondok, ganggang</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Bentos</strong>
+                 <ul>
+                   <li>Organisme yang berada di dasar perairan</li>
+                   <li>Contoh: udang, kepiting, cacing, ganggang</li>
+                 </ul>
+               </li>
+               <li>
+                 <strong>Perifiton</strong>
+                 <ul>
+                   <li>Organisme yang melekat pada organisme lain</li>
+                   <li>Contoh: ganggang, siput</li>
+                 </ul>
+               </li>
+             </ol>
+           </div>
+         </div>
+       </div>
 
 
 
@@ -151,172 +151,171 @@ return (
 
 
 
-//       <div className="content-section tech-conservation">
-//         <div className="text-content">
-//           <h2>Teknologi Mutakhir dalam Konservasi</h2>
-//           <div className="tech-tabs">
-//             <button 
+       <div className="content-section tech-conservation">
+         <div className="text-content">
+           <h2>Teknologi Mutakhir dalam Konservasi</h2>
+           <div className="tech-tabs">
+             <button 
               className={activeTab === 'global' ? 'active' : ''}
               onClick={() => setActiveTab('global')}
             >
-//               Teknologi Global
-//             </button>
-//             <button 
+               Teknologi Global
+             </button>
+             <button 
               className={activeTab === 'lokal' ? 'active' : ''}
              onClick={() => setActiveTab('lokal')}
             >
               Teknologi Lokal
-//             </button>
-//           </div>
+             </button>
+           </div>
 
-//           {activeTab === 'global' && (
+           {activeTab === 'global' && (
            <div className="tech-content">
-//               <h3>Teknologi Konservasi Global</h3>
-//               <ul>
-//                 <li>
-//                   <strong>Drone Pemantauan Hutan</strong>
-//                   <p>Teknologi pemetaan dan pemantauan hutan secara real-time</p>
-//                 </li>
-//                 <li>
-//                   <strong>Genetik Digital</strong>
-//                   <p>Pemetaan genom untuk konservasi spesies terancam punah</p>
-//                 </li>
-//                 <li>
-//                   <strong>Satelit Lingkungan</strong>
-//                   <p>Pemantauan perubahan ekosistem dari luar angkasa</p>
-//                 </li>
-//               </ul>
-//             </div>
+               <h3>Teknologi Konservasi Global</h3>
+               <ul>
+                 <li>
+                   <strong>Drone Pemantauan Hutan</strong>
+                   <p>Teknologi pemetaan dan pemantauan hutan secara real-time</p>
+                 </li>
+                 <li>
+                   <strong>Genetik Digital</strong>
+                   <p>Pemetaan genom untuk konservasi spesies terancam punah</p>
+                 </li>
+                 <li>
+                   <strong>Satelit Lingkungan</strong>
+                   <p>Pemantauan perubahan ekosistem dari luar angkasa</p>
+                 </li>
+               </ul>
+             </div>
         )}
 
           {activeTab === 'lokal' && (
              <div className="tech-content">
-//               <h3>Teknologi Konservasi Lokal Indonesia</h3>
-//               <ul>
-//                 <li>
-//                   <strong>Sistem Informasi Geografis Berbasis Masyarakat</strong>
-//                   <p>Pemetaan wilayah konservasi oleh masyarakat lokal</p>
-//                 </li>
-//                 <li>
-//                   <strong>Teknologi Restorasi Terumbu Karang</strong>
-//                   <p>Metode transplantasi karang berbasis teknologi</p>
-//                 </li>
-//                 <li>
-//                   <strong>Pengembangan Bank Benih Lokal</strong>
-//                   <p>Pelestarian varietas tanaman asli Indonesia</p>
-//                 </li>
-//               </ul>
-//             </div>
+               <h3>Teknologi Konservasi Lokal Indonesia</h3>
+               <ul>
+                 <li>
+                   <strong>Sistem Informasi Geografis Berbasis Masyarakat</strong>
+                   <p>Pemetaan wilayah konservasi oleh masyarakat lokal</p>
+                 </li>
+                 <li>
+                   <strong>Teknologi Restorasi Terumbu Karang</strong>
+                   <p>Metode transplantasi karang berbasis teknologi</p>
+                 </li>
+                 <li>
+                   <strong>Pengembangan Bank Benih Lokal</strong>
+                   <p>Pelestarian varietas tanaman asli Indonesia</p>
+                 </li>
+               </ul>
+             </div>
           )}
-//         </div>
-//       </div>
+         </div>
+       </div>
 
-//       <div className="content-section scientific-research">
-//         <div className="text-content">
-//           <h2>Riset Terkini Keanekaragaman Hayati</h2>
-//           <div className="research-grid">
-//             <div className="research-card">
-//               <h3>Mikroorganisme Ekstrem</h3>
-//               <p>Penemuan bakteri yang dapat bertahan di kondisi tersulit</p>
-//             </div>
-//             <div className="research-card">
-//               <h3>Genom Spesies Langka</h3>
-//               <p>Pemetaan DNA spesies terancam punah</p>
-//             </div>
-//             <div className="research-card">
-//               <h3>Ekologi Molekuler</h3>
-//               <p>Studi interaksi genetik antarspesies</p>
-//             </div>
-//             <div className="research-card">
-//               <h3>Bioteknologi Konservasi</h3>
-//               <p>Pengembangan metode penyelamatan spesies</p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
+       <div className="content-section scientific-research">
+         <div className="text-content">
+           <h2>Riset Terkini Keanekaragaman Hayati</h2>
+           <div className="research-grid">
+             <div className="research-card">
+               <h3>Mikroorganisme Ekstrem</h3>
+               <p>Penemuan bakteri yang dapat bertahan di kondisi tersulit</p>
+             </div>
+             <div className="research-card">
+               <h3>Genom Spesies Langka</h3>
+               <p>Pemetaan DNA spesies terancam punah</p>
+             </div>
+             <div className="research-card">
+               <h3>Ekologi Molekuler</h3>
+               <p>Studi interaksi genetik antarspesies</p>
+             </div>
+             <div className="research-card">
+               <h3>Bioteknologi Konservasi</h3>
+               <p>Pengembangan metode penyelamatan spesies</p>
+             </div>
+           </div>
+         </div>
+       </div>
 
     
 
 
 
-//       <div className="content-section download-materials">
-//   <div className="container">
-//     <h2 className="text-center mb-4">Unduh Materi Keanekaragaman Hayati</h2>
+       <div className="content-section download-materials">
+   <div className="container">
+     <h2 className="text-center mb-4">Unduh Materi Keanekaragaman Hayati</h2>
     
-//     <div className="row">
-//       <div className="col-md-4 mb-3">
-//         <Card>
-//           <Card.Header>Materi Dasar</Card.Header>
-//           <Card.Body>
-//             <Card.Title>Pengantar Keanekaragaman Hayati</Card.Title>
-//             <Card.Text>
+     <div className="row">
+       <div className="col-md-4 mb-3">
+         <Card>
+           <Card.Header>Materi Dasar</Card.Header>
+           <Card.Body>
+             <Card.Title>Pengantar Keanekaragaman Hayati</Card.Title>
+             <Card.Text>
               Dokumen PDF berisi materi dasar tentang konsep keanekaragaman hayati
-//             </Card.Text>
-//             <Button 
+             </Card.Text>
+             <Button 
               variant="primary" 
               href="./materi3/materi.pdf"
                download
            >
              Unduh PDF
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </div>
+             </Button>
+           </Card.Body>
+         </Card>
+       </div>
       
-//       <div className="col-md-4 mb-3">
-//         <Card>
-//           <Card.Header>Materi Lanjutan</Card.Header>
-//           <Card.Body>
-//             <Card.Title>Ekosistem dan Konservasi</Card.Title>
-//             <Card.Text>
-//               Panduan komprehensif tentang ekosistem dan upaya konservasi
-//             </Card.Text>
-//             <Button 
+       <div className="col-md-4 mb-3">
+         <Card>
+           <Card.Header>Materi Lanjutan</Card.Header>
+           <Card.Body>
+             <Card.Title>Ekosistem dan Konservasi</Card.Title>
+             <Card.Text>
+               Panduan komprehensif tentang ekosistem dan upaya konservasi
+             </Card.Text>
+             <Button 
               variant="success" 
                href="./materi3/materi.pdf" 
                download
            >
-//               Unduh PDF
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </div>
+               Unduh PDF
+             </Button>
+           </Card.Body>
+         </Card>
+       </div>
       
-//       <div className="col-md-4 mb-3">
-//         <Card>
-//           <Card.Header>Presentasi</Card.Header>
-//           <Card.Body>
-//             <Card.Title>Slide Presentasi</Card.Title>
-//             <Card.Text>
-//               Slide presentasi lengkap untuk dipelajari atau dibagikan
-//             </Card.Text>
-//             <Button 
+       <div className="col-md-4 mb-3">
+         <Card>
+           <Card.Header>Presentasi</Card.Header>           <Card.Body>
+             <Card.Title>Slide Presentasi</Card.Title>
+             <Card.Text>
+               Slide presentasi lengkap untuk dipelajari atau dibagikan
+             </Card.Text>
+             <Button 
               variant="info" 
                href="./materi2/materi.pdf" 
               download
             >
-//               Unduh Presentasi
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </div>
-//     </div>
+               Unduh Presentasi
+             </Button>
+           </Card.Body>
+         </Card>
+       </div>
+     </div>
 
-//     <div className="text-center mt-4">
-//       <Accordion>
-//         <Accordion.Item eventKey="0">
-//           <Accordion.Header>Informasi Unduhan</Accordion.Header>
-//           <Accordion.Body>
-//             <p>
-//               Semua materi yang disediakan untuk download bersifat gratis 
-//               dan dapat digunakan untuk kepentingan edukasi. Mohon 
-//               mencantumkan sumber apabila menggunakan materi ini.
-//             </p>
+     <div className="text-center mt-4">
+       <Accordion>
+         <Accordion.Item eventKey="0">
+           <Accordion.Header>Informasi Unduhan</Accordion.Header>
+           <Accordion.Body>
+             <p>
+               Semua materi yang disediakan untuk download bersifat gratis 
+               dan dapat digunakan untuk kepentingan edukasi. Mohon 
+               mencantumkan sumber apabila menggunakan materi ini.
+             </p>
             
-//           </Accordion.Body>
-//         </Accordion.Item>
-//       </Accordion>
-//     </div>
+           </Accordion.Body>
+         </Accordion.Item>
+       </Accordion>
+    </div>
  </div>
  </div>
 

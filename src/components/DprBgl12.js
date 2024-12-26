@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Team.css';
+import '../css/Team.css';
 import tm1 from '../images/Bgl121.jpg';
 import tm2 from '../images/Bgl122.jpg';
 import tm3 from '../images/Bgl123.jpg';
