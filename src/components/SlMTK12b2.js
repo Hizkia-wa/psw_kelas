@@ -41,7 +41,36 @@ const LatihanSoalStatistika = () => {
       explanation:
         "Kuartil ketiga (Q3) berada di posisi 3/4(n+1). Data diurutkan: 10, 15, 20, 25, 30, 35. Q3 = data ke-5, yaitu 30.",
     },
-    // Tambahkan soal lainnya sesuai kebutuhan
+    {
+      question: "Luas permukaan kerucut dengan jari-jari 6 cm dan tinggi 8 cm adalah?",
+      options: ["96π cm²", "72π cm²", "84π cm²", "60π cm²"],
+      correctOption: "96π cm²",
+      explanation: "Luas permukaan kerucut = π × r × (r + s), dengan s adalah panjang garis pelukis. s = √(r² + t²). = π × 6 cm × (6 cm + √(6² + 8²)) ≈ 96π cm².",
+    },
+    {
+      question: "Volume prisma segitiga dengan alas 5 cm, tinggi 6 cm, dan panjang prisma 10 cm adalah?",
+      options: ["150 cm³", "300 cm³", "250 cm³", "200 cm³"],
+      correctOption: "150 cm³",
+      explanation: "Volume prisma = luas alas × panjang = 1/2 × alas × tinggi × panjang = 1/2 × 5 cm × 6 cm × 10 cm = 150 cm³.",
+    },
+    {
+      question: "Luas permukaan limas segi empat dengan panjang sisi alas 6 cm dan tinggi 8 cm adalah?",
+      options: ["96 cm²", "80 cm²", "72 cm²", "60 cm²"],
+      correctOption: "96 cm²",
+      explanation: "Luas permukaan limas = luas alas + 4 × luas segitiga pada sisi tegak. Luas alas = 6 cm × 6 cm = 36 cm². Luas segitiga = 1/2 × alas segitiga × tinggi segitiga ≈ 4 cm² per sisi, jadi total = 96 cm².",
+    },
+    {
+      question: "Volume kerucut dengan jari-jari 4 cm dan tinggi 9 cm adalah?",
+      options: ["48π cm³", "36π cm³", "54π cm³", "72π cm³"],
+      correctOption: "48π cm³",
+      explanation: "Volume kerucut = 1/3 × π × r² × tinggi = 1/3 × 3.14 × (4 cm)² × 9 cm = 48π cm³.",
+    },
+    {
+      question: "Jika segitiga siku-siku memiliki tinggi 4 mc, alas 3cm. berakah sisi miring nya",
+      options: ["2 cm", "5 cm", "7 cm³", "9 cm"],
+      correctOption: "5 cm",
+      explanation: "c^2=a^2+b^2, 𝑐^2=4^2+3^2, c^2=16+9, c^2=25, 𝑐=5",
+    },
   ];
 
   const handleNextQuestion = () => {
