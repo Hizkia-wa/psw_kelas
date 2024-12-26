@@ -9,6 +9,33 @@ import Kontak from './pages/Contact';
 import Developer from './pages/Developer';
 
 // Import page kelas dari berbagai mata pelajaran
+import Kelas11 from './pages/Kelas11';
+import Kelas12 from './pages/Kelas12';
+import Kelas10 from './pages/kelas10';
+import TO10b1 from './components/TO10b1';
+import TO10b2 from './components/TO10b2';
+import TO10b3 from './components/TO10b3';
+import TO10b4 from './components/TO10b4';
+import TO10b5 from './components/TO10b5';
+import TO10b6 from './components/TO10b6';
+import TO10b7 from './components/TO10b7';
+import TO10b8 from './components/TO10b8';
+import TO11b1 from './components/TO11b1';
+import TO11b2 from './components/TO11b2';
+import TO11b3 from './components/TO11b3';
+import TO11b4 from './components/TO11b4';
+import TO11b5 from './components/TO11b5';
+import TO11b6 from './components/TO11b6';
+import TO11b7 from './components/TO11b7';
+import TO11b8 from './components/TO11b8';
+import TO12b1 from './components/TO12b1';
+import TO12b2 from './components/TO12b2';
+import TO12b3 from './components/TO12b3';
+import TO12b4 from './components/TO12b4';
+import TO12b5 from './components/TO12b5';
+import TO12b6 from './components/TO12b6';
+import TO12b7 from './components/TO12b7';
+import TO12b8 from './components/TO12b8';
 import MatematikaKelas10 from './pages/MateriMTK10';
 import MatematikaKelas11 from './pages/MateriMTK11';
 import MatematikaKelas12 from './pages/MateriMTK12';
@@ -408,7 +435,7 @@ import DprEko11 from './components/DprEko11';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -434,6 +461,34 @@ function App() {
         <Route path="/Eko10" element={<DprEko10 />} />
         <Route path="/Eko11" element={<DprEko11 />} />
 
+        <Route path="/TO10b1" element={<TO10b1 />} />
+        <Route path="/TO10b2" element={<TO10b2 />} />
+        <Route path="/TO10b3" element={<TO10b3 />} />
+        <Route path="/TO10b4" element={<TO10b4 />} />
+        <Route path="/TO10b5" element={<TO10b5 />} />
+        <Route path="/TO10b6" element={<TO10b6 />} />
+        <Route path="/TO10b7" element={<TO10b7 />} />
+        <Route path="/TO10b8" element={<TO10b8 />} />
+        <Route path="/TO11b1" element={<TO11b1 />} />
+        <Route path="/TO11b2" element={<TO11b2 />} />
+        <Route path="/TO11b3" element={<TO11b3 />} />
+        <Route path="/TO11b4" element={<TO11b4 />} />
+        <Route path="/TO11b5" element={<TO11b5 />} />
+        <Route path="/TO11b6" element={<TO11b6 />} />
+        <Route path="/TO11b7" element={<TO11b7 />} />
+        <Route path="/TO11b8" element={<TO11b8 />} />
+        <Route path="/TO12b1" element={<TO12b1 />} />
+        <Route path="/TO12b2" element={<TO12b2 />} />
+        <Route path="/TO12b3" element={<TO12b3 />} />
+        <Route path="/TO12b4" element={<TO12b4 />} />
+        <Route path="/TO12b5" element={<TO12b5 />} />
+        <Route path="/TO12b6" element={<TO12b6 />} />
+        <Route path="/TO12b7" element={<TO12b7 />} />
+        <Route path="/TO12b8" element={<TO12b8 />} />
+        
+        <Route path="/tryout/kelas-10" element={<Kelas10 />} />
+        <Route path="/tryout/kelas-11" element={<Kelas11 />} />
+        <Route path="/tryout/kelas-12" element={<Kelas12 />} />
         {/* Rute untuk materi Matematika */}
         <Route path="materi/matematika/kelas-10" element={<MatematikaKelas10 />} />
         <Route path="materi/matematika/kelas-11" element={<MatematikaKelas11 />} />
@@ -916,7 +971,7 @@ function App() {
         <Route path="/QzMTK12b8" element={<QzMtk12b8 />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

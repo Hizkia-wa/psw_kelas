@@ -20,7 +20,7 @@ const Navbar = () => {
                   <ul className="sub-dropdown-content">
                     {[10, 11, 12].map((kelas) => (
                       <li key={`${subject}-kelas-${kelas}`}>
-                        <Link to={`materi/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
+                        <Link to={`/materi/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
                       </li>
                     ))}
                   </ul>
@@ -37,7 +37,7 @@ const Navbar = () => {
                   <ul className="sub-dropdown-content">
                     {[10, 11, 12].map((kelas) => (
                       <li key={`${subject}-kelas-${kelas}-kuis`}>
-                        <Link to={`kuis/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
+                        <Link to={`/kuis/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
                       </li>
                     ))}
                   </ul>
@@ -54,10 +54,20 @@ const Navbar = () => {
                   <ul className="sub-dropdown-content">
                     {[10, 11, 12].map((kelas) => (
                       <li key={`${subject}-kelas-${kelas}-latihan`}>
-                        <Link to={`latihan/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
+                        <Link to={`/latihan/${subject}/kelas-${kelas}`}>Kelas {kelas}</Link>
                       </li>
                     ))}
                   </ul>
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li className="dropdown">
+            <span>Try Out</span>
+            <ul className="dropdown-content">
+              {[10, 11, 12].map((kelas) => (
+                <li key={`kelas-${kelas}-tryout`}>
+                  <Link to={`/tryout/kelas-${kelas}`}>Kelas {kelas}</Link>
                 </li>
               ))}
             </ul>
