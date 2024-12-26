@@ -4,21 +4,6 @@ import "../css/TryOut.css";
 
 const KuisReaksiRedoksKelas10 = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
     { question: "1.Pernyataan berikut yang benar tentang reaksi redoks adalah", options: ["Oksidasi adalah pelepasan elektron dan reduksi adalah penyerapan elektron", " Oksidasi adalah proses di mana bilangan oksidasi suatu unsur berkurang", "Reduksi adalah proses di mana bilangan oksidasi suatu unsur bertambah", "Dalam reaksi redoks, hanya terjadi perubahan bilangan oksidasi tanpa perpindahan elektron"], answer: "Oksidasi adalah pelepasan elektron dan reduksi adalah penyerapan elektron0" },
@@ -63,10 +48,6 @@ const KuisReaksiRedoksKelas10 = () => {
     localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">

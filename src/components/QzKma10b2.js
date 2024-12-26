@@ -4,21 +4,6 @@ import "../css/TryOut.css";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]); 
 
   const questions = [
     { question: "1. Tentukan Mr dari urea (CO(NH2)2)! (Ar C = 12; O = 16; N = 14; H = 1)", options: ["A. 60", "B. 61", "C. 62", "D. 59"], answer: "A" },
@@ -67,10 +52,6 @@ const Tryout = () => {
     localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">
