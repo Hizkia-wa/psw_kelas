@@ -1,37 +1,31 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Eko111.jpg';
+import tm2 from '../images/Eko112.jpg';
+import tm3 from '../images/Eko113.jpg';
+import tm4 from '../images/Eko114.jpg';
+import tm5 from '../images/Eko115.jpg';
+import tm6 from '../images/Eko116.jpg';
+import tm7 from '../images/Eko117.jpg';
+import tm8 from '../images/Eko118.jpg';
+import tm9 from '../images/Eko119.jpg';
+import tm10 from '../images/Eko1110.jpg';
+import tm11 from '../images/Eko1111.jpg';
+import tm12 from '../images/Eko1112.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "JESLEY BRILLIAN SINAGA", img: tm1, about: "Nama aku Jesley Brillian Sinaga, biasa dipanggil Jesli. Hobby-ku olahraga, Sangat sering tertawa, Mungkin agak pemalu, tapi lebih suka bersikap apa adanya." },
+  { id: 2, name: "STEEVEN GENEROUS SIMARANGKIR", img: tm5, about: "Saya orangnya formal dan tidak toxic. selalu bercanda ria dimanapun kapanpun tanpa tahu tempat dan kondisi. Sesuai dengan rumor yang telah tersebar, saya orangnya freak. Walaupun tatapan saya kadang mematikan dan sinis tidak karuan, saya orangnya baik dan ramah pake banget (maybe). Dengan segala esensi diatas terpadulah sifat freak dan berbagai kegiatan yang saya sukai yaitu bermain bola basket. Saya suka warna hitam dan putih seperti pantofel hitam dan air putih." },
+  { id: 3, name: "SONIA AGATHA SIAHAAN", img: tm9, about: "I'm a quiet person dan aku malas mengurus masalah oranglain. Aku suka desain, segala hiasan, ide untuk hias call me, terutama lettering. Desain website atau mendesain hidupmu menjadi berwarna? Yap, it's me: Sonia Agatha Siahaan dengan nim 41424061. I like listening music. tanpa musik hidup tdk seperti dj, dari kelompok mata pelajaran Ekonomi kelas 11" },
 ];
 
 const myTeamImages = [
   [tm2, tm3, tm4],
   [tm6, tm7, tm8],
   [tm10, tm11, tm12],
-  [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprEko11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +58,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprEko11;

@@ -1,34 +1,28 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Mtk10p1.jpg';
+import tm2 from '../images/Mtk10p2.jpg';
+import tm3 from '../images/Mtk10p3.jpg';
+import tm4 from '../images/Mtk10p4.jpg';
+import tm5 from '../images/Mtk10p5.jpg';
+import tm6 from '../images/Mtk10p6.jpg';
+import tm7 from '../images/Mtk10p7.jpg';
+import tm8 from '../images/Mtk10p8.jpg';
+import tm9 from '../images/Mtk10p9.jpg';
+import tm10 from '../images/Mtk10p10.jpg';
+import tm11 from '../images/Mtk10p11.jpg';
+import tm12 from '../images/Mtk10p12.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "Hugo Henock Morales Simorangkir", img: tm5, about: "Aku orang yang suka main musik, sering banget menghabiskan waktu buat main game, dan nggak bisa lepas dari kopi. Dalam obrolan, aku selalu mencoba pengertian, meskipun kadang nggak semua orang bisa aku pahami sepenuhnya. Tapi tenang aja, itu cuma caraku untuk lebih memahami situasi. Aku Aldi Fahrel Nababan, dan ya, aku orang yang santai tapi selalu mendengarkan." },
+  { id: 2, name: "OCTAVIA M. SIDABUTAR", img: tm1, about: "aku orang nya suka nonton drama apalagi nonton drakor,suka jalan-jalan dan mencoba hal-hal baru" },
+  { id: 3, name: "Novi Windyani Simanjuntak", img: tm9, about: "Aku orangnya gampang seru diajak ngobrol, suka banget bercanda, tapi jujur, aku juga mudah bosan kalau suasananya monoton. Aku selalu pengen coba hal-hal baru biar gak stuck di situ-situ aja. Kadang-kadang, aku bisa keras kepala kalau lagi yakin sama sesuatu, tapi di balik itu, aku sebenarnya sangat memperhatikan orang-orang yang aku sayang. Itu lah aku, Novi Windyani Simanjuntak. Saya suka menjelajahi tempat baru, menonton film komedi dan drakor , dan nyari inspirasi." },
 ];
 
 const myTeamImages = [
-  [tm2, tm3, tm4],
   [tm6, tm7, tm8],
+  [tm2, tm3, tm4],
   [tm10, tm11, tm12],
-  [tm14, tm15, tm16],
 ];
 
 const Team = () => {

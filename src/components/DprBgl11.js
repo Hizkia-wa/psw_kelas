@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Bgl111.jpg';
+import tm2 from '../images/Bgl112.jpg';
+import tm3 from '../images/Bgl113.jpg';
+import tm4 from '../images/Bgl114.jpg';
+import tm5 from '../images/Bgl115.jpg';
+import tm6 from '../images/Bgl116.jpg';
+import tm7 from '../images/Bgl117.jpg';
+import tm8 from '../images/Bgl118.jpg';
+import tm9 from '../images/Bgl119.jpg';
+import tm10 from '../images/Bgl1110.jpg';
+import tm11 from '../images/Bgl1111.jpg';
+import tm12 from '../images/Bgl1112.jpg';
+import tm13 from '../images/Bgl1113.jpg';
+import tm14 from '../images/Bgl1114.jpg';
+import tm15 from '../images/Bgl1115.jpg';
+import tm16 from '../images/Bgl1116.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "MAROJAHAN CHRISTIAN COKIRAY HUTAHAEAN", img: tm1, about: "Hai namaku Marojahan Christian Cokiray Hutahaean! Aku suka beradu dalam bertinju, berpanco, menembak. Aku berjiwa solid dan berespect tinggi, Hal yang kusuka adalah bermain biliard, game online, jalan-jalan, mendengar musik, dan yang paling Kusuka Nongkrong bercerita yang hal dilakukan bersama-sama, ohh ya, infokan permabaran terdekat dan tempat nongkrong bercerita untuk melepas pikiran, ayo my bruda, kita bantai kerasnya kehidupan ini." },
+  { id: 2, name: "INTAN SONIA SIREGAR", img: tm5, about: "Aku, orangnya selalu berusaha memberikan yang terbaik dalam segala hal. Meski jalannya kadang nggak mulus, aku percaya setiap usaha pasti ada hasilnya. aku juga punya sisi santai suka duduk sambil dengerin musik favorit saat ngerjain tugas. Tapi aku juga punya kekurangan, aku orangnya agak teledor dan suka lupa, apalagi kalau lagi banyak yang dipikirin. Dan kalau membuat kesalahan, aku pasti kepikiran terus, kadang sampai susah move on. Dalam pertemanan, aku cenderung canggung dan hati-hati saat pertama kenal. Tapi kalau sudah dekat, aku jadi orang yang terbuka dan perhatian, bahkan nggak ragu memberikan apa pun yang aku punya untuk orang-orang terdekatku. Itulah aku, Intan Sonia Siregar" },
+  { id: 3, name: "GRACESYA ANGELINA SIMANJUNTAK", img: tm9, about: "Aku orang yang simpel, nggak suka ribet, dan selalu merasa hidup lebih ringan kalau dinikmati  wkwkw dengan bernyanyi atau mendengarkan musik. Musik itu kayak penghibur, yang bikin aku tenang atau semangat, tergantung lagunya. Apalagi kalo lagi Taylor Swift yang All too well wkwkw" },
+  { id: 4, name: "CRISMAN OLIVER SIAGIAN", img: tm13, about: "Nama ku Crisman Siagian! Aku orangnya ramah dan asyik diajak ngobrol, meski awalnya terkesan sedikit introvert. Tapi tunggu sampai kita kenal lebih dekat, aku jamin kamu bakal nemuin sisi seruku yang nggak ada habisnya!" },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprBgl11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBgl11;

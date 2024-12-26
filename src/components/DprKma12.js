@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Kma121.JPG';
+import tm2 from '../images/Kma122.jpg';
+import tm3 from '../images/Kma123.jpg';
+import tm4 from '../images/Kma124.jpg';
+import tm5 from '../images/Kma125.jpg';
+import tm6 from '../images/Kma126.jpg';
+import tm7 from '../images/Kma127.jpg';
+import tm8 from '../images/Kma128.jpg';
+import tm9 from '../images/Kma129.JPG';
+import tm10 from '../images/Kma1210.jpg';
+import tm11 from '../images/Kma1211.jpg';
+import tm12 from '../images/Kma1212.jpg';
+import tm13 from '../images/Kma1213.jpg';
+import tm14 from '../images/Kma1214.jpg';
+import tm15 from '../images/Kma1215.jpg';
+import tm16 from '../images/Kma1216.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "DAVID GIAN FILBERT SINURAT", img: tm1, about: "Aku bernama David. Aku dikenal sebagai sosok yang hangat dan selalu siap membantu orang di sekitarnya (asekkk). Selain sifatku yang ramah, aku juga memiliki dua hobi yang menjadi pelarian dari rutinitas: bermain tenis meja dan ngoding Kode yang gak jelas wkwk. Aku juga  punya harapan yang ingin kukabulkan yaitu bisa kerja di perusahaan besar yakalii menunggu kamu yang tak pasti-pasti." },
+  { id: 2, name: "RAMADHANI SIHOTANG", img: tm5, about: "Namaku Ramadhani, seluruh aspek dalam kehidupanku overall biasa aja sih." },
+  { id: 3, name: "ARIMBI ANGELICA SITOHANG", img: tm9, about: "Hi aku Arimbi Angelica Sitohang. Aku orangnya suka SKSD, kadang aku tau kalo orang itu ga suka sama ku, tapi tetap ku SKSD-in. Aku orangnya sering marah-marah walau kadang ga keliatan. Hal yang paling ku suka di Dunia ini adalah tidur. " },
+  { id: 4, name: "BINTANG JESISCA TANJUNG", img: tm13, about: "Perkenalkan nama ku Bintang Jesisca Tanjung, aku orang nya bawa chill aja brayy, aku menghargai setiap orang yang baik terhadap ku, yang memberi feedbacknya yang sesuai juga dengan apa yang aku beri juga, aku orangnya keras kepalaa abiss(maklum brayy anak terakhir hehehww), tapi aku keras kepala yang ga bisa dikasarin, dengar nada tinggi sikit langsung ngerasa gedubrakk bwangett, aku juga orang nya gampang di bawa berbau" },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprKma12 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprKma12;

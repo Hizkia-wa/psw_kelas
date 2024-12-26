@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Fsk11p1.jpg';
+import tm2 from '../images/Fsk11p2.jpg';
+import tm3 from '../images/Fsk11p3.jpg';
+import tm4 from '../images/Fsk11p4.jpg';
+import tm5 from '../images/Fsk11p5.jpg';
+import tm6 from '../images/Fsk11p6.jpg';
+import tm7 from '../images/Fsk11p7.jpg';
+import tm8 from '../images/Fsk11p8.jpg';
+import tm9 from '../images/Fsk11p9.jpg';
+import tm10 from '../images/Fsk11p10.jpg';
+import tm11 from '../images/Fsk11p11.jpg';
+import tm12 from '../images/Fsk11p12.jpg';
+import tm13 from '../images/Fsk11p13.jpg';
+import tm14 from '../images/Fsk11p14.jpg';
+import tm15 from '../images/Fsk11p15.jpg';
+import tm16 from '../images/Fsk11p16.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "Arjuna Melix Sihombing", img: tm1, about: "Hidup untuk bernafas dan bernafas untuk hidup itulah diriku Arjuna Melix Sihombing" },
+  { id: 2, name: "Elisabeth Putri Panggabean", img: tm5, about: "Aku orang nya introvert tidak terlalu suka berteman dengan banyak orang karna aku lebih suka menyendiri ini adalah aku Elisabeth Putri Panggabean aku suka nonton drama Korea,dan aku juga suka nonton sinetron" },
+  { id: 3, name: "Mangatur Jeremi Silitonga", img: tm9, about: "Perkenalkan saya Mangatur Jeremi Silitonga, dengan hobi saya adalah menggambar hal hal unik yang ada di imajinasi saya, saya suka mendengarkan musik dan tertarik dalam bidang software" },
+  { id: 4, name: "Esthefany Christin Sipahutar", img: tm13, about: "Annyeong chinguyaa! Aku Esthefany Christin Sipahutar, biasa dipanggil Esteh. Aku penggemar berat darkor and k-pop lohh hehehe, aku suka banget sama kyungsoo kalian harus tau dia segreen flag apah huhuhu mana cakep lagi, selain suka K-pop and drakor aku juga hobby banget sama yang namanya baking. Setiap orang punya cerita seru, kan? Aku suka ngejar mimpi meski jalannya kadang nggak mudah, persis kayak Han Ji-pyeong di Start-Up. Kalau kamu juga suka drakor, yuk ngobrol bareng soal drama atau OST yang bikin hati meleleh. Let’s make life as seru as episode drakor yang nggak pernah bosen!" },
 ];
 
 const myTeamImages = [

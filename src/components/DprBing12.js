@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Bing121.jpg';
+import tm2 from '../images/Bing122.jpg';
+import tm3 from '../images/Bing123.jpg';
+import tm4 from '../images/Bing124.jpg';
+import tm5 from '../images/Bing125.jpg';
+import tm6 from '../images/Bing126.jpg';
+import tm7 from '../images/Bing127.jpg';
+import tm8 from '../images/Bing128.jpg';
+import tm9 from '../images/Bing129.jpg';
+import tm10 from '../images/Bing1210.jpg';
+import tm11 from '../images/Bing1211.jpg';
+import tm12 from '../images/Bing1212.jpg';
+import tm13 from '../images/Bing1213.jpg';
+import tm14 from '../images/Bing1214.jpg';
+import tm15 from '../images/Bing1215.jpg';
+import tm16 from '../images/Bing1216.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "PAULUS C. K. MANURUNG", img: tm1, about: "Gak suka ribet ga suka menawar banyak itss Paulus Manurung, aku lebih suka to The point." },
+  { id: 2, name: "NOVSIANA RIBKA MASNAULI SILALAHI", img: tm5, about: "Aku orangny pemarah, pemalu, nada suaraku tinggi, tapi aslinya aku sangat baikkk. Aku suka nonton drakor, main mobile legend tapi semenjak aku di del aku jadi sangat jarang nonton drakor dan bermain mobile legend. Ini la aku Novsiana sipaling ceria:)" },
+  { id: 3, name: "KASIH IMMANUELA BR SAMOSIR", img: tm9, about: "aku adalah mahasiswa yang antusias untuk belajar dan berkembang. aku punya hobi kecil seperti menulis jurnal harian, mendengar musik, dan menonton film fantasi/trilogi. Aku tipikal orang yang ceria, tapi kalau marah/cemberut jadi garang sekali." },
+  { id: 4, name: "HARYATI HUTAPEA", img: tm13, about: "Aku orang yang pendiam, baik dan tidak sombong. aku gak suka dengan keributan dan kadang ngegas sama org_-. Aku adalah haryati ,mungkin aku terliat sedikit galak,TAPII aku orang yang baik,dan senang membantu orang sebisa kemampuan ku." },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprBing12 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBing12;

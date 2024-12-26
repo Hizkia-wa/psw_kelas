@@ -2,223 +2,215 @@ import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
 const LatihanSoal2 = () => {
-  const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+const [currentQuestion, setCurrentQuestion] = useState(1);
+const [selectedOption, setSelectedOption] = useState(null);
+const [showExplanation, setShowExplanation] = useState(false);
+const [showConfirmation, setShowConfirmation] = useState(false);
 
-  const questions = [
-    {
-      question: "Apa yang dimaksud dengan transportasi pasif dalam pergerakan zat pada sel?",
-      options: [
-        { label: "A. Pergerakan zat melawan gradien konsentrasi dengan memerlukan energi", value: "A" },
-        { label: "B. Pergerakan zat tanpa memerlukan energi", value: "B", isCorrect: true },
-        { label: "C. Pergerakan zat menggunakan vesikel", value: "C" },
-        { label: "D. Pergerakan zat melalui saluran protein", value: "D" },
-      ],
-      explanation: "Transportasi pasif adalah pergerakan zat yang tidak memerlukan energi. Zat bergerak mengikuti gradien konsentrasi, dari daerah dengan konsentrasi tinggi ke daerah dengan konsentrasi rendah. Contoh dari transportasi pasif adalah difusi, osmosis, dan fasilitasi difusi.",
-    },
-    {
-      question: "Apa yang dimaksud dengan osmosis?",
-      options: [
-        { label: "A. Pergerakan molekul air melalui membran semipermeabel dari konsentrasi air tinggi ke rendah", value: "A", isCorrect: true },
-        { label: "B. Pergerakan molekul air dari daerah dengan konsentrasi rendah ke tinggi", value: "B" },
-        { label: "C. Pergerakan oksigen dari luar sel ke dalam sel", value: "C" },
-        { label: "D. Pergerakan glukosa melalui protein pembawa", value: "D" },
-      ],
-      explanation: "Osmosis adalah pergerakan molekul air melalui membran semipermeabel, yang memungkinkan air bergerak dari daerah dengan konsentrasi air tinggi ke daerah dengan konsentrasi air rendah. Proses ini penting untuk menjaga keseimbangan cairan dalam sel.",
-    },
-    {
-      question: "Manakah dari berikut ini yang memerlukan energi dalam proses transportasi zat melintasi membran sel?",
-      options: [
-        { label: "A. Diffusi", value: "A" },
-        { label: "B. Osmosis", value: "B" },
-        { label: "C. Pompa Natrium-Kalium", value: "C", isCorrect: true },
-        { label: "D. Fasilitasi difusi", value: "D" },
-      ],
-      explanation: "Pompa Natrium-Kalium adalah mekanisme transportasi aktif yang memerlukan energi dalam bentuk ATP. Proses ini memindahkan ion natrium keluar dan ion kalium masuk ke dalam sel, meskipun melawan gradien konsentrasi. Berbeda dengan transportasi pasif yang tidak memerlukan energi.",
-    },
-    {
-      question: "Jika terjadi gangguan pada protein transportasi seperti pada penyakit cystic fibrosis, bagaimana hal ini dapat mempengaruhi pergerakan zat dalam sel?",
-      options: [
-        { label: "A. Molekul air tidak dapat bergerak keluar dari sel ", value: "A" },
-        { label: "B. Proses osmosis terhambat, menyebabkan pembengkakan sel", value: "B" },
-        { label: "C.Transportasi zat penting seperti klorida terganggu ", value: "C", isCorrect: true },
-        { label: "D.Endositosis tidak dapat mengambil zat besar ke dalam sel", value: "D" },
-      ],
-      explanation: "Pada penyakit cystic fibrosis, terdapat mutasi pada protein pembawa yang mengganggu transportasi zat-zat penting seperti ion klorida. Hal ini mengganggu keseimbangan ion dalam sel, yang berakibat pada ketidakseimbangan cairan tubuh dan gangguan dalam fungsi berbagai organ.",
-    },
-    {
-      question: "Jika sebuah sel mengalami gangguan dalam mekanisme osmosis, apa yang dapat terjadi pada sel tersebut?",
-      options: [
-        { label: "A.Sel tidak dapat membentuk vesikel ", value: "A" },
-        { label: "B.Sel akan mengalami pembengkakan atau dehidrasi ", value: "B", isCorrect: true },
-        { label: "C.Sel tidak bisa menyintesis protein ", value: "C" },
-        { label: "D.Sel tidak dapat membentuk membran semipermeabel", value: "D" },
-      ],
-      explanation: "Gangguan pada proses osmosis dapat menyebabkan ketidakseimbangan cairan dalam sel. Jika osmosis tidak berjalan dengan baik, sel bisa mengalami pembengkakan (jika terlalu banyak air masuk) atau dehidrasi (jika air keluar dari sel), yang dapat mengganggu fungsi normal sel.",
-    },
-    {
-      question: "Apa yang dimaksud dengan transportasi aktif?",
-      options: [
-        { label: "A. Pergerakan zat melawan gradien konsentrasi dengan memerlukan energi", value: "A", isCorrect: true },
-        { label: "B. Pergerakan zat dengan memanfaatkan energi dari sinyal luar", value: "B" },
-        { label: "C. Pergerakan zat dengan bantuan protein pembawa", value: "C" },
-        { label: "D. Pergerakan zat melalui saluran protein", value: "D" },
-      ],
-      explanation: "Transportasi aktif adalah pergerakan zat melawan gradien konsentrasi yang memerlukan energi, biasanya dalam bentuk ATP. Ini termasuk proses seperti pompa natrium-kalium.",
-    },
-    {
-      question: "Manakah dari berikut ini yang merupakan contoh transportasi aktif?",
-      options: [
-        { label: "A. Osmosis", value: "A" },
-        { label: "B. Diffusi", value: "B" },
-        { label: "C. Pompa Proton", value: "C", isCorrect: true },
-        { label: "D. Fasilitasi difusi", value: "D" },
-      ],
-      explanation: "Pompa proton adalah contoh transportasi aktif, yang memindahkan proton (ion H+) melawan gradien konsentrasi dengan menggunakan energi.",
-    },
-    {
-      question: "Apa yang terjadi pada sel jika terjadi ketidakseimbangan dalam proses osmosis?",
-      options: [
-        { label: "A. Sel akan kehilangan air dan mengkerut", value: "A" },
-        { label: "B. Sel akan membengkak dan bisa pecah", value: "B", isCorrect: true },
-        { label: "C. Sel akan tetap stabil", value: "C" },
-        { label: "D. Sel akan menghasilkan lebih banyak protein", value: "D" },
-      ],
-      explanation: "Ketidakseimbangan osmosis dapat menyebabkan sel membengkak jika air masuk ke dalam sel atau mengkerut jika air keluar dari sel.",
-    },
-    {
-      question: "Bagaimana sel menjaga keseimbangan cairan melalui membran?",
-      options: [
-        { label: "A. Melalui mekanisme osmosis", value: "A", isCorrect: true },
-        { label: "B. Melalui proses endositosis", value: "B" },
-        { label: "C. Melalui difusi", value: "C" },
-        { label: "D. Melalui transportasi aktif", value: "D" },
-      ],
-      explanation: "Sel menjaga keseimbangan cairan melalui osmosis, yang memungkinkan molekul air bergerak melintasi membran semipermeabel untuk menyeimbangkan konsentrasi zat di dalam dan luar sel.",
-    },
-    {
-      question: "Bagaimana proses difusi terjadi dalam membran sel?",
-      options: [
-        { label: "A. Molekul bergerak melawan gradien konsentrasi", value: "A" },
-        { label: "B. Molekul bergerak mengikuti gradien konsentrasi tanpa memerlukan energi", value: "B", isCorrect: true },
-        { label: "C. Molekul bergerak menggunakan energi dari ATP", value: "C" },
-        { label: "D. Molekul bergerak dengan bantuan vesikel", value: "D" },
-      ],
-      explanation: "Difusi adalah pergerakan molekul dari daerah dengan konsentrasi tinggi ke daerah dengan konsentrasi rendah, tanpa memerlukan energi. Proses ini terjadi secara alami untuk menyeimbangkan konsentrasi zat di kedua sisi membran.",
-    },
-  ];
-
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] ? true : false);
-    }
-  };
-
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] ? true : false);
-    }
-  };
-
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
-  };
-
-  const handleRestartQuiz = () => {
-    setAnswers([]);
-    setScore(0);
-    setCurrentQuestionIndex(0);
-    setIsFinished(false);
-    setIsAnswered(false);
-  };
-
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Mode Bionik</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>Skor Anda: {score}/{questions.length}</p>
-          <button className="finish-button" onClick={handleRestartQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
+const questions = [
+  {
+    "question": "Apa yang dimaksud dengan teori sel dalam biologi?",
+    "options": ["A. Semua makhluk hidup tersusun dari sel", "B. Sel adalah unit fungsional terkecil dari organisme", "C. Semua sel berasal dari sel sebelumnya", "D. Semua jawaban benar"],
+    "correctOption": "D. Semua jawaban benar",
+    "explanation": "Teori Sel menyatakan bahwa sel adalah unit struktural dan fungsional dasar dari makhluk hidup. Semua makhluk hidup tersusun dari satu atau lebih sel, dan semua fungsi kehidupan terjadi dalam sel."
+  },
+  {
+    "question": "Apa fungsi utama dari membran sel dalam suatu sel?",
+    "options": ["A. Mengatur keluar masuknya zat", "B. Menyimpan materi genetik", "C. Menyintesis protein", "D. Menghasilkan energi"],
+    "correctOption": "A. Mengatur keluar masuknya zat",
+    "explanation": "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel."
+  },
+  {
+    "question": "Dimana sel-sel spermatzoa dimatangkan?",
+    "options": ["A. Tubuli seminiferi", "B. Ductus deferens", "C. Epididymis", "D. Ductus afferens"],
+    "correctOption": "C. Epididymis",
+    "explanation": "Sel-sel spermatzoa diproduksi di dalam tubulus seminiferus testis dan kemudian dipindahkan ke epididymis untuk proses pematangan."
+  },
+  {
+    "question": "Proses pembelahan sel yang menghasilkan dua sel anak dengan jumlah kromosom yang sama seperti sel induknya adalah...",
+    "options": ["A. Mitosis", "B. Meiosis", "C. Pembelahan Biner", "D. Fagositosis"],
+    "correctOption": "A. Mitosis",
+    "explanation": "Mitosis adalah proses pembelahan sel yang menghasilkan dua sel anak dengan jumlah kromosom yang identik dengan sel induknya. Mitosis terdiri dari beberapa tahap yaitu profase, metafase, anafase, dan telofase."
+  },
+  {
+    "question": "Jika sel kekurangan fungsi mitokondria, bagaimana hal tersebut mempengaruhi sel dan organisme secara keseluruhan?",
+    "options": ["A. Sel tidak dapat memproduksi energi (ATP) yang cukup, mengganggu fungsi metabolisme sel", "B. Sel tidak dapat menghasilkan protein dengan efisien", "C. Sel tidak dapat melakukan pembelahan sel", "D. Sel kehilangan kemampuan untuk mengatur keluar masuknya zat"],
+    "correctOption": "A. Sel tidak dapat memproduksi energi (ATP) yang cukup, mengganggu fungsi metabolisme sel",
+    "explanation": "Mitokondria berfungsi sebagai 'pembangkit tenaga' sel, memproduksi ATP melalui respirasi sel. Tanpa mitokondria yang berfungsi dengan baik, sel tidak dapat menghasilkan energi yang diperlukan untuk aktivitas metabolisme, yang akhirnya akan mempengaruhi kelangsungan hidup sel dan organisme secara keseluruhan."
+  },
+  {
+    "question": "Dalam proses meiosis, terjadi pengurangan jumlah kromosom menjadi setengahnya. Apa tujuan utama dari proses ini dalam reproduksi seksual?",
+    "options": ["A. Untuk menghasilkan sel-sel dengan jumlah kromosom yang sama dengan sel induk", "B. Untuk memastikan variasi genetik pada keturunan", "C. Untuk mempercepat pembentukan sel-sel germinal", "D. Untuk memperbaiki kerusakan DNA dalam sel germinal"],
+    "correctOption": "B. Untuk memastikan variasi genetik pada keturunan",
+    "explanation": "Meiosis menghasilkan sel-sel germinal (sel telur dan sperma) dengan jumlah kromosom setengah dari sel induknya, yang memungkinkan terjadinya rekombinasi genetik dan memastikan variasi genetik pada keturunan. Proses ini penting untuk mempertahankan keanekaragaman genetik dalam populasi."
+  },
+  {
+    "question": "Apa fungsi dari ribosom dalam sel?",
+    "options": ["A. Sintesis protein", "B. Menghasilkan energi", "C. Mengatur pergerakan zat dalam sel", "D. Menyimpan materi genetik"],
+    "correctOption": "A. Sintesis protein",
+    "explanation": "Ribosom berfungsi dalam sintesis protein dengan membaca informasi yang ada pada mRNA dan menghubungkan asam amino untuk membentuk protein."
+  },
+  {
+    "question": "Apa yang dimaksud dengan apoptosis?",
+    "options": ["A. Pembelahan sel", "B. Proses kematian sel terprogram", "C. Pembentukan jaringan baru", "D. Proses pembentukan energi dalam sel"],
+    "correctOption": "B. Proses kematian sel terprogram",
+    "explanation": "Apoptosis adalah proses kematian sel terprogram yang penting dalam pengaturan jumlah sel dan menghilangkan sel-sel yang rusak atau tidak dibutuhkan."
+  },
+  {
+    "question": "Apa peran dari kloroplas dalam sel tumbuhan?",
+    "options": ["A. Menghasilkan energi", "B. Menyintesis protein", "C. Tempat fotosintesis", "D. Mengatur pergerakan zat"],
+    "correctOption": "C. Tempat fotosintesis",
+    "explanation": "Kloroplas berfungsi dalam proses fotosintesis, di mana energi cahaya diubah menjadi energi kimia dalam bentuk glukosa."
+  },
+  {
+    "question": "Apa yang dimaksud dengan diferensiasi sel?",
+    "options": ["A. Proses pembelahan sel", "B. Proses perubahan sel menjadi bentuk dan fungsi yang lebih spesifik", "C. Proses pembentukan energi", "D. Proses pembentukan jaringan baru"],
+    "correctOption": "B. Proses perubahan sel menjadi bentuk dan fungsi yang lebih spesifik",
+    "explanation": "Diferensiasi sel adalah proses di mana sel-sel tidak berdiferensiasi menjadi tipe sel yang lebih spesifik dengan fungsi tertentu dalam tubuh."
   }
+  
+];
 
-  return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
-        </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
-            <button
-              key={index}
-              className={`latihan-soal1-answer-button ${answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""}`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex]}
-            >
-              {option.label}
-            </button>
-          ))}
-        </div>
-        {answers[currentQuestionIndex] && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${currentQuestion.options.find((opt) => opt.isCorrect)?.value}`}
-            </h3>
-            <p>{currentQuestion.explanation}</p>
-          </div>
-        )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
-          >
-            {currentQuestionIndex === questions.length - 1 ? "Selesai" : "Soal Selanjutnya →"}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+const handleNextQuestion = () => {
+  if (currentQuestion < questions.length) {
+    setCurrentQuestion(currentQuestion + 1);
+    resetSelection();
+  }
 };
 
+const handlePreviousQuestion = () => {
+  if (currentQuestion > 1) {
+    setCurrentQuestion(currentQuestion - 1);
+    resetSelection();
+  }
+};
+
+const handleOptionSelect = (option) => {
+  setSelectedOption(option);
+};
+
+const resetSelection = () => {
+  setSelectedOption(null);
+  setShowExplanation(false);
+};
+
+const handleDropdownChange = (e) => {
+  const selectedNumber = parseInt(e.target.value);
+  setCurrentQuestion(selectedNumber);
+  resetSelection();
+};
+
+const handleExplanationClick = () => {
+  if (showExplanation) {
+    setShowExplanation(false); // Sembunyikan pembahasan tanpa pesan
+  } else if (!selectedOption) {
+    setShowConfirmation(true); // Tampilkan pesan jika opsi belum dipilih
+  } else {
+    setShowExplanation(true); // Langsung tampilkan pembahasan jika opsi sudah dipilih
+  }
+};
+
+const handleConfirmationResponse = (response) => {
+  if (response === "yes") {
+    setShowExplanation(true); // Tampilkan pembahasan
+  }
+  setShowConfirmation(false); // Hilangkan pesan
+};
+
+return (
+  <div className="question-page">
+    <div className="question-container">
+      <button
+        className="oval-button previous-button"
+        onClick={handlePreviousQuestion}
+        disabled={currentQuestion === 1}
+      >
+        &larr; Soal Sebelumnya
+      </button>
+      <div className="question-box">
+        <h2>Soal {currentQuestion}</h2>
+        <p>{questions[currentQuestion - 1].question}</p>
+      </div>
+      <button
+        className="oval-button next-button"
+        onClick={handleNextQuestion}
+        disabled={currentQuestion === questions.length}
+      >
+        Soal Berikutnya &rarr;
+      </button>
+    </div>
+
+    <div className="interactive-section">
+      <div className="dropdown-container">
+        <label htmlFor="question-dropdown">Pilih Soal:</label>
+        <select
+          id="question-dropdown"
+          value={currentQuestion}
+          onChange={handleDropdownChange}
+        >
+          {questions.map((_, index) => (
+            <option key={index} value={index + 1}>
+              Soal {index + 1}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="options-container">
+        {questions[currentQuestion - 1].options.map((option, index) => (
+          <button
+            key={index}
+            className={`option-button ${
+              selectedOption === option
+                ? option === questions[currentQuestion - 1].correctOption
+                  ? "correct"
+                  : "incorrect"
+                : ""
+            }`}
+            onClick={() => handleOptionSelect(option)}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+
+      <div className="explanation-container">
+        <button
+          className="explanation-toggle"
+          onClick={handleExplanationClick}
+        >
+          {showExplanation ? "Sembunyikan Pembahasan" : "Lihat Pembahasan"}
+        </button>
+        {showExplanation && (
+          <p className="explanation-text">
+            {questions[currentQuestion - 1].explanation}
+          </p>
+        )}
+      </div>
+    </div>
+
+    {showConfirmation && (
+      <div className="confirmation-popup">
+        <div className="popup-content">
+          <p>Yakin mau melihat pembahasan sekarang?</p>
+          <div className="popup-buttons">
+            <button
+              className="popup-button no-button"
+              onClick={() => handleConfirmationResponse("no")}
+            >
+              Tidak
+            </button>
+            <button
+              className="popup-button yes-button"
+              onClick={() => handleConfirmationResponse("yes")}
+            >
+              Iya
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+);
+}
 export default LatihanSoal2;

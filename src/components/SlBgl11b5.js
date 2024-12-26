@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import "../css/QuestionPage.css";
 
 const LatihanSoal5 = () => {
-  const [answers, setAnswers] = useState([]);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
-  const [isFinished, setIsFinished] = useState(false);
+const [currentQuestion, setCurrentQuestion] = useState(1);
+const [selectedOption, setSelectedOption] = useState(null);
+const [showExplanation, setShowExplanation] = useState(false);
+const [showConfirmation, setShowConfirmation] = useState(false);
 
-  const questions = [
+const questions = [
     {
       question: "Apa fungsi utama dari sistem imun manusia?",
       options: [
@@ -130,126 +128,150 @@ const LatihanSoal5 = () => {
       ],
       explanation:
         "Fungsi utama antibodi adalah menetralkan antigen seperti bakteri dan virus, membantu tubuh melawan infeksi.",
-    },
-    
-  ];
+    },  
+  
+];
 
-  const currentQuestion = questions[currentQuestionIndex];
-
-  const handleAnswerClick = (option) => {
-    const updatedAnswers = [...answers];
-    updatedAnswers[currentQuestionIndex] = option.value;
-    setAnswers(updatedAnswers);
-
-    if (option.isCorrect) {
-      setScore((prevScore) => prevScore + 1);
-    }
-
-    setIsCorrect(option.isCorrect || false);
-    setIsAnswered(true);
-  };
-
-  const goToNextQuestion = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] !== undefined);
-    }
-  };
-
-  const goToPreviousQuestion = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] !== undefined);
-    }
-  };
-
-  const handleFinishQuiz = () => {
-    setIsFinished(true);
-  };
-
-  const resetQuiz = () => {
-    setAnswers([]);
-    setIsAnswered(false);
-    setIsCorrect(false);
-    setCurrentQuestionIndex(0);
-    setScore(0);
-    setIsFinished(false);
-  };
-
-  if (isFinished) {
-    return (
-      <div className="latihan-soal1-container">
-        <div className="latihan-soal1-question-box">
-          <h1 className="latihan-soal1-title">Mode Bionik</h1>
-          <h2>Quiz Selesai!</h2>
-          <p>Skor Anda: {score}/{questions.length} </p>
-          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
-            Ulangi Latihan
-          </button>
-        </div>
-      </div>
-    );
+const handleNextQuestion = () => {
+  if (currentQuestion < questions.length) {
+    setCurrentQuestion(currentQuestion + 1);
+    resetSelection();
   }
-
-  return (
-    <div className="latihan-soal1-container">
-      <div className="latihan-soal1-question-box">
-        <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
-        </div>
-        <div className="latihan-soal1-answers">
-          {currentQuestion.options.map((option, index) => (
-            <button
-              key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value
-                  ? "latihan-soal1-selected-answer"
-                  : ""
-              }`}
-              onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex] !== undefined}
-            >
-              {option.label}
-            </button>
-          ))}
-        </div>
-        {answers[currentQuestionIndex] !== undefined && (
-          <div className="latihan-soal1-explanation-box">
-            <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
-            <h3>
-              {isCorrect
-                ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${
-                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
-                  }`}
-            </h3>
-            <p>{currentQuestion.explanation}</p>
-          </div>
-        )}
-        <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
-          >
-            {currentQuestionIndex === questions.length - 1
-              ? "Selesai"
-              : "Soal Selanjutnya →"}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
 };
 
+const handlePreviousQuestion = () => {
+  if (currentQuestion > 1) {
+    setCurrentQuestion(currentQuestion - 1);
+    resetSelection();
+  }
+};
+
+const handleOptionSelect = (option) => {
+  setSelectedOption(option);
+};
+
+const resetSelection = () => {
+  setSelectedOption(null);
+  setShowExplanation(false);
+};
+
+const handleDropdownChange = (e) => {
+  const selectedNumber = parseInt(e.target.value);
+  setCurrentQuestion(selectedNumber);
+  resetSelection();
+};
+
+const handleExplanationClick = () => {
+  if (showExplanation) {
+    setShowExplanation(false); // Sembunyikan pembahasan tanpa pesan
+  } else if (!selectedOption) {
+    setShowConfirmation(true); // Tampilkan pesan jika opsi belum dipilih
+  } else {
+    setShowExplanation(true); // Langsung tampilkan pembahasan jika opsi sudah dipilih
+  }
+};
+
+const handleConfirmationResponse = (response) => {
+  if (response === "yes") {
+    setShowExplanation(true); // Tampilkan pembahasan
+  }
+  setShowConfirmation(false); // Hilangkan pesan
+};
+
+return (
+  <div className="question-page">
+    <div className="question-container">
+      <button
+        className="oval-button previous-button"
+        onClick={handlePreviousQuestion}
+        disabled={currentQuestion === 1}
+      >
+        &larr; Soal Sebelumnya
+      </button>
+      <div className="question-box">
+        <h2>Soal {currentQuestion}</h2>
+        <p>{questions[currentQuestion - 1].question}</p>
+      </div>
+      <button
+        className="oval-button next-button"
+        onClick={handleNextQuestion}
+        disabled={currentQuestion === questions.length}
+      >
+        Soal Berikutnya &rarr;
+      </button>
+    </div>
+
+    <div className="interactive-section">
+      <div className="dropdown-container">
+        <label htmlFor="question-dropdown">Pilih Soal:</label>
+        <select
+          id="question-dropdown"
+          value={currentQuestion}
+          onChange={handleDropdownChange}
+        >
+          {questions.map((_, index) => (
+            <option key={index} value={index + 1}>
+              Soal {index + 1}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="options-container">
+        {questions[currentQuestion - 1].options.map((option, index) => (
+          <button
+            key={index}
+            className={`option-button ${
+              selectedOption === option
+                ? option === questions[currentQuestion - 1].correctOption
+                  ? "correct"
+                  : "incorrect"
+                : ""
+            }`}
+            onClick={() => handleOptionSelect(option)}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
+
+      <div className="explanation-container">
+        <button
+          className="explanation-toggle"
+          onClick={handleExplanationClick}
+        >
+          {showExplanation ? "Sembunyikan Pembahasan" : "Lihat Pembahasan"}
+        </button>
+        {showExplanation && (
+          <p className="explanation-text">
+            {questions[currentQuestion - 1].explanation}
+          </p>
+        )}
+      </div>
+    </div>
+
+    {showConfirmation && (
+      <div className="confirmation-popup">
+        <div className="popup-content">
+          <p>Yakin mau melihat pembahasan sekarang?</p>
+          <div className="popup-buttons">
+            <button
+              className="popup-button no-button"
+              onClick={() => handleConfirmationResponse("no")}
+            >
+              Tidak
+            </button>
+            <button
+              className="popup-button yes-button"
+              onClick={() => handleConfirmationResponse("yes")}
+            >
+              Iya
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
+  </div>
+);
+}
 export default LatihanSoal5;

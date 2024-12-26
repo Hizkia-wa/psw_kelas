@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Bing101.jpg';
+import tm2 from '../images/Bing102.jpg';
+import tm3 from '../images/Bing103.jpg';
+import tm4 from '../images/Bing104.jpg';
+import tm5 from '../images/Bing105.jpg';
+import tm6 from '../images/Bing106.jpg';
+import tm7 from '../images/Bing107.jpg';
+import tm8 from '../images/Bing108.jpg';
+import tm9 from '../images/Bing109.jpg';
+import tm10 from '../images/Bing1010.jpg';
+import tm11 from '../images/Bing1011.jpg';
+import tm12 from '../images/Bing1012.jpg';
+import tm13 from '../images/Bing1013.jpg';
+import tm14 from '../images/Bing1014.jpg';
+import tm15 from '../images/Bing1015.jpg';
+import tm16 from '../images/Bing1016.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "SARAH AMELYA ZALUKHU", img: tm1, about: "Haloo aku sarah.. singkat saja saya cewe dan suka makan , saya orangnya pendiam tp ceria dan cill bgt bro, saya selalu mensyukuri hal-hal kecil contohnya bisa liat dia. jangan lupa bersyukur teman><" },
+  { id: 2, name: "TRISTAN PANDRIS PASARIBU", img: tm5, about: "Halo, kenalin aku Tristan Pandris Pasaribu biasa dipanggil Tann. Aku orangnya bisa dibilang lumayan ambis dan rajin, aku bercita cita menjadi seorang developer yang dikenal akan karyanya. Oh iya aku penggemar One Piece kalo ada yang nonton." },
+  { id: 3, name: "ANDREY KURNIA BAHTIAR SILALAHI", img: tm9, about: "Hai, namaku Andrey Silalahi, tapi teman-teman sering memanggilku Andrey. Aku punya tiga hal yang bikin hari-hariku penuh warna: bermain game, memancing, dan menikmati dentuman musik rock and roll yang membakar semangat! Orang bilang aku ini jahil, tapi itu semua karena aku percaya persahabatan sejati dibangun dari tawa, kejahilan kecil, dan momen tak terlupakan. Selain musik, aku juga cinta dunia programming. Bagiku, coding itu seperti membuat simfoni—harus rapi, selaras, dan keren. <br/> Mimpiku? Menjadi seorang fullstack programmer yang bisa menciptakan software yang dapat di gunakan musisi seperti sound efect. Jadi, yuk, kita bikin sesuatu yang seru bersama!" },
+  { id: 4, name: "MARKUS YOGO SEPTIAN SARAGI", img: tm13, about: "Halo semua, kenalin aku Markus Saragi. aku punya nama panggilan yang aku sering jadiin personal branding yaitu markyzxa. Aku suka musik, ngoding, dan bermain game. Apa, anime favorit? 86 dong pastinya." },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprBing10 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBing10;

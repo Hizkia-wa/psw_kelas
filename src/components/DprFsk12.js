@@ -1,33 +1,33 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Fsk12p1.jpg';
+import tm2 from '../images/Fsk12p2.jpg';
+import tm3 from '../images/Fsk12p3.jpg';
+import tm4 from '../images/Fsk12p4.jpg';
+import tm5 from '../images/Fsk12p5.jpg';
+import tm6 from '../images/Fsk12p6.jpg';
+import tm7 from '../images/Fsk12p7.jpg';
+import tm8 from '../images/Fsk12p8.jpg';
+import tm9 from '../images/Fsk12p9.jpg';
+import tm10 from '../images/Fsk12p10.jpg';
+import tm11 from '../images/Fsk12p11.jpg';
+import tm12 from '../images/Fsk12p12.jpg';
+import tm13 from '../images/Fsk12p13.jpg';
+import tm14 from '../images/Fsk12p14.jpg';
+import tm15 from '../images/Fsk12p15.jpg';
+import tm16 from '../images/Fsk12p16.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "Stevani Rointan Nadeak", img: tm9,about: "Aku adalah orang yang sangat mencintai musik. Saat aku mendengarkan musik aku langsung menyanyi." },
+  { id: 2, name: "Jamot Togu Suryadi Sigiro", img: tm1,about: "Hi !, Perkenalkan namaku Jamot Togu Suryadi Sigiro Dari prodi DIV TRPL dengan NIM 41424017.Aku adalah orang yang mudah marah dan juga suka ngomong kasar,tapi sebenarnya aku punya hati yang baik dan suka membantu teman.aku suka membaca manga,manhwa dan manhua,karakter fiksi kesukaanku adalah Sun wukong,son Goku,Kamen Rider Decade,Van Helsing dan karakter sejarah Favoritku adalah LUBU FENGXIAN" },
+  { id: 3, name: "Lastri Anna Hutagalung", img: tm5,about: "Halo, saya Lastri Anna Hutagalung. Saya adalah pribadi yang menemukan semangat dalam hal-hal sederhana, seperti menikmati makanan manis favorit saya dan mendengarkan musik di waktu luang. Saya juga sangat menyukai anjing—makhluk menggemaskan dan setia." },
+  { id: 4, name: "Epelina Oktavia Pangaribuan", img: tm13, about: "Hobi mendengarkan musik dan film Korea. Memiliki pribadi yang disiplin,pemberani dan suka berbagi!" },
 ];
 
 const myTeamImages = [
-  [tm2, tm3, tm4],
-  [tm6, tm7, tm8],
-  [tm10, tm11, tm12],
+  [tm10,tm11,tm12],
+  [tm2,tm3,tm4],
+  [tm6,tm7,tm8],
   [tm14, tm15, tm16],
 ];
 

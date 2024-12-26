@@ -1,27 +1,27 @@
 import React from 'react';
-import './Team.css';
-import tm1 from '../images/tm1.jpg';
-import tm2 from '../images/tm2.jpg';
-import tm3 from '../images/tm3.jpg';
-import tm4 from '../images/tm4.jpg';
-import tm5 from '../images/tm5.jpg';
-import tm6 from '../images/tm6.jpg';
-import tm7 from '../images/tm7.jpg';
-import tm8 from '../images/tm8.jpg';
-import tm9 from '../images/tm9.jpg';
-import tm10 from '../images/tm10.jpg';
-import tm11 from '../images/tm11.jpg';
-import tm12 from '../images/tm12.jpg';
-import tm13 from '../images/tm13.jpg';
-import tm14 from '../images/tm14.jpg';
-import tm15 from '../images/tm15.jpg';
-import tm16 from '../images/tm16.jpg';
+import '../css/Team.css';
+import tm1 from '../images/Kma111.jpg';
+import tm2 from '../images/Kma112.jpg';
+import tm3 from '../images/Kma113.jpg';
+import tm4 from '../images/Kma114.jpg';
+import tm5 from '../images/Kma115.jpg';
+import tm6 from '../images/Kma116.jpg';
+import tm7 from '../images/Kma117.jpg';
+import tm8 from '../images/Kma118.jpg';
+import tm9 from '../images/Kma119.jpg';
+import tm10 from '../images/Kma1110.jpg';
+import tm11 from '../images/Kma1111.jpg';
+import tm12 from '../images/Kma1112.jpg';
+import tm13 from '../images/Kma1113.jpg';
+import tm14 from '../images/Kma1114.jpg';
+import tm15 from '../images/Kma1115.jpg';
+import tm16 from '../images/Kma1116.jpg';
 
 const teamData = [
-  { id: 1, name: "HIZKIA CRISTIAN SIAHAAN", img: tm1, about: "..." },
-  { id: 2, name: "JONATAN RAJA BASA SIMAMORA", img: tm5, about: "..." },
-  { id: 3, name: "JESICA ROULI TUA NAPITUPULU", img: tm9, about: "..." },
-  { id: 4, name: "JOHANNA", img: tm13, about: "..." },
+  { id: 1, name: "SAMUEL BONA TUA HUTAGAOL", img: tm1, about: "Aku orangnya baik (keknya), tatapan mata aing kadang tajam tapi dah bawaan lahir, tapi kek diawal, aku baik dan ramah( keknya ) , aku suka nonton film, dengar musik metal, punk, rock, math rock, classic, indie terkadang, suka gym, basket, sama nasi goreng dan beberapa makanan lainnya sama melihara kucing." },
+  { id: 2, name: "NEUREE DANIELA GIANIK SIAGIAN", img: tm5, about: "Cheese, anime, game, and books that's all you need in life bud! Life is nice if your death." },
+  { id: 3, name: "IMMANUEL PARLIN SIMORANGKIR", img: tm9, about: "Halo perkenalkan nama ku Immanuel Simorangkir dari D4 trpl dengan Nim 41424034, nah disini aku suka banget dengar musik, makan juga suka. kalau di pikir pikir, aku suka banget sama kucing yang kalau bukunya lebat. suara ku juga kadang tinggi kalau ada sesuatu yang kurang pas. Nah ini aku, terimakasih." },
+  { id: 4, name: "BINSAR IMMANUEL SIREGAR", img: tm13, about: "Namaku Binsar Immanuel Siregar! Aku orang nya biasaa ajaa,Hidupku mungkin ngga sempurna,tapi aku percaya setiap langkah kecil bisa jadi besar.Udah dulu ya,takutnya makin kenal makin susah lupa." },
 ];
 
 const myTeamImages = [
@@ -31,7 +31,7 @@ const myTeamImages = [
   [tm14, tm15, tm16],
 ];
 
-const Team = () => {
+const DprKma11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -64,4 +64,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprKma11;
