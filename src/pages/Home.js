@@ -6,9 +6,11 @@ import {
   FaLaptopCode,
   FaQuestionCircle,
   FaTeamspeak,
+  FaFastBackward,
 } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
+import { FaAward } from "react-icons/fa";
 
 function Home() {
   return (
@@ -28,9 +30,10 @@ function Home() {
           className="text-primary fw-bold display-4 animated-title"
           style={{ marginBottom: "1rem" }}
         >
-          <FaCalculator size={50} className="me-2 animated-icon" />
+          <FaAward size={50} className="me-2 animated-icon" />
           RUANG BELAJAR CERMAT
         </h1>
+
         <p className="text-muted fs-4 animated-subtitle mb-3">
           Kumpulan Materi dan Soal-Soal
         </p>

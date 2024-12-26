@@ -22,7 +22,10 @@ function Virus() {
         </div>
       )
     },
+<<<<<<< HEAD
     
+=======
+>>>>>>> d4df0190af7cae5716dc8d9bef58b1f84aa747ab
     { 
       id: 'sejarah', 
       title: 'Sejarah Penemuan Virus',
