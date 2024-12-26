@@ -7,107 +7,107 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Sebuah data berisi nilai ujian 10 siswa: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140. Hitung standar deviasi dari data tersebut!",
-      options: ["25", "28.72", "30", "32.15"],
-      answer: "28.72"
+      question: "1. Turunan dari f(x) = 3x^2 + 5x - 2 adalah?",
+      options: ["6x + 5", "6x - 5", "3x + 5", "5x - 2"],
+      answer: "6x + 5"
     },
     {
-      question: "2. Jika rata-rata dari 12 bilangan adalah 50, dan salah satu bilangan dihapus sehingga rata-rata menjadi 48, berapa nilai bilangan yang dihapus?",
-      options: ["72", "56", "58", "62"],
-      answer: "72"
+      question: "2. Jika f(x) = x^3 - 4x^2 + 2x, berapakah f'(x)?",
+      options: ["3x^2 - 8x + 2", "3x^2 - 4x + 2", "x^2 - 8x + 2", "3x^2 - 8x - 2"],
+      answer: "3x^2 - 8x + 2"
     },
     {
-      question: "3. Hitung variansi dari data berikut: 5, 7, 10, 15, 20!",
-      options: ["22", "30", "35", "40"],
-      answer: "30"
+      question: "3. Hitung turunan pertama dari f(x) = 2x^4 - 3x^3 + 5!",
+      options: ["8x^3 - 9x^2", "8x^3 - 3x^2", "4x^3 - 9x^2", "4x^3 - 3x^2"],
+      answer: "8x^3 - 9x^2"
     },
     {
-      question: "4. Dari sebuah data dengan Q1 = 20 dan Q3 = 80, jika ada nilai outlier di atas, berapa batas atas outliernya?",
-      options: ["130", "100", "120", "140"],
-      answer: "130"
+      question: "4. Jika y = 5x^2 - 7x + 1, maka dy/dx adalah?",
+      options: ["10x - 7", "10x + 7", "5x - 7", "10x - 1"],
+      answer: "10x - 7"
     },
     {
-      question: "5. Sebuah kelas memiliki rata-rata tinggi badan 160 cm dengan standar deviasi 8 cm. Jika 95% data mengikuti distribusi normal, hitung rentang tinggi badan 95% siswa!",
-      options: ["144-176 cm", "150-170 cm", "152-168 cm", "145-175 cm"],
-      answer: "144-176 cm"
+      question: "5. Turunan dari f(x) = 7x^3 - 2x + 4 adalah?",
+      options: ["21x^2 - 2", "21x^2 + 2", "21x^2 - 1", "14x^2 - 2"],
+      answer: "21x^2 - 2"
     },
     {
-      question: "6. Sebuah perusahaan mencatat rata-rata penjualan harian 200 unit dengan standar deviasi 10 unit. Berapa probabilitas penjualan lebih dari 220 unit (dengan asumsi distribusi normal)?",
-      options: ["0.023", "0.021", "0.019", "0.018"],
-      answer: "0.023"
+      question: "6. Hitung turunan pertama dari f(x) = x^5 + 3x^2 - 7!",
+      options: ["5x^4 + 6x", "5x^4 + 3x", "6x^4 + 3x", "6x^4 + 6x"],
+      answer: "5x^4 + 6x"
     },
     {
-      question: "7. Diberikan 5 angka: 3, 7, 9, 15, dan 21. Hitung median dan range dari data tersebut!",
-      options: ["Median: 9, Range: 18", "Median: 9, Range: 15", "Median: 10, Range: 18", "Median: 10, Range: 15"],
-      answer: "Median: 9, Range: 18"
+      question: "7. Jika y = 4x^3 + 6x^2 - 8, maka dy/dx adalah?",
+      options: ["12x^2 + 12x", "12x^2 + 6x", "8x^2 + 12x", "8x^2 + 6x"],
+      answer: "12x^2 + 12x"
     },
     {
-      question: "8. Sebuah distribusi data memiliki rata-rata 70 dan standar deviasi 5. Hitung nilai z-score untuk data bernilai 80.",
-      options: ["1.5", "1.8", "2", "2.2"],
-      answer: "2"
+      question: "8. Turunan dari f(x) = (3x^2 - 4x)(x^3) adalah?",
+      options: ["9x^4 - 4x^3", "9x^4 - 12x^2", "9x^4 - 4x^3 - 12x^2", "9x^4 + 4x^3 - 12x^2"],
+      answer: "9x^4 - 4x^3 - 12x^2"
     },
     {
-      question: "9. Dari data berikut: 15, 20, 25, 30, 35. Hitung nilai rata-rata harmonik!",
-      options: ["22.56", "24.16", "25.15", "26.14"],
-      answer: "24.16"
+      question: "9. Jika f(x) = (2x^2 - 3x)/(x^2), maka f'(x) adalah?",
+      options: ["4x - 3", "4x + 3", "4x - 6x^2", "4x + 6x^2"],
+      answer: "4x - 3"
     },
     {
-      question: "10. Hitung kuartil ketiga (Q3) dari data: 10, 15, 20, 25, 30, 35, 40, 45, 50!",
-      options: ["35", "37.5", "40", "42.5"],
-      answer: "40"
+      question: "10. Turunan dari f(x) = e^x adalah?",
+      options: ["e^x", "e^x - 1", "x * e^x", "ln(x)"],
+      answer: "e^x"
     },
     {
-      question: "11. Sebuah data memiliki nilai rata-rata 60 dan standar deviasi 8. Hitung nilai rata-rata kuadrat (mean square) dari data tersebut!",
-      options: ["3680", "3700", "3720", "3750"],
-      answer: "3680"
+      question: "11. Turunan dari y = ln(x) adalah?",
+      options: ["1/x", "x", "ln(x) + 1", "1/x + x"],
+      answer: "1/x"
     },
     {
-      question: "12. Dari data: 8, 10, 12, 14, 16, 18. Hitung rata-rata geometrik!",
-      options: ["13", "13.8", "14", "14.5"],
-      answer: "13.8"
+      question: "12. Hitung turunan dari f(x) = sin(x) + cos(x)!",
+      options: ["cos(x) - sin(x)", "-cos(x) + sin(x)", "sin(x) - cos(x)", "-sin(x) + cos(x)"],
+      answer: "cos(x) - sin(x)"
     },
     {
-      question: "13. Diberikan data frekuensi: 2 (4x), 4 (3x), 6 (2x), 8 (1x). Hitung rata-rata tertimbang dari data tersebut!",
-      options: ["4.5", "5", "5.2", "5.5"],
-      answer: "5"
+      question: "13. Jika y = tan(x), maka dy/dx adalah?",
+      options: ["sec^2(x)", "-sec^2(x)", "tan^2(x)", "1 + tan^2(x)"],
+      answer: "sec^2(x)"
     },
     {
-      question: "14. Dari data berikut: 3, 5, 7, 10, 15. Hitung simpangan rata-rata (mean deviation) terhadap rata-rata hitung!",
-      options: ["2.4", "3.2", "3.8", "4"],
-      answer: "3.2"
+      question: "14. Hitung turunan pertama dari f(x) = x^2 * sin(x)!",
+      options: ["2x * sin(x) + x^2 * cos(x)", "2x * cos(x) + x^2 * sin(x)", "2x * sin(x) - x^2 * cos(x)", "2x - sin(x) + cos(x)"],
+      answer: "2x * sin(x) + x^2 * cos(x)"
     },
     {
-      question: "15. Jika rata-rata ujian adalah 75 dan standar deviasi adalah 10, berapa persentase siswa yang mendapatkan nilai di bawah 65 (asumsi distribusi normal)?",
-      options: ["16%", "18%", "14%", "12%"],
-      answer: "16%"
+      question: "15. Turunan dari y = cos(x^2) adalah?",
+      options: ["-2x * sin(x^2)", "2x * cos(x^2)", "-x^2 * sin(x)", "-sin(x^2)"],
+      answer: "-2x * sin(x^2)"
     },
     {
-      question: "16. Data nilai siswa: 50, 60, 70, 80, 90, 100. Jika semua nilai dinaikkan 10%, berapakah rata-rata baru dari data tersebut?",
-      options: ["77", "88", "87", "78"],
-      answer: "88"
+      question: "16. Jika f(x) = ln(2x), maka f'(x) adalah?",
+      options: ["1/x", "1/(2x)", "1/x + 2", "1/(2x) + 2"],
+      answer: "1/x"
     },
     {
-      question: "17. Diberikan data 7 angka: 5, 10, 15, 20, 25, 30, 35. Hitung simpangan baku (standar deviasi) data tersebut!",
-      options: ["10.8", "11", "12", "13"],
-      answer: "11"
+      question: "17. Turunan dari f(x) = sqrt(x) adalah?",
+      options: ["1/(2sqrt(x))", "1/sqrt(x)", "1/(4sqrt(x))", "2/sqrt(x)"],
+      answer: "1/(2sqrt(x))"
     },
     {
-      question: "18. Suatu distribusi normal memiliki rata-rata 100 dan standar deviasi 15. Berapa probabilitas data berada antara 85 dan 115?",
-      options: ["0.682", "0.700", "0.710", "0.750"],
-      answer: "0.682"
+      question: "18. Hitung turunan dari f(x) = x * e^x!",
+      options: ["x * e^x + e^x", "x * e^x - e^x", "e^x - x", "e^x + x^2"],
+      answer: "x * e^x + e^x"
     },
     {
-      question: "19. Dari data berikut: 2, 4, 6, 8, 10. Hitung momen kedua (second moment) terhadap rata-rata!",
-      options: ["6", "8", "10", "12"],
-      answer: "8"
+      question: "19. Jika y = x^3 * ln(x), maka dy/dx adalah?",
+      options: ["3x^2 * ln(x) + x^2", "3x^2 * ln(x) + x^3", "x^2 * ln(x) + 3x", "3x^2 + ln(x)"],
+      answer: "3x^2 * ln(x) + x^2"
     },
     {
-      question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
-      options: ["12%", "15%", "18%", "20%"],
-      answer:"15%"
-  }
+      question: "20. Turunan dari f(x) = cos(x)/x adalah?",
+      options: ["-sin(x)/x - cos(x)/x^2", "-cos(x)/x^2", "-sin(x)/x^2", "sin(x)/x + cos(x)/x^2"],
+      answer: "-sin(x)/x - cos(x)/x^2"
+    }
   ];
-
+  
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
@@ -130,7 +130,7 @@ const Tryout = () => {
 
   return (
     <div className="app">
-      <h1>Kuis Matematika Kelas XII</h1>
+      <h1>Kuis Matematika Kelas XI</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>

@@ -7,106 +7,107 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Sebuah data berisi nilai ujian 10 siswa: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140. Hitung standar deviasi dari data tersebut!",
-      options: ["25", "28.72", "30", "32.15"],
-      answer: "28.72"
+      question: "1. Buktikan bahwa jumlah bilangan ganjil pertama n adalah n^2 menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "2. Jika rata-rata dari 12 bilangan adalah 50, dan salah satu bilangan dihapus sehingga rata-rata menjadi 48, berapa nilai bilangan yang dihapus?",
-      options: ["72", "56", "58", "62"],
-      answer: "72"
+      question: "2. Buktikan bahwa jumlah bilangan genap pertama n adalah n(n+1) menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "3. Hitung variansi dari data berikut: 5, 7, 10, 15, 20!",
-      options: ["22", "30", "35", "40"],
-      answer: "30"
+      question: "3. Buktikan bahwa untuk setiap bilangan bulat n >= 1, 1 + 2 + 3 + ... + n = n(n+1)/2 menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "4. Dari sebuah data dengan Q1 = 20 dan Q3 = 80, jika ada nilai outlier di atas, berapa batas atas outliernya?",
-      options: ["130", "100", "120", "140"],
-      answer: "130"
+      question: "4. Gunakan induksi matematika untuk membuktikan bahwa 2^n > n^2 untuk semua n > 4!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "5. Sebuah kelas memiliki rata-rata tinggi badan 160 cm dengan standar deviasi 8 cm. Jika 95% data mengikuti distribusi normal, hitung rentang tinggi badan 95% siswa!",
-      options: ["144-176 cm", "150-170 cm", "152-168 cm", "145-175 cm"],
-      answer: "144-176 cm"
+      question: "5. Buktikan bahwa untuk setiap n bilangan asli, 1^2 + 2^2 + 3^2 + ... + n^2 = n(n+1)(2n+1)/6 menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "6. Sebuah perusahaan mencatat rata-rata penjualan harian 200 unit dengan standar deviasi 10 unit. Berapa probabilitas penjualan lebih dari 220 unit (dengan asumsi distribusi normal)?",
-      options: ["0.023", "0.021", "0.019", "0.018"],
-      answer: "0.023"
+      question: "6. Buktikan bahwa untuk semua n >= 1, 1 + 1/2 + 1/4 + ... + 1/(2^n) = 2 - 1/(2^(n-1)) menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "7. Diberikan 5 angka: 3, 7, 9, 15, dan 21. Hitung median dan range dari data tersebut!",
-      options: ["Median: 9, Range: 18", "Median: 9, Range: 15", "Median: 10, Range: 18", "Median: 10, Range: 15"],
-      answer: "Median: 9, Range: 18"
+      question: "7. Gunakan induksi matematika untuk membuktikan bahwa 3^n > n^3 untuk semua n >= 4!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "8. Sebuah distribusi data memiliki rata-rata 70 dan standar deviasi 5. Hitung nilai z-score untuk data bernilai 80.",
-      options: ["1.5", "1.8", "2", "2.2"],
-      answer: "2"
+      question: "8. Buktikan bahwa jumlah bilangan kubik pertama n adalah (n(n+1)/2)^2 menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "9. Dari data berikut: 15, 20, 25, 30, 35. Hitung nilai rata-rata harmonik!",
-      options: ["22.56", "24.16", "25.15", "26.14"],
-      answer: "24.16"
+      question: "9. Buktikan dengan induksi matematika bahwa untuk semua n bilangan asli, 2 + 4 + 6 + ... + 2n = n(n+1)!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "10. Hitung kuartil ketiga (Q3) dari data: 10, 15, 20, 25, 30, 35, 40, 45, 50!",
-      options: ["35", "37.5", "40", "42.5"],
-      answer: "40"
+      question: "10. Gunakan induksi matematika untuk membuktikan bahwa n^3 - n selalu habis dibagi 3 untuk semua n bilangan asli!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "11. Sebuah data memiliki nilai rata-rata 60 dan standar deviasi 8. Hitung nilai rata-rata kuadrat (mean square) dari data tersebut!",
-      options: ["3680", "3700", "3720", "3750"],
-      answer: "3680"
+      question: "11. Gunakan induksi matematika untuk membuktikan bahwa n! > 2^n untuk semua n >= 4!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "12. Dari data: 8, 10, 12, 14, 16, 18. Hitung rata-rata geometrik!",
-      options: ["13", "13.8", "14", "14.5"],
-      answer: "13.8"
+      question: "12. Buktikan dengan induksi matematika bahwa 5^n - 1 selalu habis dibagi 4 untuk semua n bilangan bulat positif!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "13. Diberikan data frekuensi: 2 (4x), 4 (3x), 6 (2x), 8 (1x). Hitung rata-rata tertimbang dari data tersebut!",
-      options: ["4.5", "5", "5.2", "5.5"],
-      answer: "5"
+      question: "13. Buktikan bahwa untuk semua bilangan asli n, jumlah bilangan segitiga pertama adalah n(n+1)(n+2)/6 menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "14. Dari data berikut: 3, 5, 7, 10, 15. Hitung simpangan rata-rata (mean deviation) terhadap rata-rata hitung!",
-      options: ["2.4", "3.2", "3.8", "4"],
-      answer: "3.2"
+      question: "14. Gunakan induksi matematika untuk membuktikan bahwa 1^3 + 2^3 + 3^3 + ... + n^3 = (n(n+1)/2)^2!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "15. Jika rata-rata ujian adalah 75 dan standar deviasi adalah 10, berapa persentase siswa yang mendapatkan nilai di bawah 65 (asumsi distribusi normal)?",
-      options: ["16%", "18%", "14%", "12%"],
-      answer: "16%"
+      question: "15. Buktikan bahwa untuk semua bilangan asli n >= 1, 2^n - 1 habis dibagi 3!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "16. Data nilai siswa: 50, 60, 70, 80, 90, 100. Jika semua nilai dinaikkan 10%, berapakah rata-rata baru dari data tersebut?",
-      options: ["77", "88", "87", "78"],
-      answer: "88"
+      question: "16. Gunakan induksi matematika untuk membuktikan bahwa (n+1)! > n^n untuk semua n >= 4!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "17. Diberikan data 7 angka: 5, 10, 15, 20, 25, 30, 35. Hitung simpangan baku (standar deviasi) data tersebut!",
-      options: ["10.8", "11", "12", "13"],
-      answer: "11"
+      question: "17. Buktikan dengan induksi matematika bahwa 1 + 3 + 5 + ... + (2n-1) = n^2 untuk semua n >= 1!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "18. Suatu distribusi normal memiliki rata-rata 100 dan standar deviasi 15. Berapa probabilitas data berada antara 85 dan 115?",
-      options: ["0.682", "0.700", "0.710", "0.750"],
-      answer: "0.682"
+      question: "18. Buktikan bahwa n^4 - 4n^2 selalu habis dibagi 3 untuk semua bilangan asli n menggunakan induksi matematika!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "19. Dari data berikut: 2, 4, 6, 8, 10. Hitung momen kedua (second moment) terhadap rata-rata!",
-      options: ["6", "8", "10", "12"],
-      answer: "8"
+      question: "19. Gunakan induksi matematika untuk membuktikan bahwa 1 + 2 + 4 + 8 + ... + 2^(n-1) = 2^n - 1 untuk semua n >= 1!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
     },
     {
-      question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
-      options: ["12%", "15%", "18%", "20%"],
-      answer:"15%"
-  }
+      question: "20. Buktikan dengan induksi matematika bahwa n^5 - n selalu habis dibagi 5 untuk semua bilangan asli n!",
+      options: ["Benar", "Salah"],
+      answer: "Benar"
+    }
   ];
+  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -130,7 +131,7 @@ const Tryout = () => {
 
   return (
     <div className="app">
-      <h1>Kuis Matematika Kelas XII</h1>
+      <h1>Kuis Matematika Kelas XI</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>

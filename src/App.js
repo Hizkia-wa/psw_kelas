@@ -299,8 +299,6 @@ import QzMtk11b3 from './components/QzMtk11b3';
 import QzMtk11b4 from './components/QzMtk11b4';
 import QzMtk11b5 from './components/QzMtk11b5';
 import QzMtk11b6 from './components/QzMtk11b6';
-import QzMtk11b7 from './components/QzMtk11b7';
-import QzMtk11b8 from './components/QzMtk11b8';
 import QzMtk12b1 from './components/QzMtk12b1';
 import QzMtk12b2 from './components/QzMtk12b2';
 import QzMtk12b3 from './components/QzMtk12b3';

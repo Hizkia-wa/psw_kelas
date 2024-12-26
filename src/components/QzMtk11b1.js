@@ -7,106 +7,107 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Sebuah data berisi nilai ujian 10 siswa: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140. Hitung standar deviasi dari data tersebut!",
-      options: ["25", "28.72", "30", "32.15"],
-      answer: "28.72"
+      question: "1. Diberikan matriks A = [[1, 2], [3, 4]] dan B = [[2, 0], [1, 3]]. Hitung A + B!",
+      options: ["[[3, 2], [4, 7]]", "[[3, 2], [3, 7]]", "[[3, 2], [4, 6]]", "[[3, 2], [5, 7]]"],
+      answer: "[[3, 2], [4, 7]]"
     },
     {
-      question: "2. Jika rata-rata dari 12 bilangan adalah 50, dan salah satu bilangan dihapus sehingga rata-rata menjadi 48, berapa nilai bilangan yang dihapus?",
-      options: ["72", "56", "58", "62"],
-      answer: "72"
+      question: "2. Tentukan hasil dari perkalian matriks A = [[1, 2], [3, 4]] dengan skalar 3!",
+      options: ["[[3, 6], [9, 12]]", "[[2, 6], [6, 12]]", "[[3, 5], [9, 11]]", "[[3, 7], [9, 13]]"],
+      answer: "[[3, 6], [9, 12]]"
     },
     {
-      question: "3. Hitung variansi dari data berikut: 5, 7, 10, 15, 20!",
-      options: ["22", "30", "35", "40"],
-      answer: "30"
+      question: "3. Diberikan matriks A = [[1, 2, 3], [4, 5, 6]]. Hitung transpose dari matriks A!",
+      options: ["[[1, 4], [2, 5], [3, 6]]", "[[1, 5], [2, 6], [3, 4]]", "[[1, 3], [2, 4], [5, 6]]", "[[1, 2], [3, 4], [5, 6]]"],
+      answer: "[[1, 4], [2, 5], [3, 6]]"
     },
     {
-      question: "4. Dari sebuah data dengan Q1 = 20 dan Q3 = 80, jika ada nilai outlier di atas, berapa batas atas outliernya?",
-      options: ["130", "100", "120", "140"],
-      answer: "130"
+      question: "4. Jika A = [[2, 3], [1, 4]] dan B = [[1, 0], [5, 2]], hitung A * B!",
+      options: ["[[17, 6], [21, 8]]", "[[17, 6], [9, 8]]", "[[13, 6], [21, 8]]", "[[17, 6], [9, 8]]"],
+      answer: "[[17, 6], [21, 8]]"
     },
     {
-      question: "5. Sebuah kelas memiliki rata-rata tinggi badan 160 cm dengan standar deviasi 8 cm. Jika 95% data mengikuti distribusi normal, hitung rentang tinggi badan 95% siswa!",
-      options: ["144-176 cm", "150-170 cm", "152-168 cm", "145-175 cm"],
-      answer: "144-176 cm"
-    },
-    {
-      question: "6. Sebuah perusahaan mencatat rata-rata penjualan harian 200 unit dengan standar deviasi 10 unit. Berapa probabilitas penjualan lebih dari 220 unit (dengan asumsi distribusi normal)?",
-      options: ["0.023", "0.021", "0.019", "0.018"],
-      answer: "0.023"
-    },
-    {
-      question: "7. Diberikan 5 angka: 3, 7, 9, 15, dan 21. Hitung median dan range dari data tersebut!",
-      options: ["Median: 9, Range: 18", "Median: 9, Range: 15", "Median: 10, Range: 18", "Median: 10, Range: 15"],
-      answer: "Median: 9, Range: 18"
-    },
-    {
-      question: "8. Sebuah distribusi data memiliki rata-rata 70 dan standar deviasi 5. Hitung nilai z-score untuk data bernilai 80.",
-      options: ["1.5", "1.8", "2", "2.2"],
+      question: "5. Tentukan determinan dari matriks A = [[3, 2], [5, 4]]!",
+      options: ["2", "7", "6", "-2"],
       answer: "2"
     },
     {
-      question: "9. Dari data berikut: 15, 20, 25, 30, 35. Hitung nilai rata-rata harmonik!",
-      options: ["22.56", "24.16", "25.15", "26.14"],
-      answer: "24.16"
+      question: "6. Diberikan matriks A = [[2, 1], [3, 2]]. Apakah A merupakan matriks invertibel?",
+      options: ["Ya, determinan tidak nol", "Tidak, karena tidak persegi", "Tidak, determinannya nol", "Tidak dapat ditentukan"],
+      answer: "Ya, determinan tidak nol"
     },
     {
-      question: "10. Hitung kuartil ketiga (Q3) dari data: 10, 15, 20, 25, 30, 35, 40, 45, 50!",
-      options: ["35", "37.5", "40", "42.5"],
-      answer: "40"
+      question: "7. Jika matriks A = [[1, 2], [3, 4]], hitung invers dari matriks A!",
+      options: ["[[-2, 1], [1.5, -0.5]]", "[[2, -1], [-1.5, 0.5]]", "[[2, 1], [-1.5, -0.5]]", "[[-2, -1], [1.5, 0.5]]"],
+      answer: "[[-2, 1], [1.5, -0.5]]"
     },
     {
-      question: "11. Sebuah data memiliki nilai rata-rata 60 dan standar deviasi 8. Hitung nilai rata-rata kuadrat (mean square) dari data tersebut!",
-      options: ["3680", "3700", "3720", "3750"],
-      answer: "3680"
+      question: "8. Matriks A = [[2, 0], [0, 3]]. Apakah A merupakan matriks diagonal?",
+      options: ["Ya", "Tidak", "Hanya baris pertama", "Hanya kolom kedua"],
+      answer: "Ya"
     },
     {
-      question: "12. Dari data: 8, 10, 12, 14, 16, 18. Hitung rata-rata geometrik!",
-      options: ["13", "13.8", "14", "14.5"],
-      answer: "13.8"
-    },
-    {
-      question: "13. Diberikan data frekuensi: 2 (4x), 4 (3x), 6 (2x), 8 (1x). Hitung rata-rata tertimbang dari data tersebut!",
-      options: ["4.5", "5", "5.2", "5.5"],
+      question: "9. Diberikan matriks A = [[1, 2], [3, 4]]. Hitung trace dari matriks A!",
+      options: ["5", "6", "7", "8"],
       answer: "5"
     },
     {
-      question: "14. Dari data berikut: 3, 5, 7, 10, 15. Hitung simpangan rata-rata (mean deviation) terhadap rata-rata hitung!",
-      options: ["2.4", "3.2", "3.8", "4"],
-      answer: "3.2"
+      question: "10. Jika A = [[1, 2], [3, 4]] dan B = [[1, 0], [0, 1]], hitung A * B!",
+      options: ["[[1, 2], [3, 4]]", "[[0, 0], [0, 0]]", "[[2, 2], [4, 4]]", "[[3, 3], [5, 5]]"],
+      answer: "[[1, 2], [3, 4]]"
     },
     {
-      question: "15. Jika rata-rata ujian adalah 75 dan standar deviasi adalah 10, berapa persentase siswa yang mendapatkan nilai di bawah 65 (asumsi distribusi normal)?",
-      options: ["16%", "18%", "14%", "12%"],
-      answer: "16%"
+      question: "11. Tentukan apakah matriks A = [[0, 1], [1, 0]] adalah matriks simetris!",
+      options: ["Ya", "Tidak", "Tergantung nilai elemen", "Tidak dapat ditentukan"],
+      answer: "Ya"
     },
     {
-      question: "16. Data nilai siswa: 50, 60, 70, 80, 90, 100. Jika semua nilai dinaikkan 10%, berapakah rata-rata baru dari data tersebut?",
-      options: ["77", "88", "87", "78"],
-      answer: "88"
+      question: "12. Matriks A = [[3, 1], [1, 2]]. Tentukan eigenvalue dari matriks A!",
+      options: ["4 dan 1", "2 dan 3", "3 dan 1", "2 dan 4"],
+      answer: "4 dan 1"
     },
     {
-      question: "17. Diberikan data 7 angka: 5, 10, 15, 20, 25, 30, 35. Hitung simpangan baku (standar deviasi) data tersebut!",
-      options: ["10.8", "11", "12", "13"],
-      answer: "11"
+      question: "13. Jika A = [[1, 2], [2, 4]], tentukan rank dari matriks A!",
+      options: ["1", "2", "3", "0"],
+      answer: "1"
     },
     {
-      question: "18. Suatu distribusi normal memiliki rata-rata 100 dan standar deviasi 15. Berapa probabilitas data berada antara 85 dan 115?",
-      options: ["0.682", "0.700", "0.710", "0.750"],
-      answer: "0.682"
+      question: "14. Matriks A = [[1, 0], [0, 1]]. Apakah A adalah matriks identitas?",
+      options: ["Ya", "Tidak", "Hanya baris pertama", "Hanya kolom kedua"],
+      answer: "Ya"
     },
     {
-      question: "19. Dari data berikut: 2, 4, 6, 8, 10. Hitung momen kedua (second moment) terhadap rata-rata!",
-      options: ["6", "8", "10", "12"],
-      answer: "8"
+      question: "15. Tentukan norma matriks A = [[3, 4]] (vektor baris) menggunakan norma Euclidean!",
+      options: ["5", "7", "4", "6"],
+      answer: "5"
     },
     {
-      question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
-      options: ["12%", "15%", "18%", "20%"],
-      answer:"15%"
-  }
+      question: "16. Matriks A = [[1, 2], [3, 4]]. Apakah matriks A orthogonal?",
+      options: ["Tidak", "Ya", "Tergantung determinan", "Tidak dapat ditentukan"],
+      answer: "Tidak"
+    },
+    {
+      question: "17. Jika A = [[2, 3], [1, 4]] dan B = [[3, 2], [4, 1]], hitung A - B!",
+      options: ["[[-1, 1], [-3, 3]]", "[[-1, 1], [-3, -3]]", "[[1, -1], [3, -3]]", "[[1, 1], [-3, -3]]"],
+      answer: "[[-1, 1], [-3, 3]]"
+    },
+    {
+      question: "18. Tentukan hasil dari perkalian matriks identitas I = [[1, 0], [0, 1]] dengan matriks A = [[5, 6], [7, 8]]!",
+      options: ["[[5, 6], [7, 8]]", "[[1, 1], [1, 1]]", "[[0, 0], [0, 0]]", "[[5, 6], [0, 1]]"],
+      answer: "[[5, 6], [7, 8]]"
+    },
+    {
+      question: "19. Apakah matriks A = [[1, 2], [3, 4]] merupakan matriks singular?",
+      options: ["Tidak", "Ya", "Hanya jika ditranspose", "Hanya jika dijumlahkan"],
+      answer: "Tidak"
+    },
+    {
+      question: "20. Diberikan matriks A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]. Tentukan apakah A adalah matriks persegi!",
+      options: ["Ya", "Tidak", "Tergantung elemen diagonal", "Tidak dapat ditentukan"],
+      answer: "Ya"
+    }
   ];
+  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -130,7 +131,7 @@ const Tryout = () => {
 
   return (
     <div className="app">
-      <h1>Kuis Matematika Kelas XII</h1>
+      <h1>Kuis Matematika Kelas XI</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>

@@ -130,7 +130,7 @@ const Tryout = () => {
 
   return (
     <div className="app">
-      <h1>Kuis Matematika Kelas XII</h1>
+      <h1>Kuis Matematika Kelas X</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
