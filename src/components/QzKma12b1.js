@@ -1,26 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./tryout.css";
-import Timer from "./Timer";
-import Question from "./Question";
+import "../css/TryOut.css";
 
-const QzKma12b1 = () => {
+const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;
-      }
-      navigate("/login");
-    }
-  }, [navigate]);
 
   const questions = [
     { 
@@ -129,6 +112,7 @@ const QzKma12b1 = () => {
       answer: "Gas hidrogen" 
     }
   ];
+  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -146,40 +130,37 @@ const QzKma12b1 = () => {
     }
   };
 
-  const handleTimeUp = () => {
-    setShowResult(true);
-  };
-
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <div className="app">
-      <h1>Tryout Kimia Kelas XII</h1>
+      <h1>Kuis Kimia Kelas XII</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>
           <p>Terima kasih telah mengikuti tryout!</p>
         </div>
       ) : (
-        <>
-          <Timer duration={1200} onTimeUp={handleTimeUp} />
-          <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
-          />
-        </>
+        <div className="question-container">
+          <h2>{questions[currentQuestion].question}</h2>
+          <div className="options">
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className="option-button"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        </div>
       )}
       <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>
   );
 };
 
-export default QzKma12b1;
+export default Tryout;
