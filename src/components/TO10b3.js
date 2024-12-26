@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 import Timer from "./Timer";
@@ -10,12 +10,12 @@ const Tryout = () => {
   const questions = [
     // Matematika
     {
-      question: "1. Tentukan nilai dari \( (3x + 4) - (2x - 5) \).",
+      question: "1. Tentukan nilai dari (3x + 4) - (2x - 5).",
       options: ["x + 9", "x - 1", "5x + 9", "5x - 1"],
       answer: "x + 9"
     },
     {
-      question: "2. Tentukan akar-akar dari persamaan kuadrat \( x^2 - 6x + 8 = 0 \).",
+      question: "2. Tentukan akar-akar dari persamaan kuadrat x^2 - 6x + 8 = 0.",
       options: ["2, 4", "1, 8", "3, 4", "2, 6"],
       answer: "2, 4"
     },
@@ -44,7 +44,7 @@ const Tryout = () => {
     {
       question: "5. Sebuah benda massanya 5 kg bergerak dengan kecepatan 3 m/s. Tentukan energi kinetiknya.",
       options: ["15 J", "30 J", "45 J", "60 J"],
-      answer: "22.5 J"
+      answer: "45 J"
     },
     {
       question: "6. Jika sebuah benda dilempar vertikal ke atas dengan kecepatan awal 20 m/s, berapa waktu yang diperlukan untuk mencapai titik tertinggi? (g = 10 m/s²)",
@@ -63,18 +63,18 @@ const Tryout = () => {
       answer: "Ukuran keasaman atau kebasaan suatu larutan"
     },
     {
-      question: "8. Senyawa yang memiliki rumus kimia \( H_2SO_4 \) disebut?",
+      question: "8. Senyawa yang memiliki rumus kimia H2SO4 disebut?",
       options: ["Asam klorida", "Asam sulfat", "Asam asetat", "Asam nitrat"],
       answer: "Asam sulfat"
     },
     // Bahasa Inggris
     {
-      question: "9. Choose the correct sentence: \"I ____ to the store tomorrow.\"",
+      question: "9. Choose the correct sentence: 'I ____ to the store tomorrow.'",
       options: ["go", "went", "will go", "going"],
       answer: "will go"
     },
     {
-      question: "10. Fill in the blank: \"They are studying ____ the library right now.\"",
+      question: "10. Fill in the blank: 'They are studying ____ the library right now.'",
       options: ["in", "at", "on", "by"],
       answer: "in"
     },
@@ -101,14 +101,14 @@ const Tryout = () => {
     },
     // Matematika
     {
-      question: "13. Tentukan integral dari \( \int 5x^2 dx \).",
-      options: ["\( \frac{5}{3} x^3 + C \)", "\( 5x^3 + C \)", "\( \frac{5}{2} x^3 + C \)", "\( 5x^2 + C \)"],
-      answer: "\( \frac{5}{3} x^3 + C \)"
+      question: "13. Tentukan integral dari ∫ 5x^2 dx.",
+      options: ["5/3 x^3 + C", "5x^3 + C", "5/2 x^3 + C", "5x^2 + C"],
+      answer: "5/3 x^3 + C"
     },
     {
-      question: "14. Tentukan turunan dari fungsi \( f(x) = 4x^3 - 5x^2 + 3 \).",
-      options: ["\( 12x^2 - 10x \)", "\( 12x^2 - 5x \)", "\( 12x^2 + 5x \)", "\( 3x^2 - 5x \)"],
-      answer: "\( 12x^2 - 10x \)"
+      question: "14. Tentukan turunan dari fungsi f(x) = 4x^3 - 5x^2 + 3.",
+      options: ["12x^2 - 10x", "12x^2 - 5x", "12x^2 + 5x", "3x^2 - 5x"],
+      answer: "12x^2 - 10x"
     },
     // Biologi
     {
@@ -147,9 +147,8 @@ const Tryout = () => {
       question: "20. Proses pemisahan campuran gas dengan cara menggunakan perbedaan titik didih disebut?",
       options: ["Distilasi", "Filtrasi", "Dekantasi", "Kromatografi"],
       answer: "Distilasi"
-    }
+    }
   ];
-  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -188,13 +187,12 @@ const Tryout = () => {
         <>
           <Timer duration={600} onTimeUp={handleTimeUp} />
           <Question 
-            question={questions[currentQuestion].question} 
-            options={questions[currentQuestion].options} 
-            handleAnswer={handleAnswer} 
+            question={questions[currentQuestion]} 
+            onAnswerSelected={handleAnswer} 
           />
         </>
       )}
-      <button onClick={handleLogout} className="logout-button">Logout</button>
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 };
