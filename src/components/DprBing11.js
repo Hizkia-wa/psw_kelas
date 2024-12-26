@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import '../Team.css';
 import tm1 from '../images/Bing111.jpg';
 import tm2 from '../images/Bing112.jpg';
 import tm3 from '../images/Bing113.jpg';
@@ -25,7 +25,7 @@ const myTeamImages = [
   [tm10, tm11, tm12],
 ];
 
-const Team = () => {
+const DprBing11 = () => {
   return (
     <div className="container">
       {teamData.map((teamMember, index) => (
@@ -58,4 +58,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default DprBing11;
