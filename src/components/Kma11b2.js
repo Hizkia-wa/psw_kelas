@@ -107,7 +107,7 @@ const Bab1 = () => {
         </button>
         <button 
           className="btn-navigate"
-          onClick={() => navigate("/Kma11b2")}
+          onClick={() => navigate("/Kma11b3")}
         >
           Lanjut ke Bab Selanjutnya
         </button>
