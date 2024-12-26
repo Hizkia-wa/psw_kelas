@@ -4,21 +4,6 @@ import "../css/TryOut.css";
 
 const KuisIkatanKimiaKelas10 = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]); 
 
   const questions = [
     { question: "1. Apa yang menyebabkan ikatan ion terbentuk?", options: ["Adanya gaya tarik elektrostatik antara ion positif dan negatif", "Adanya elektron bebas dalam logam", "Adanya pasangan elektron bersama", "Adanya perbedaan polaritas molekul"], answer: "Adanya gaya tarik elektrostatik antara ion positif dan negatif" },
@@ -67,10 +52,6 @@ const KuisIkatanKimiaKelas10 = () => {
     localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">

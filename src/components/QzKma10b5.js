@@ -3,22 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 
 const KuisTeoriAtomKelas10 = () => {
-  const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]); 
+  const navigate = useNavigate(); 
 
   const questions = [
     { question: "1. Dalam eksperimen hamburan sinar alfa, Rutherford menemukan bahwa?", options: ["Atom berbentuk seperti roti kismis", "Sebagian besar massa atom terkonsentrasi di inti kecil", "Elektron bergerak dalam lintasan berbentuk lingkaran di sekitar inti", "Proton dan neutron tersebar merata dalam atom"], answer: "Sebagian besar massa atom terkonsentrasi di inti kecil"},
@@ -67,10 +52,6 @@ const KuisTeoriAtomKelas10 = () => {
     localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">

@@ -4,21 +4,6 @@ import "../css/TryOut.css";
 
 const Tryout = () => {
   const navigate = useNavigate();
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  
-
-  useEffect(() => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    if (isLoggedIn) {
-      setIsAuthenticated(true);
-    } else {
-      if (!alertShown.current) {  
-        alert("Anda harus login terlebih dahulu!");
-        alertShown.current = true;  
-      }
-      navigate("/login");
-    }
-  }, [navigate]); 
 
   const questions = [
     { question: "1. Kalium isoelektronik dengan klor (nomor atom K=19, Cl=17)", options: ["A. Salah", "B. Benar", "C. Tidak ada jawaban", "D. D"], answer: "D" },
@@ -67,10 +52,6 @@ const Tryout = () => {
     localStorage.removeItem("isLoggedIn");
     navigate("/login");
   };
-
-  if (!isAuthenticated) {
-    return null;
-  }
 
   return (
     <div className="app">
