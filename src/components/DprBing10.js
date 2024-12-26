@@ -18,10 +18,10 @@ import tm15 from '../images/Bing1015.jpg';
 import tm16 from '../images/Bing1016.jpg';
 
 const teamData = [
-  { id: 1, name: "SARAH AMELYA ZALUKHU", img: tm1, about: "..." },
-  { id: 2, name: "TRISTAN PANDRIS PASARIBU", img: tm5, about: "..." },
-  { id: 3, name: "ANDREY KURNIA BAHTIAR SILALAHI", img: tm9, about: "..." },
-  { id: 4, name: "MARKUS YOGO SEPTIAN SARAG", img: tm13, about: "..." },
+  { id: 1, name: "SARAH AMELYA ZALUKHU", img: tm1, about: "Haloo aku sarah.. singkat saja saya cewe dan suka makan , saya orangnya pendiam tp ceria dan cill bgt bro, saya selalu mensyukuri hal-hal kecil contohnya bisa liat dia. jangan lupa bersyukur teman><" },
+  { id: 2, name: "TRISTAN PANDRIS PASARIBU", img: tm5, about: "Halo, kenalin aku Tristan Pandris Pasaribu biasa dipanggil Tann. Aku orangnya bisa dibilang lumayan ambis dan rajin, aku bercita cita menjadi seorang developer yang dikenal akan karyanya. Oh iya aku penggemar One Piece kalo ada yang nonton." },
+  { id: 3, name: "ANDREY KURNIA BAHTIAR SILALAHI", img: tm9, about: "Hai, namaku Andrey Silalahi, tapi teman-teman sering memanggilku Andrey. Aku punya tiga hal yang bikin hari-hariku penuh warna: bermain game, memancing, dan menikmati dentuman musik rock and roll yang membakar semangat! Orang bilang aku ini jahil, tapi itu semua karena aku percaya persahabatan sejati dibangun dari tawa, kejahilan kecil, dan momen tak terlupakan. Selain musik, aku juga cinta dunia programming. Bagiku, coding itu seperti membuat simfoni—harus rapi, selaras, dan keren. <br/> Mimpiku? Menjadi seorang fullstack programmer yang bisa menciptakan software yang dapat di gunakan musisi seperti sound efect. Jadi, yuk, kita bikin sesuatu yang seru bersama!" },
+  { id: 4, name: "MARKUS YOGO SEPTIAN SARAGI", img: tm13, about: "Halo semua, kenalin aku Markus Saragi. aku punya nama panggilan yang aku sering jadiin personal branding yaitu markyzxa. Aku suka musik, ngoding, dan bermain game. Apa, anime favorit? 86 dong pastinya." },
 ];
 
 const myTeamImages = [

@@ -18,9 +18,9 @@ import tm15 from '../images/Bing1215.jpg';
 import tm16 from '../images/Bing1216.jpg';
 
 const teamData = [
-  { id: 1, name: "PAULUS C. K. MANURUNG", img: tm1, about: "..." },
+  { id: 1, name: "PAULUS C. K. MANURUNG", img: tm1, about: "Gak suka ribet ga suka menawar banyak itss Paulus Manurung, aku lebih suka to The point." },
   { id: 2, name: "NOVSIANA RIBKA MASNAULI SILALAHI", img: tm5, about: "..." },
-  { id: 3, name: "KASIH IMMANUELA BR SAMOSIR", img: tm9, about: "..." },
+  { id: 3, name: "KASIH IMMANUELA BR SAMOSIR", img: tm9, about: "aku adalah mahasiswa yang antusias untuk belajar dan berkembang. aku punya hobi kecil seperti menulis jurnal harian, mendengar musik, dan menonton film fantasi/trilogi. Aku tipikal orang yang ceria, tapi kalau marah/cemberut jadi garang sekali." },
   { id: 4, name: "HARYATI HUTAPEA", img: tm13, about: "..." },
 ];
 
