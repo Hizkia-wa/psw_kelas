@@ -8,7 +8,7 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Keanekaragaman',description:'Keanekaragaman hayati adalah variasi makhluk hidup di bumi yang saling mendukung kehidupan.',image: 'https://i.pinimg.com/474x/f2/24/f0/f224f0ba48016419fd718f4d6b35830e.jpg', category: 'Bab 1', link: '/Bgl10b1' },
+      { id: 1, name: 'Keanekaragaman Hayati',description:'Keanekaragaman hayati adalah variasi makhluk hidup di bumi yang saling mendukung kehidupan.',image: 'https://i.pinimg.com/474x/f2/24/f0/f224f0ba48016419fd718f4d6b35830e.jpg', category: 'Bab 1', link: '/Bgl10b1' },
       { id: 2, name: 'Virus', description:'Virus adalah mikroorganisme parasit berukuran sangat kecil yang berkembang biak dalam sel inang hidup.',image: 'https://i.pinimg.com/474x/6d/4c/2d/6d4c2d0ffb7ffdb33280f8bbb96b3fd1.jpg', category: 'Bab 2', link: '/Bgl10b2' },
       { id: 3, name: 'Fungi',description:'Fungi adalah organisme eukariotik yang tidak berklorofil.',image: 'https://i.pinimg.com/474x/26/a8/ef/26a8efda8b67f8711a85854df95bb759.jpg', category: 'Bab 3', link: '/Bgl10b3' },
       { id: 4, name: 'Plantae', description:'Plantae adalah kingdom organisme eukariotik berklorofil.',image: 'https://i.pinimg.com/474x/18/c2/92/18c292c28d0ce2474045ac2fd6e94c0e.jpg', category: 'Bab 4', link: '/Bgl10b4' },
