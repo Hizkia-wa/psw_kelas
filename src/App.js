@@ -285,6 +285,7 @@ import QzKma12b2 from './components/QzKma12b2';
 import QzKma12b3 from './components/QzKma12b3';
 import QzKma12b4 from './components/QzKma12b4';
 import QzKma12b5 from './components/QzKma12b5';
+import QzKma12b6 from './components/QzKma12b6';
 import QzMtk10b1 from './components/QzMtk10b1';
 import QzMtk10b2 from './components/QzMtk10b2';
 import QzMtk10b3 from './components/QzMtk10b3';
@@ -965,6 +966,7 @@ function App() {
         <Route path="/QzKma12b3" element={<QzKma12b3 />} />
         <Route path="/QzKma12b4" element={<QzKma12b4 />} />
         <Route path="/QzKma12b5" element={<QzKma12b5 />} />
+        <Route path="/QzKma12b6" element={<QzKma12b6 />} />
         {/* Rute untuk Materi Matematika 10 */}
          <Route path="/QzMtk10b1" element={<QzMtk10b1 />} />
         <Route path="/QzMtk10b2" element={<QzMtk10b2 />} />
