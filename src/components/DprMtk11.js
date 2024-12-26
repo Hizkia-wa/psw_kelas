@@ -18,16 +18,16 @@ import tm15 from '../images/Mtk11p15.jpg';
 import tm16 from '../images/Mtk11p16.jpg';
 
 const teamData = [
-  { id: 1, name: "Petrus Frans Firdaus Simbolon", img: tm1, about: "aku orang yang cukup perhatian, orang sering memujiku karena aku tampan dan hak itu membuatku semakin peraaya diri, aku memiliki suara yang besar dan sedikit cepat marah tetapi aku orang yang penyayang. itu lah aku Petrus Frans Firdaus Simbolon, mungkin segitu aja ya terimakasih." },
+  { id: 1, name: "Petrus Frans Firdaus Simbolon", img: tm9, about: "aku orang yang cukup perhatian, orang sering memujiku karena aku tampan dan hak itu membuatku semakin peraaya diri, aku memiliki suara yang besar dan sedikit cepat marah tetapi aku orang yang penyayang. itu lah aku Petrus Frans Firdaus Simbolon, mungkin segitu aja ya terimakasih." },
   { id: 2, name: "Yohanna Agatha Bertha Sihombing", img: tm5, about: "Hi !, aku Yohanna Agatha, aku suka gym tapi perut doang kalau tangan ga kuat please, suka kentang! kentangma di apain aja juga enak bro !, gasuka nasi:(, suka tidur tapi kalo berisik gabisa tidur hehe, aku juga humble banget orang nya parah, suka nongkrong, terus suka nonton tapi gatau mau nonton apa, sekian." },
   { id: 3, name: "galde rylin hutasoit", img: tm9, about:  "haloo, aku galde dipanggil cyntia. fun fact 'bout me : ku suka orange tapi sangat amat teramat tidak suka orange(buah)" },
   { id: 4, name: "Rahel Hasian Pardede", img: tm13, about: "Hobi mendengarkan musik dan film Korea. Memiliki pribadi yang disiplin,pemberani dan suka berbagi!" },
 ];
 
 const myTeamImages = [
-  [tm2, tm3, tm4],
-  [tm6, tm7, tm8],
   [tm10, tm11, tm12],
+  [tm6, tm7, tm8],
+  [tm2, tm3, tm4],
   [tm14, tm15, tm16],
 ];
 

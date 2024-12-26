@@ -8,23 +8,23 @@ const Materi = () => {
 
   useEffect(() => {
     const mockBiologies = [
-      { id: 1, name: 'Matematika Kelas 10', category: 'Bab 1', link: '/Mtk10' },
-      { id: 2, name: 'Matematika Kelas 11', category: 'Bab 2', link: '/Mtk11' },
-      { id: 3, name: 'Matematika Kelas 12', category: 'Bab 3', link: '/Mtk12' },
-      { id: 4, name: 'Fisika kelas 10', category: 'Bab 4', link: '/Fsk10' },
-      { id: 5, name: 'Fisika kelas 11', category: 'Bab 5', link: '/Fsk11' },
-      { id: 6, name: 'Fisika kelas 12', category: 'Bab 6', link: '/Fsk12' },
-      { id: 7, name: 'Kimia kelas 10', category: 'Bab 7', link: '/Kma10' },
-      { id: 8, name: 'Kimia kelas 11', category: 'Bab 8', link: '/Kma11' },
-      { id: 9, name: 'Kimia kelas 12', category: 'Bab 5', link: '/kma12' },
-      { id: 10, name: 'Biologi kelas 10', category: 'Bab 6', link: '/Bgl10' },
-      { id: 11, name: 'Biologi kelas 11', category: 'Bab 7', link: '/Bgl11' },
-      { id: 12, name: 'Biologi kelas 12', category: 'Bab 8', link: '/Bgl12' },
-      { id: 13, name: 'Bahasa Inggris kelas 10', category: 'Bab 8', link: '/Bing10' },
-      { id: 14, name: 'Bahasa Inggris kelas 11', category: 'Bab 5', link: '/Bing11' },
-      { id: 15, name: 'Bahasa Inggris kelas 12', category: 'Bab 6', link: '/Bing12' },
-      { id: 16, name: 'Ekonomi kelas 10', category: 'Bab 7', link: '/Eko10' },
-      { id: 17, name: 'Ekonomi kelas 11', category: 'Bab 8', link: '/Eko11' },
+      { id: 1, name: 'Matematika Kelas 10', category: '', link: '/Mtk10'},
+      { id: 2, name: 'Matematika Kelas 11', category: '', link: '/Mtk11'},
+      { id: 3, name: 'Matematika Kelas 12', category: '', link: '/Mtk12'},
+      { id: 4, name: 'Fisika kelas 10', category: '', link: '/Fsk10'},
+      { id: 5, name: 'Fisika kelas 11', category: '', link: '/Fsk11'},
+      { id: 6, name: 'Fisika kelas 12', category: '', link: '/Fsk12',},
+      { id: 7, name: 'Kimia kelas 10', category: '', link: '/Kma10',},
+      { id: 8, name: 'Kimia kelas 11', category: '', link: '/Kma11',},
+      { id: 9, name: 'Kimia kelas 12', category: '', link: '/kma12',},
+      { id: 10, name: 'Biologi kelas 10', category: '', link: '/Bgl10',},
+      { id: 11, name: 'Biologi kelas 11', category: '', link: '/Bgl11'},
+      { id: 12, name: 'Biologi kelas 12', category: '', link: '/Bgl12',},
+      { id: 13, name: 'Bahasa Inggris kelas 10', category: '', link: '/Bing10'},
+      { id: 14, name: 'Bahasa Inggris kelas 11', category: '', link: '/Bing11'},
+      { id: 15, name: 'Bahasa Inggris kelas 12', category: '', link: '/Bing12'},
+      { id: 16, name: 'Ekonomi kelas 10', category: '', link: '/Eko10',},
+      { id: 17, name: 'Ekonomi kelas 11', category: '', link: '/Eko11',},
     ];
 
     setBiologies(mockBiologies);
@@ -53,7 +53,7 @@ const Materi = () => {
       <div className="biologi-biology-section">
         <div className="container">
           <div className="section-header">
-            <h2>Kuis Bahasa Inggris 10</h2>
+            <h2>Developer</h2>
           </div>
           <div className="biology-grid">
             {biologies.map((biology) => (
