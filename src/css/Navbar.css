@@ -3,13 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #ffffff, hsla(166, 65%, 49%, 0.312)); /* Gradien putih ke hijau */
+  background: linear-gradient(90deg, #0067cd, #037df8); /* Gradien biru muda */
   color: #ffffff;
   padding: 15px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar Title */
@@ -17,21 +18,21 @@
   margin: 0;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #000a0b;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Hilangkan kotak di belakang teks */
+  background: none;
+  padding: 0;
 }
-
 
 /* Navbar Menu */
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 15px; 
+  gap: 15px;
   margin: 0;
   padding: 10px;
   justify-content: flex-start;
 }
-
 
 .nav-menu a {
   text-decoration: none;
@@ -39,29 +40,26 @@
   font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
-  padding: 0 15px; /* Adjust padding to reduce space between items */
+  padding: 0 15px;
 }
 
-
 .nav-menu a:hover {
-  color: #259186; /* Warna hover kuning cerah */
-  transform: scale(1.1); /* Efek zoom saat hover */
+  color: #004d99; /* Warna hover biru tua */
+  transform: scale(1.1);
 }
 
 /* Dropdown Menu */
 .dropdown {
   position: relative;
-  margin-right:180px;
+  margin-right: 180px;
   color: #ffffff;
-  display: flex; /* Aktifkan flexbox */
-  justify-content: center; /* Pusatkan secara horizontal */
-  align-items: center; /* Pusatkan secara vertikal */
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .dropdown > span::after {
-  content: " ▼"; /* Ikon dropdown */
+  content: " ▼";
   font-size: 0.8rem;
 }
 
@@ -70,7 +68,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: linear-gradient(90deg, #9d9db9, #2dc9a7); /* Gradien dropdown */
+  background: linear-gradient(90deg, #99ccff, #3399ff); /* Gradien biru muda ke biru */
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   padding: 10px 0;
@@ -88,7 +86,7 @@
 }
 
 .dropdown-content li:hover {
-  background-color: #54d2c5; /* Warna hover biru cerah */
+  background-color: #66b3ff; /* Warna hover biru terang */
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,7 +105,7 @@
   position: absolute;
   top: 0;
   left: 100%;
-  background: linear-gradient(90deg, #1a1a3d, #36eed6);
+  background: linear-gradient(90deg, #cce6ff, #66b3ff); /* Gradien biru terang */
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   padding: 10px 0;
@@ -115,7 +113,7 @@
   opacity: 0;
   transform: translateX(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-   color: #ffffff;
+  color: #ffffff;
 }
 
 .sub-dropdown-content li {
@@ -126,7 +124,7 @@
 }
 
 .sub-dropdown-content li:hover {
-  background-color: #54d2c5;
+  background-color: #3385ff; /* Warna hover biru cerah */
   color: #ffffff;
 }
 
