@@ -6,122 +6,118 @@ const SlKma12b3 = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
 
-  const questions = 
-  [
+  const questions = [
     {
-      question: "Unsur yang termasuk dalam golongan halogen adalah..",
+      question: "Unsur transisi memiliki sifat unik yang membedakannya dari unsur lainnya. Salah satu sifat tersebut adalah kemampuan membentuk kompleks berwarna. Apa penyebab utama terbentuknya warna pada senyawa kompleks unsur transisi?",
       options: [
-        { label: "A. Klorin", value: "A", isCorrect: true },
-        { label: "B. Oksigen", value: "B" },
-        { label: "C. Sodium", value: "C" },
-        { label: "D. Kalsium", value: "D" },
-        { label: "E. Nitrogen", value: "E" }
+        "Adanya elektron dalam subkulit s yang tereksitasi",
+        "Adanya transisi elektron pada subkulit d yang terbelah akibat pengaruh medan ligan",
+        "Adanya ikatan ionik antara ligan dan logam",
+        "Adanya transisi elektron antar orbital p dan d"
       ],
-      explanation: "Klorin merupakan unsur yang termasuk dalam golongan halogen (golongan VIIA) dalam tabel periodik."
+      correctOption: "Adanya transisi elektron pada subkulit d yang terbelah akibat pengaruh medan ligan",
+      explanation: "Senyawa kompleks unsur transisi berwarna karena adanya transisi elektron dalam orbital d yang terbelah akibat interaksi dengan medan ligan (efek medan kristal).",
     },
     {
-      question: "Unsur yang memiliki sifat non-logam dan mudah membentuk ikatan kovalen adalah..",
+      question: "Senyawa feromagnetik seperti Fe3O4 memiliki sifat magnet yang kuat. Sifat ini berkaitan dengan elektron pada atom Fe. Apa penyebab utama sifat feromagnetik ini?",
       options: [
-        { label: "A. Silikon", value: "A" },
-        { label: "B. Karbon", value: "B", isCorrect: true },
-        { label: "C. Natrium", value: "C" },
-        { label: "D. Kalsium", value: "D" },
-        { label: "E. Magnesium", value: "E" }
+        "Semua elektron dalam atom Fe berpasangan",
+        "Elektron tidak berpasangan dalam orbital d menciptakan momen magnetik yang teratur",
+        "Elektron pada orbital p menciptakan medan magnet",
+        "Adanya transisi elektron antar orbital s dan p"
       ],
-      explanation: "Karbon adalah unsur non-logam yang mudah membentuk ikatan kovalen dengan unsur lainnya, seperti pada senyawa organik."
+      correctOption: "Elektron tidak berpasangan dalam orbital d menciptakan momen magnetik yang teratur",
+      explanation: "Sifat feromagnetik muncul karena elektron tidak berpasangan dalam orbital d saling sejajar, menciptakan momen magnetik yang kuat."
     },
     {
-      question: "Berikut ini yang merupakan unsur logam transisi adalah..",
+      question: "Salah satu metode produksi logam adalah proses elektrolisis. Pada ekstraksi aluminium, digunakan kriolit untuk mencairkan bauksit. Apa fungsi utama kriolit dalam proses ini?",
       options: [
-        { label: "A. Besi (Fe)", value: "A", isCorrect: true },
-        { label: "B. Natrium (Na)", value: "B" },
-        { label: "C. Klorin (Cl)", value: "C" },
-        { label: "D. Kalium (K)", value: "D" },
-        { label: "E. Helium (He)", value: "E" }
+        "Mengurangi titik leleh bauksit",
+        "Meningkatkan reaktivitas bauksit",
+        "Mencegah oksidasi aluminium",
+        "Meningkatkan kemurnian aluminium"
       ],
-      explanation: "Besi (Fe) adalah salah satu unsur logam transisi yang terletak di blok d tabel periodik."
+      correctOption: "Mengurangi titik leleh bauksit",
+      explanation: "Kriolit digunakan untuk menurunkan titik leleh bauksit, sehingga proses elektrolisis dapat dilakukan pada suhu yang lebih rendah."
     },
     {
-      question: "Unsur dengan konfigurasi elektron [Kr] 5s² 4d¹⁰ 5p² adalah..",
+      question: "Gas klorin dapat diproduksi melalui elektrolisis larutan NaCl. Pada anoda terjadi reaksi oksidasi ion Cl-. Mengapa gas klorin dihasilkan, bukan oksigen dari air?",
       options: [
-        { label: "A. Stronsium", value: "A" },
-        { label: "B. Zirkonium", value: "B" },
-        { label: "C. Selenium", value: "C" },
-        { label: "D. Germanium", value: "D", isCorrect: true },
-        { label: "E. Arsenik", value: "E" }
+        "Ion Cl- lebih mudah direduksi dibandingkan air",
+        "Ion Cl- memiliki potensial reduksi lebih tinggi dibandingkan air",
+        "Ion Cl- lebih mudah dioksidasi dibandingkan air",
+        "Ion Cl- memiliki afinitas elektron lebih rendah dibandingkan air"
       ],
-      explanation: "Germanium memiliki konfigurasi elektron [Kr] 5s² 4d¹⁰ 5p², yang menunjukkan bahwa ia berada di golongan IV."
+      correctOption: "Ion Cl- lebih mudah dioksidasi dibandingkan air",
+      explanation: "Gas klorin dihasilkan karena ion Cl- lebih mudah dioksidasi menjadi gas Cl2 dibandingkan air yang menghasilkan oksigen."
     },
     {
-      question: "Unsur yang memiliki 7 elektron valensi dan termasuk golongan VIIA adalah..",
+      question: "Senyawa mangan, seperti KMnO4, sering digunakan sebagai oksidator dalam reaksi kimia. Dalam lingkungan asam, MnO4- direduksi menjadi ion Mn2+. Apa yang terjadi pada bilangan oksidasi mangan selama reaksi ini?",
       options: [
-        { label: "A. Fluorin", value: "A" },
-        { label: "B. Klorin", value: "B" },
-        { label: "C. Bromin", value: "C" },
-        { label: "D. Iodin", value: "D" },
-        { label: "E. Semua benar", value: "E", isCorrect: true }
+        "Bilangan oksidasi mangan bertambah dari +7 ke +2",
+        "Bilangan oksidasi mangan berkurang dari +7 ke +2",
+        "Bilangan oksidasi mangan tetap +7",
+        "Bilangan oksidasi mangan bertambah dari +2 ke +7"
       ],
-      explanation: "Fluorin, klorin, bromin, dan iodin semuanya adalah unsur golongan VIIA (halogen) yang memiliki 7 elektron valensi."
+      correctOption: "Bilangan oksidasi mangan berkurang dari +7 ke +2",
+      explanation: "Dalam reaksi tersebut, bilangan oksidasi mangan pada MnO4- berkurang dari +7 menjadi +2 karena mengalami reduksi."
     },
     {
-      question: "Senyawa manakah yang terbentuk dari unsur logam alkali dan halogen?",
+      question: "Dalam proses pembuatan baja, ditambahkan karbon pada besi cair. Mengapa penambahan karbon diperlukan dalam proses ini?",
       options: [
-        { label: "A. NaCl", value: "A", isCorrect: true },
-        { label: "B. H₂O", value: "B" },
-        { label: "C. CO₂", value: "C" },
-        { label: "D. NH₃", value: "D" },
-        { label: "E. SO₂", value: "E" }
+        "Untuk meningkatkan titik leleh besi",
+        "Untuk mengurangi kerapuhan besi",
+        "Untuk meningkatkan kekerasan dan kekuatan baja",
+        "Untuk mencegah korosi pada baja"
       ],
-      explanation: "NaCl adalah senyawa yang terbentuk dari logam alkali (natrium) dan halogen (klorin)."
+      correctOption: "Untuk meningkatkan kekerasan dan kekuatan baja",
+      explanation: "Karbon ditambahkan untuk meningkatkan kekerasan dan kekuatan baja dengan membentuk struktur mikrokristalin yang lebih kuat."
     },
     {
-      question: "Senyawa manakah yang digunakan sebagai bahan baku pembuatan pupuk urea?",
+      question: "Air keras (hard water) mengandung ion Ca2+ dan Mg2+ yang sulit dihilangkan dengan sabun biasa. Apa prinsip kerja zeolit dalam menghilangkan ion-ion tersebut?",
       options: [
-        { label: "A. NH₃", value: "A", isCorrect: true },
-        { label: "B. CO₂", value: "B" },
-        { label: "C. H₂O", value: "C" },
-        { label: "D. NaCl", value: "D" },
-        { label: "E. CaCO₃", value: "E" }
+        "Zeolit mengikat ion-ion tersebut secara kovalen",
+        "Zeolit bertindak sebagai katalis dalam reaksi pengendapan",
+        "Zeolit menggantikan ion Ca2+ dan Mg2+ dengan ion Na+ melalui pertukaran ion",
+        "Zeolit melarutkan ion-ion tersebut melalui reaksi asam-basa"
       ],
-      explanation: "NH₃ (amonia) digunakan sebagai bahan baku utama dalam pembuatan pupuk urea."
+      correctOption: "Zeolit menggantikan ion Ca2+ dan Mg2+ dengan ion Na+ melalui pertukaran ion",
+      explanation: "Zeolit bekerja melalui mekanisme pertukaran ion, di mana ion Ca2+ dan Mg2+ digantikan oleh ion Na+."
     },
     {
-      question: "Apa nama proses pemisahan logam dari bijihnya melalui reaksi kimia?",
+      question: "Salah satu sifat kimia logam alkali adalah reaktivitasnya yang tinggi dengan air. Mengapa logam alkali semakin reaktif ke bawah golongan?",
       options: [
-        { label: "A. Ekstraksi", value: "A", isCorrect: true },
-        { label: "B. Reduksi", value: "B" },
-        { label: "C. Fusi", value: "C" },
-        { label: "D. Peleburan", value: "D" },
-        { label: "E. Pengendapan", value: "E" }
+        "Energi ionisasi meningkat ke bawah golongan",
+        "Jari-jari atom bertambah besar, sehingga lebih mudah melepaskan elektron",
+        "Elektron valensi lebih stabil ke bawah golongan",
+        "Logam alkali ke bawah golongan memiliki titik leleh yang lebih tinggi"
       ],
-      explanation: "Ekstraksi adalah proses pemisahan logam dari bijihnya menggunakan reaksi kimia."
+      correctOption: "Jari-jari atom bertambah besar, sehingga lebih mudah melepaskan elektron",
+      explanation: "Reaktivitas logam alkali meningkat ke bawah golongan karena jari-jari atom bertambah besar, sehingga gaya tarik inti terhadap elektron valensi melemah."
     },
     {
-      question: "Unsur yang digunakan dalam baterai lithium-ion adalah..",
+      question: "Unsur logam transisi sering digunakan sebagai katalis dalam reaksi kimia. Apa yang membuat unsur logam transisi efektif sebagai katalis?",
       options: [
-        { label: "A. Litium (Li)", value: "A", isCorrect: true },
-        { label: "B. Natrium (Na)", value: "B" },
-        { label: "C. Kalium (K)", value: "C" },
-        { label: "D. Kalsium (Ca)", value: "D" },
-        { label: "E. Magnesium (Mg)", value: "E" }
+        "Logam transisi memiliki elektron valensi yang selalu penuh",
+        "Logam transisi dapat membentuk senyawa kovalen polar",
+        "Logam transisi memiliki orbital d kosong yang dapat menampung elektron reaktan",
+        "Logam transisi bersifat netral dalam semua reaksi kimia"
       ],
-      explanation: "Litium adalah unsur yang digunakan dalam baterai lithium-ion karena sifatnya yang ringan dan reaktif."
+      correctOption: "Logam transisi memiliki orbital d kosong yang dapat menampung elektron reaktan",
+      explanation: "Unsur logam transisi efektif sebagai katalis karena memiliki orbital d kosong yang dapat digunakan untuk menstabilkan keadaan transisi reaktan."
     },
     {
-      question: "Unsur manakah yang digunakan dalam pengisian bola lampu neon?",
+      question: "Senyawa seperti K2Cr2O7 sering digunakan dalam titrasi redoks. Mengapa K2Cr2O7 lebih disukai dibandingkan oksidator lain seperti KMnO4 dalam titrasi tertentu?",
       options: [
-        { label: "A. Neon (Ne)", value: "A", isCorrect: true },
-        { label: "B. Argon (Ar)", value: "B" },
-        { label: "C. Helium (He)", value: "C" },
-        { label: "D. Xenon (Xe)", value: "D" },
-        { label: "E. Oksigen (O₂)", value: "E" }
+        "K2Cr2O7 lebih stabil dan tidak mudah terurai dibandingkan KMnO4",
+        "K2Cr2O7 lebih mudah larut dalam air dibandingkan KMnO4",
+        "K2Cr2O7 menghasilkan warna larutan yang lebih gelap",
+        "K2Cr2O7 memiliki massa molar yang lebih rendah"
       ],
-      explanation: "Neon adalah gas mulia yang digunakan dalam bola lampu neon untuk memberikan cahaya berwarna khas."
+      correctOption: "K2Cr2O7 lebih stabil dan tidak mudah terurai dibandingkan KMnO4",
+      explanation: "K2Cr2O7 lebih stabil dibandingkan KMnO4, sehingga lebih mudah digunakan dalam titrasi dengan hasil yang akurat."
     }
-  ]
-  
- 
-
+  ];
 
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length) {
@@ -139,6 +135,7 @@ const SlKma12b3 = () => {
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
+    setShowConfirmation(true);
   };
 
   const resetSelection = () => {
@@ -153,9 +150,11 @@ const SlKma12b3 = () => {
 
   const handleConfirmationResponse = (response) => {
     if (response === "yes") {
-      setSelectedOption(true); // Tampilkan pembahasan
+      setShowConfirmation(false);
+    } else {
+      resetSelection();
+      setShowConfirmation(false);
     }
-    setShowConfirmation(false); // Hilangkan pesan
   };
 
   return (
@@ -215,34 +214,34 @@ const SlKma12b3 = () => {
           ))}
         </div>
 
-        {selectedOption && (
-          <div className="explanation-container">
-            <p className="explanation-text">
-              {questions[currentQuestion - 1].explanation}
-            </p>
+        {showConfirmation && (
+          <div className="confirmation-popup">
+            <div className="popup-content">
+              <p>Yakin mau melihat pembahasan sekarang?</p>
+              <div className="popup-buttons">
+                <button
+                  className="popup-button no-button"
+                  onClick={() => handleConfirmationResponse("no")}
+                >
+                  Tidak
+                </button>
+                <button
+                  className="popup-button yes-button"
+                  onClick={() => handleConfirmationResponse("yes")}
+                >
+                  Iya
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>
 
-      {showConfirmation && (
-        <div className="confirmation-popup">
-          <div className="popup-content">
-            <p>Yakin mau melihat pembahasan sekarang?</p>
-            <div className="popup-buttons">
-              <button
-                className="popup-button no-button"
-                onClick={() => handleConfirmationResponse("no")}
-              >
-                Tidak
-              </button>
-              <button
-                className="popup-button yes-button"
-                onClick={() => handleConfirmationResponse("yes")}
-              >
-                Iya
-              </button>
-            </div>
-          </div>
+      {selectedOption && !showConfirmation && (
+        <div className="explanation-container">
+          <p className="explanation-text">
+            {questions[currentQuestion - 1].explanation}
+          </p>
         </div>
       )}
     </div>

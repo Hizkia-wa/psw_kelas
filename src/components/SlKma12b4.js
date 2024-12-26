@@ -8,116 +8,116 @@ const SlKma12b4 = () => {
 
   const questions = [
     {
-      question: "Senyawa karbon yang termasuk dalam golongan hidrokarbon jenuh adalah..",
+      question: "Mengapa senyawa karbon memiliki keragaman struktur yang sangat banyak?",
       options: [
-        { label: "A. Metana", value: "A", isCorrect: true },
-        { label: "B. Etilena", value: "B" },
-        { label: "C. Asetilena", value: "C" },
-        { label: "D. Benzena", value: "D" },
+        "Karena karbon memiliki kemampuan berikatan tunggal saja",
+        "Karena karbon memiliki 4 elektron valensi dan dapat membentuk rantai panjang",
+        "Karena karbon hanya dapat berikatan dengan oksigen",
+        "Karena karbon memiliki massa atom yang rendah"
       ],
-      explanation:
-        "Metana (CH₄) adalah contoh hidrokarbon jenuh, yang berarti hanya memiliki ikatan tunggal antara atom karbon.",
+      correctOption: "Karena karbon memiliki 4 elektron valensi dan dapat membentuk rantai panjang",
+      explanation: "Karbon memiliki 4 elektron valensi sehingga dapat membentuk ikatan kovalen dengan atom lain dan membentuk rantai panjang, bercabang, atau siklik."
     },
     {
-      question: "Senyawa karbon yang memiliki gugus fungsi alkohol adalah..",
+      question: "Senyawa manakah yang termasuk dalam turunan alkana?",
       options: [
-        { label: "A. Ethanol", value: "A", isCorrect: true },
-        { label: "B. Aseton", value: "B" },
-        { label: "C. Asam asetat", value: "C" },
-        { label: "D. Metanal", value: "D" },
+        "Metanol",
+        "Butena",
+        "Benzena",
+        "Asam etanoat"
       ],
-      explanation:
-        "Ethanol (C₂H₅OH) memiliki gugus fungsi -OH, yang membuatnya termasuk dalam golongan alkohol.",
+      correctOption: "Metanol",
+      explanation: "Metanol adalah turunan alkana karena berasal dari penggantian satu atom hidrogen pada alkana dengan gugus -OH."
     },
     {
-      question: "Berikut ini yang merupakan senyawa karbon yang termasuk dalam golongan aldehida adalah..",
+      question: "Apa peran katalis dalam reaksi pembentukan senyawa karbon?",
       options: [
-        { label: "A. Etanal", value: "A", isCorrect: true },
-        { label: "B. Asam propionat", value: "B" },
-        { label: "C. Ethanol", value: "C" },
-        { label: "D. Glukosa", value: "D" },
+        "Mengurangi energi aktivasi reaksi",
+        "Menambah jumlah produk reaksi",
+        "Mengubah senyawa karbon menjadi senyawa anorganik",
+        "Mengubah reaksi eksoterm menjadi endoterm"
       ],
-      explanation:
-        "Etanal (atau asetaldehida) adalah senyawa karbon yang memiliki gugus fungsi -CHO, yang merupakan ciri khas aldehida.",
+      correctOption: "Mengurangi energi aktivasi reaksi",
+      explanation: "Katalis bekerja dengan menurunkan energi aktivasi, sehingga reaksi berlangsung lebih cepat tanpa memengaruhi jumlah produk yang dihasilkan."
     },
     {
-        question: "Senyawa karbon yang mengandung gugus fungsi karboksil (-COOH) adalah..",
-        options: [
-          { label: "A. Asam asetat", value: "A", isCorrect: true },
-          { label: "B. Metanol", value: "B" },
-          { label: "C. Etena", value: "C" },
-          { label: "D. Benzena", value: "D" },
-        ],
-        explanation:
-          "Asam asetat (CH₃COOH) memiliki gugus karboksil (-COOH), yang memberikan sifat asam pada senyawa tersebut.",
+      question: "Bagaimana perbedaan sifat fisik antara senyawa hidrokarbon jenuh dan tak jenuh?",
+      options: [
+        "Hidrokarbon jenuh memiliki titik didih lebih tinggi dibandingkan hidrokarbon tak jenuh",
+        "Hidrokarbon tak jenuh lebih mudah bereaksi dibandingkan hidrokarbon jenuh",
+        "Hidrokarbon tak jenuh memiliki massa molar lebih kecil dibandingkan hidrokarbon jenuh",
+        "Hidrokarbon jenuh lebih larut dalam air dibandingkan hidrokarbon tak jenuh"
+      ],
+      correctOption: "Hidrokarbon tak jenuh lebih mudah bereaksi dibandingkan hidrokarbon jenuh",
+      explanation: "Ikatan rangkap dalam hidrokarbon tak jenuh membuatnya lebih reaktif dibandingkan hidrokarbon jenuh yang hanya memiliki ikatan tunggal."
     },
     {
-        question: "Senyawa karbon berikut yang merupakan isomer struktural dari butana adalah..",
-        options: [
-          { label: "A. Isobutana", value: "A", isCorrect: true },
-          { label: "B. Metana", value: "B" },
-          { label: "C. Etana", value: "C" },
-          { label: "D. Asetilen", value: "D" },
-        ],
-        explanation:
-          "Isobutana adalah isomer struktural dari butana, yang berarti memiliki rumus molekul yang sama tetapi struktur atom yang berbeda.",
+      question: "Apa yang akan terjadi jika alkena direaksikan dengan bromin dalam larutan karbon tetraklorida?",
+      options: [
+        "Terbentuk endapan merah",
+        "Warna larutan berubah menjadi bening",
+        "Tidak ada reaksi yang terjadi",
+        "Larutan berubah menjadi biru"
+      ],
+      correctOption: "Warna larutan berubah menjadi bening",
+      explanation: "Alkena bereaksi dengan bromin melalui reaksi adisi, menghilangkan warna cokelat kemerahan dari bromin."
     },
     {
-        question: "Manakah dari senyawa berikut yang memiliki ikatan rangkap tiga?",
-        options: [
-          { label: "A. Etana", value: "A" },
-          { label: "B. Etena", value: "B" },
-          { label: "C. Asetilena", value: "C", isCorrect: true },
-          { label: "D. Propana", value: "D" },
-        ],
-        explanation:
-          "Asetilena (C₂H₂) adalah senyawa hidrokarbon yang memiliki ikatan rangkap tiga antara atom karbonnya.",
+      question: "Apa fungsi dari ozonolisis dalam analisis struktur hidrokarbon?",
+      options: [
+        "Mengubah hidrokarbon menjadi alkohol",
+        "Membantu menentukan posisi ikatan rangkap",
+        "Menurunkan massa molekul hidrokarbon",
+        "Mengubah hidrokarbon menjadi karboksilat"
+      ],
+      correctOption: "Membantu menentukan posisi ikatan rangkap",
+      explanation: "Ozonolisis memecah ikatan rangkap dalam hidrokarbon, menghasilkan senyawa karbonil yang membantu mengidentifikasi posisi ikatan rangkap."
     },
     {
-        question: "Senyawa karbon berikut yang termasuk dalam golongan keton adalah..",
-        options: [
-          { label: "A. Aseton", value: "A", isCorrect: true },
-          { label: "B. Metanal", value: "B" },
-          { label: "C. Etanol", value: "C" },
-          { label: "D. Asam format", value: "D" },
-        ],
-        explanation:
-          "Aseton (CH₃COCH₃) adalah senyawa karbon dengan gugus fungsi keton, yang memiliki ikatan karbon ke oksigen melalui ikatan rangkap.",
+      question: "Senyawa manakah yang dapat membentuk ikatan hidrogen antar molekul?",
+      options: [
+        "Metana",
+        "Etanol",
+        "Propana",
+        "Butana"
+      ],
+      correctOption: "Etanol",
+      explanation: "Etanol memiliki gugus -OH yang dapat membentuk ikatan hidrogen antar molekul, berbeda dengan senyawa hidrokarbon nonpolar."
     },
     {
-        question: "Manakah senyawa berikut yang merupakan senyawa aromatik?",
-        options: [
-          { label: "A. Benzena", value: "A", isCorrect: true },
-          { label: "B. Etena", value: "B" },
-          { label: "C. Propana", value: "C" },
-          { label: "D. Asetilena", value: "D" },
-        ],
-        explanation:
-          "Benzena (C₆H₆) adalah senyawa aromatik dengan struktur cincin yang mengandung ikatan rangkap terkonjugasi.",
+      question: "Apa hasil utama reaksi pembakaran sempurna dari alkana?",
+      options: [
+        "Karbon monoksida dan air",
+        "Karbon dioksida dan air",
+        "Karbon monoksida dan oksigen",
+        "Karbon dioksida dan oksigen"
+      ],
+      correctOption: "Karbon dioksida dan air",
+      explanation: "Pembakaran sempurna alkana menghasilkan karbon dioksida dan air karena semua atom karbon teroksidasi menjadi CO2."
     },
     {
-        question: "Gugus fungsi amina terdapat pada senyawa berikut, kecuali..",
-        options: [
-          { label: "A. Metilamina", value: "A" },
-          { label: "B. Etanol", value: "B", isCorrect: true },
-          { label: "C. Dimetilamina", value: "C" },
-          { label: "D. Anilina", value: "D" },
-        ],
-        explanation:
-          "Etanol (C₂H₅OH) tidak memiliki gugus fungsi amina (-NH₂), melainkan gugus hidroksil (-OH).",
+      question: "Mengapa alkohol memiliki titik didih lebih tinggi dibandingkan alkana dengan jumlah atom karbon yang sama?",
+      options: [
+        "Karena alkohol memiliki massa molekul lebih besar",
+        "Karena alkohol membentuk ikatan hidrogen antar molekul",
+        "Karena alkohol lebih polar dibandingkan alkana",
+        "Karena alkohol memiliki ikatan rangkap"
+      ],
+      correctOption: "Karena alkohol membentuk ikatan hidrogen antar molekul",
+      explanation: "Ikatan hidrogen antar molekul alkohol menyebabkan gaya tarik antarmolekul lebih kuat, sehingga titik didihnya lebih tinggi."
     },
     {
-        question: "Senyawa karbon yang memiliki sifat optik aktif adalah..",
-        options: [
-          { label: "A. Glukosa", value: "A", isCorrect: true },
-          { label: "B. Etanol", value: "B" },
-          { label: "C. Asetilena", value: "C" },
-          { label: "D. Propana", value: "D" },
-        ],
-        explanation:
-          "Glukosa adalah senyawa karbon yang memiliki atom karbon asimetris, sehingga menunjukkan sifat optik aktif.",
+      question: "Bagaimana cara membedakan antara alkana dan alkena dengan uji kimia sederhana?",
+      options: [
+        "Menggunakan larutan KMnO4",
+        "Membakar kedua senyawa dan membandingkan nyalanya",
+        "Melarutkan kedua senyawa dalam air",
+        "Mengukur titik didih kedua senyawa"
+      ],
+      correctOption: "Menggunakan larutan KMnO4",
+      explanation: "Alkena dapat mendekolorisasi larutan KMnO4, sedangkan alkana tidak bereaksi dengan KMnO4."
     }
-];
+  ];
 
   const handleNextQuestion = () => {
     if (currentQuestion < questions.length) {
@@ -135,6 +135,7 @@ const SlKma12b4 = () => {
 
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
+    setShowConfirmation(true);
   };
 
   const resetSelection = () => {
@@ -149,9 +150,11 @@ const SlKma12b4 = () => {
 
   const handleConfirmationResponse = (response) => {
     if (response === "yes") {
-      setSelectedOption(true); // Tampilkan pembahasan
+      setShowConfirmation(false);
+    } else {
+      resetSelection();
+      setShowConfirmation(false);
     }
-    setShowConfirmation(false); // Hilangkan pesan
   };
 
   return (
@@ -211,34 +214,34 @@ const SlKma12b4 = () => {
           ))}
         </div>
 
-        {selectedOption && (
-          <div className="explanation-container">
-            <p className="explanation-text">
-              {questions[currentQuestion - 1].explanation}
-            </p>
+        {showConfirmation && (
+          <div className="confirmation-popup">
+            <div className="popup-content">
+              <p>Yakin mau melihat pembahasan sekarang?</p>
+              <div className="popup-buttons">
+                <button
+                  className="popup-button no-button"
+                  onClick={() => handleConfirmationResponse("no")}
+                >
+                  Tidak
+                </button>
+                <button
+                  className="popup-button yes-button"
+                  onClick={() => handleConfirmationResponse("yes")}
+                >
+                  Iya
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </div>
 
-      {showConfirmation && (
-        <div className="confirmation-popup">
-          <div className="popup-content">
-            <p>Yakin mau melihat pembahasan sekarang?</p>
-            <div className="popup-buttons">
-              <button
-                className="popup-button no-button"
-                onClick={() => handleConfirmationResponse("no")}
-              >
-                Tidak
-              </button>
-              <button
-                className="popup-button yes-button"
-                onClick={() => handleConfirmationResponse("yes")}
-              >
-                Iya
-              </button>
-            </div>
-          </div>
+      {selectedOption && !showConfirmation && (
+        <div className="explanation-container">
+          <p className="explanation-text">
+            {questions[currentQuestion - 1].explanation}
+          </p>
         </div>
       )}
     </div>
