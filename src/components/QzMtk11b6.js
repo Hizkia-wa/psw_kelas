@@ -7,106 +7,107 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Sebuah data berisi nilai ujian 10 siswa: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140. Hitung standar deviasi dari data tersebut!",
-      options: ["25", "28.72", "30", "32.15"],
-      answer: "28.72"
+      question: "1. Hitung integral dari 2x terhadap x.",
+      options: ["x^2 + C", "2x^2 + C", "x^2/2 + C", "2x + C"],
+      answer: "x^2 + C"
     },
     {
-      question: "2. Jika rata-rata dari 12 bilangan adalah 50, dan salah satu bilangan dihapus sehingga rata-rata menjadi 48, berapa nilai bilangan yang dihapus?",
-      options: ["72", "56", "58", "62"],
-      answer: "72"
+      question: "2. Hitung integral dari sin(x) terhadap x.",
+      options: ["cos(x) + C", "-cos(x) + C", "-sin(x) + C", "tan(x) + C"],
+      answer: "-cos(x) + C"
     },
     {
-      question: "3. Hitung variansi dari data berikut: 5, 7, 10, 15, 20!",
-      options: ["22", "30", "35", "40"],
-      answer: "30"
+      question: "3. Hitung integral dari 1/x terhadap x.",
+      options: ["ln(x) + C", "1/x + C", "e^x + C", "-ln(x) + C"],
+      answer: "ln(x) + C"
     },
     {
-      question: "4. Dari sebuah data dengan Q1 = 20 dan Q3 = 80, jika ada nilai outlier di atas, berapa batas atas outliernya?",
-      options: ["130", "100", "120", "140"],
-      answer: "130"
+      question: "4. Hitung integral dari e^x terhadap x.",
+      options: ["e^x + C", "xe^x + C", "ln(x) + C", "1/x + C"],
+      answer: "e^x + C"
     },
     {
-      question: "5. Sebuah kelas memiliki rata-rata tinggi badan 160 cm dengan standar deviasi 8 cm. Jika 95% data mengikuti distribusi normal, hitung rentang tinggi badan 95% siswa!",
-      options: ["144-176 cm", "150-170 cm", "152-168 cm", "145-175 cm"],
-      answer: "144-176 cm"
+      question: "5. Hitung integral dari 3x^2 terhadap x.",
+      options: ["x^3 + C", "x^2 + C", "3x + C", "x^4 + C"],
+      answer: "x^3 + C"
     },
     {
-      question: "6. Sebuah perusahaan mencatat rata-rata penjualan harian 200 unit dengan standar deviasi 10 unit. Berapa probabilitas penjualan lebih dari 220 unit (dengan asumsi distribusi normal)?",
-      options: ["0.023", "0.021", "0.019", "0.018"],
-      answer: "0.023"
+      question: "6. Hitung integral dari cos(x) terhadap x.",
+      options: ["sin(x) + C", "-sin(x) + C", "cos(x) + C", "-cos(x) + C"],
+      answer: "sin(x) + C"
     },
     {
-      question: "7. Diberikan 5 angka: 3, 7, 9, 15, dan 21. Hitung median dan range dari data tersebut!",
-      options: ["Median: 9, Range: 18", "Median: 9, Range: 15", "Median: 10, Range: 18", "Median: 10, Range: 15"],
-      answer: "Median: 9, Range: 18"
+      question: "7. Hitung integral dari tan(x) terhadap x.",
+      options: ["ln(cos(x)) + C", "-ln(cos(x)) + C", "ln(sin(x)) + C", "-ln(sin(x)) + C"],
+      answer: "-ln(cos(x)) + C"
     },
     {
-      question: "8. Sebuah distribusi data memiliki rata-rata 70 dan standar deviasi 5. Hitung nilai z-score untuk data bernilai 80.",
-      options: ["1.5", "1.8", "2", "2.2"],
-      answer: "2"
+      question: "8. Hitung integral dari x^3 terhadap x.",
+      options: ["x^4/4 + C", "x^3/3 + C", "4x + C", "3x^3 + C"],
+      answer: "x^4/4 + C"
     },
     {
-      question: "9. Dari data berikut: 15, 20, 25, 30, 35. Hitung nilai rata-rata harmonik!",
-      options: ["22.56", "24.16", "25.15", "26.14"],
-      answer: "24.16"
+      question: "9. Hitung integral dari 1/(1 + x^2) terhadap x.",
+      options: ["arctan(x) + C", "-arctan(x) + C", "ln(x) + C", "-ln(x) + C"],
+      answer: "arctan(x) + C"
     },
     {
-      question: "10. Hitung kuartil ketiga (Q3) dari data: 10, 15, 20, 25, 30, 35, 40, 45, 50!",
-      options: ["35", "37.5", "40", "42.5"],
-      answer: "40"
+      question: "10. Hitung integral dari 1 terhadap x.",
+      options: ["x + C", "1/x + C", "ln(x) + C", "x^2 + C"],
+      answer: "x + C"
     },
     {
-      question: "11. Sebuah data memiliki nilai rata-rata 60 dan standar deviasi 8. Hitung nilai rata-rata kuadrat (mean square) dari data tersebut!",
-      options: ["3680", "3700", "3720", "3750"],
-      answer: "3680"
+      question: "11. Hitung integral dari sec^2(x) terhadap x.",
+      options: ["tan(x) + C", "-tan(x) + C", "sec(x) + C", "-sec(x) + C"],
+      answer: "tan(x) + C"
     },
     {
-      question: "12. Dari data: 8, 10, 12, 14, 16, 18. Hitung rata-rata geometrik!",
-      options: ["13", "13.8", "14", "14.5"],
-      answer: "13.8"
+      question: "12. Hitung integral dari 5 terhadap x.",
+      options: ["5x + C", "x^5 + C", "5x^2/2 + C", "1/5x + C"],
+      answer: "5x + C"
     },
     {
-      question: "13. Diberikan data frekuensi: 2 (4x), 4 (3x), 6 (2x), 8 (1x). Hitung rata-rata tertimbang dari data tersebut!",
-      options: ["4.5", "5", "5.2", "5.5"],
-      answer: "5"
+      question: "13. Hitung integral dari 4x terhadap x.",
+      options: ["2x^2 + C", "4x^2 + C", "x^4 + C", "x^2 + C"],
+      answer: "2x^2 + C"
     },
     {
-      question: "14. Dari data berikut: 3, 5, 7, 10, 15. Hitung simpangan rata-rata (mean deviation) terhadap rata-rata hitung!",
-      options: ["2.4", "3.2", "3.8", "4"],
-      answer: "3.2"
+      question: "14. Hitung integral dari sqrt(x) terhadap x.",
+      options: ["2/3 x^(3/2) + C", "x^(3/2) + C", "1/2 x^(3/2) + C", "3/2 x^(1/2) + C"],
+      answer: "2/3 x^(3/2) + C"
     },
     {
-      question: "15. Jika rata-rata ujian adalah 75 dan standar deviasi adalah 10, berapa persentase siswa yang mendapatkan nilai di bawah 65 (asumsi distribusi normal)?",
-      options: ["16%", "18%", "14%", "12%"],
-      answer: "16%"
+      question: "15. Hitung integral dari 1/(1 - x^2) terhadap x.",
+      options: ["arcsin(x) + C", "-arcsin(x) + C", "arctan(x) + C", "-arctan(x) + C"],
+      answer: "arcsin(x) + C"
     },
     {
-      question: "16. Data nilai siswa: 50, 60, 70, 80, 90, 100. Jika semua nilai dinaikkan 10%, berapakah rata-rata baru dari data tersebut?",
-      options: ["77", "88", "87", "78"],
-      answer: "88"
+      question: "16. Hitung integral dari x^2 terhadap x.",
+      options: ["x^3/3 + C", "3x^2 + C", "x^2 + C", "x^3 + C"],
+      answer: "x^3/3 + C"
     },
     {
-      question: "17. Diberikan data 7 angka: 5, 10, 15, 20, 25, 30, 35. Hitung simpangan baku (standar deviasi) data tersebut!",
-      options: ["10.8", "11", "12", "13"],
-      answer: "11"
+      question: "17. Hitung integral dari 1/(cos^2(x)) terhadap x.",
+      options: ["tan(x) + C", "-tan(x) + C", "sec(x) + C", "-sec(x) + C"],
+      answer: "tan(x) + C"
     },
     {
-      question: "18. Suatu distribusi normal memiliki rata-rata 100 dan standar deviasi 15. Berapa probabilitas data berada antara 85 dan 115?",
-      options: ["0.682", "0.700", "0.710", "0.750"],
-      answer: "0.682"
+      question: "18. Hitung integral dari 3/x terhadap x.",
+      options: ["3ln(x) + C", "ln(x) + C", "3/x + C", "x^3 + C"],
+      answer: "3ln(x) + C"
     },
     {
-      question: "19. Dari data berikut: 2, 4, 6, 8, 10. Hitung momen kedua (second moment) terhadap rata-rata!",
-      options: ["6", "8", "10", "12"],
-      answer: "8"
+      question: "19. Hitung integral dari x^4 terhadap x.",
+      options: ["x^5/5 + C", "4x^3 + C", "x^5 + C", "5x^4 + C"],
+      answer: "x^5/5 + C"
     },
     {
-      question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
-      options: ["12%", "15%", "18%", "20%"],
-      answer:"15%"
-  }
+      question: "20. Hitung integral dari -sin(x) terhadap x.",
+      options: ["cos(x) + C", "-cos(x) + C", "sin(x) + C", "-sin(x) + C"],
+      answer: "cos(x) + C"
+    }
   ];
+  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -130,7 +131,7 @@ const Tryout = () => {
 
   return (
     <div className="app">
-      <h1>Kuis Matematika Kelas XII</h1>
+      <h1>Kuis Matematika Kelas XI</h1>
       {showResult ? (
         <div className="result">
           <h2>Skor Anda: {score} / {questions.length}</h2>

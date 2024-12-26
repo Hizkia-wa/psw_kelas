@@ -7,105 +7,105 @@ const Tryout = () => {
 
   const questions = [
     {
-      question: "1. Sebuah data berisi nilai ujian 10 siswa: 50, 60, 70, 80, 90, 100, 110, 120, 130, 140. Hitung standar deviasi dari data tersebut!",
-      options: ["25", "28.72", "30", "32.15"],
-      answer: "28.72"
+      question: "1. Dalam pemrograman linear, apa tujuan utama dari optimasi?",
+      options: ["Memaksimalkan atau meminimalkan fungsi objektif", "Menentukan hasil dengan cepat", "Membuat algoritma lebih efisien", "Mengelola data secara optimal"],
+      answer: "Memaksimalkan atau meminimalkan fungsi objektif"
     },
     {
-      question: "2. Jika rata-rata dari 12 bilangan adalah 50, dan salah satu bilangan dihapus sehingga rata-rata menjadi 48, berapa nilai bilangan yang dihapus?",
-      options: ["72", "56", "58", "62"],
-      answer: "72"
+      question: "2. Apa yang dimaksud dengan fungsi objektif dalam pemrograman linear?",
+      options: ["Fungsi yang ingin dioptimalkan", "Fungsi yang mendefinisikan batasan", "Fungsi yang tidak memiliki solusi", "Fungsi yang hanya bersifat estimasi"],
+      answer: "Fungsi yang ingin dioptimalkan"
     },
     {
-      question: "3. Hitung variansi dari data berikut: 5, 7, 10, 15, 20!",
-      options: ["22", "30", "35", "40"],
-      answer: "30"
+      question: "3. Apa yang dimaksud dengan variabel keputusan dalam pemrograman linear?",
+      options: ["Variabel yang menentukan solusi", "Variabel acak tanpa nilai pasti", "Variabel yang tidak dapat diubah", "Variabel yang hanya untuk simulasi"],
+      answer: "Variabel yang menentukan solusi"
     },
     {
-      question: "4. Dari sebuah data dengan Q1 = 20 dan Q3 = 80, jika ada nilai outlier di atas, berapa batas atas outliernya?",
-      options: ["130", "100", "120", "140"],
-      answer: "130"
+      question: "4. Dalam konteks pemrograman linear, apa yang dimaksud dengan batasan?",
+      options: ["Kondisi atau aturan yang membatasi solusi", "Fungsi yang harus selalu maksimum", "Himpunan solusi optimal", "Nilai yang dapat diabaikan"],
+      answer: "Kondisi atau aturan yang membatasi solusi"
     },
     {
-      question: "5. Sebuah kelas memiliki rata-rata tinggi badan 160 cm dengan standar deviasi 8 cm. Jika 95% data mengikuti distribusi normal, hitung rentang tinggi badan 95% siswa!",
-      options: ["144-176 cm", "150-170 cm", "152-168 cm", "145-175 cm"],
-      answer: "144-176 cm"
+      question: "5. Apa metode yang sering digunakan untuk menyelesaikan pemrograman linear?",
+      options: ["Metode Simplex", "Metode Regresi", "Metode Monte Carlo", "Metode Gauss"],
+      answer: "Metode Simplex"
     },
     {
-      question: "6. Sebuah perusahaan mencatat rata-rata penjualan harian 200 unit dengan standar deviasi 10 unit. Berapa probabilitas penjualan lebih dari 220 unit (dengan asumsi distribusi normal)?",
-      options: ["0.023", "0.021", "0.019", "0.018"],
-      answer: "0.023"
+      question: "6. Apa bentuk umum dari batasan dalam pemrograman linear?",
+      options: ["Persamaan atau pertidaksamaan linear", "Fungsi eksponensial", "Fungsi logaritma", "Persamaan kuadrat"],
+      answer: "Persamaan atau pertidaksamaan linear"
     },
     {
-      question: "7. Diberikan 5 angka: 3, 7, 9, 15, dan 21. Hitung median dan range dari data tersebut!",
-      options: ["Median: 9, Range: 18", "Median: 9, Range: 15", "Median: 10, Range: 18", "Median: 10, Range: 15"],
-      answer: "Median: 9, Range: 18"
+      question: "7. Jika fungsi objektif adalah Z = 3x + 2y, apa nilai Z ketika x = 2 dan y = 3?",
+      options: ["12", "13", "10", "9"],
+      answer: "12"
     },
     {
-      question: "8. Sebuah distribusi data memiliki rata-rata 70 dan standar deviasi 5. Hitung nilai z-score untuk data bernilai 80.",
-      options: ["1.5", "1.8", "2", "2.2"],
-      answer: "2"
+      question: "8. Dalam metode grafik, bagaimana menentukan solusi optimal?",
+      options: ["Mencari titik sudut area yang feasible", "Menggunakan algoritma iteratif", "Menghitung nilai rata-rata", "Memaksimalkan fungsi batas"],
+      answer: "Mencari titik sudut area yang feasible"
     },
     {
-      question: "9. Dari data berikut: 15, 20, 25, 30, 35. Hitung nilai rata-rata harmonik!",
-      options: ["22.56", "24.16", "25.15", "26.14"],
-      answer: "24.16"
+      question: "9. Apa itu solusi feasible dalam pemrograman linear?",
+      options: ["Solusi yang memenuhi semua batasan", "Solusi terbaik untuk fungsi objektif", "Solusi yang tidak mungkin terjadi", "Solusi yang mendekati nilai optimal"],
+      answer: "Solusi yang memenuhi semua batasan"
     },
     {
-      question: "10. Hitung kuartil ketiga (Q3) dari data: 10, 15, 20, 25, 30, 35, 40, 45, 50!",
-      options: ["35", "37.5", "40", "42.5"],
-      answer: "40"
+      question: "10. Jika fungsi batas adalah 2x + y <= 8, apakah titik (2, 2) merupakan solusi feasible?",
+      options: ["Ya", "Tidak", "Hanya jika x positif", "Hanya jika y positif"],
+      answer: "Ya"
     },
     {
-      question: "11. Sebuah data memiliki nilai rata-rata 60 dan standar deviasi 8. Hitung nilai rata-rata kuadrat (mean square) dari data tersebut!",
-      options: ["3680", "3700", "3720", "3750"],
-      answer: "3680"
+      question: "11. Dalam pemrograman linear, apa arti dari istilah 'region feasible'?",
+      options: ["Himpunan semua solusi yang memenuhi batasan", "Himpunan solusi optimal", "Himpunan solusi sementara", "Himpunan solusi yang tidak memenuhi batasan"],
+      answer: "Himpunan semua solusi yang memenuhi batasan"
     },
     {
-      question: "12. Dari data: 8, 10, 12, 14, 16, 18. Hitung rata-rata geometrik!",
-      options: ["13", "13.8", "14", "14.5"],
-      answer: "13.8"
+      question: "12. Apa fungsi dari metode Simplex dalam pemrograman linear?",
+      options: ["Mencari solusi optimal untuk masalah linear", "Menganalisis data statistik", "Memvalidasi model regresi", "Mengurangi kompleksitas algoritma"],
+      answer: "Mencari solusi optimal untuk masalah linear"
     },
     {
-      question: "13. Diberikan data frekuensi: 2 (4x), 4 (3x), 6 (2x), 8 (1x). Hitung rata-rata tertimbang dari data tersebut!",
-      options: ["4.5", "5", "5.2", "5.5"],
+      question: "13. Jika fungsi objektif adalah Z = 4x + 5y, dan batasannya adalah x + y <= 6, x >= 0, y >= 0, berapa nilai Z maksimum?",
+      options: ["24", "25", "30", "20"],
+      answer: "25"
+    },
+    {
+      question: "14. Apa tujuan dari analisis sensitivitas dalam pemrograman linear?",
+      options: ["Mengukur pengaruh perubahan parameter pada solusi", "Mengurangi jumlah batasan", "Meningkatkan kecepatan komputasi", "Mencari solusi alternatif"],
+      answer: "Mengukur pengaruh perubahan parameter pada solusi"
+    },
+    {
+      question: "15. Dalam pemrograman linear, apa yang dimaksud dengan dualitas?",
+      options: ["Hubungan antara masalah primal dan dual", "Solusi dari dua fungsi objektif", "Dua solusi optimal untuk satu masalah", "Fungsi yang tidak memiliki batasan"],
+      answer: "Hubungan antara masalah primal dan dual"
+    },
+    {
+      question: "16. Apa perbedaan utama antara pemrograman linear dan pemrograman non-linear?",
+      options: ["Fungsi objektif atau batasan berbentuk linear", "Fungsi objektif selalu maksimum", "Hanya ada satu solusi optimal", "Batasan hanya berupa persamaan"],
+      answer: "Fungsi objektif atau batasan berbentuk linear"
+    },
+    {
+      question: "17. Apa yang dimaksud dengan slack variable dalam pemrograman linear?",
+      options: ["Variabel tambahan untuk mengubah pertidaksamaan menjadi persamaan", "Variabel untuk menghitung error", "Variabel sementara untuk solusi optimal", "Variabel yang digunakan untuk validasi"],
+      answer: "Variabel tambahan untuk mengubah pertidaksamaan menjadi persamaan"
+    },
+    {
+      question: "18. Apa peran dari fungsi objektif dalam pemrograman linear?",
+      options: ["Menentukan nilai yang harus dioptimalkan", "Mengatur batasan solusi", "Membatasi nilai variabel", "Mengurangi jumlah solusi"],
+      answer: "Menentukan nilai yang harus dioptimalkan"
+    },
+    {
+      question: "19. Jika fungsi objektif adalah Z = x + y, dan batasannya adalah x >= 2, y >= 3, berapa nilai Z minimum?",
+      options: ["5", "4", "6", "7"],
       answer: "5"
     },
     {
-      question: "14. Dari data berikut: 3, 5, 7, 10, 15. Hitung simpangan rata-rata (mean deviation) terhadap rata-rata hitung!",
-      options: ["2.4", "3.2", "3.8", "4"],
-      answer: "3.2"
-    },
-    {
-      question: "15. Jika rata-rata ujian adalah 75 dan standar deviasi adalah 10, berapa persentase siswa yang mendapatkan nilai di bawah 65 (asumsi distribusi normal)?",
-      options: ["16%", "18%", "14%", "12%"],
-      answer: "16%"
-    },
-    {
-      question: "16. Data nilai siswa: 50, 60, 70, 80, 90, 100. Jika semua nilai dinaikkan 10%, berapakah rata-rata baru dari data tersebut?",
-      options: ["77", "88", "87", "78"],
-      answer: "88"
-    },
-    {
-      question: "17. Diberikan data 7 angka: 5, 10, 15, 20, 25, 30, 35. Hitung simpangan baku (standar deviasi) data tersebut!",
-      options: ["10.8", "11", "12", "13"],
-      answer: "11"
-    },
-    {
-      question: "18. Suatu distribusi normal memiliki rata-rata 100 dan standar deviasi 15. Berapa probabilitas data berada antara 85 dan 115?",
-      options: ["0.682", "0.700", "0.710", "0.750"],
-      answer: "0.682"
-    },
-    {
-      question: "19. Dari data berikut: 2, 4, 6, 8, 10. Hitung momen kedua (second moment) terhadap rata-rata!",
-      options: ["6", "8", "10", "12"],
-      answer: "8"
-    },
-    {
-      question: "20. Sebuah survei mencatat data pendapatan bulanan (dalam juta): 2, 2.5, 3, 3.5, 4, 4.5, 5. Hitung koefisien variasi (CV) dari data tersebut!",
-      options: ["12%", "15%", "18%", "20%"],
-      answer:"15%"
-  }
+      question: "20. Dalam pemrograman linear, apa arti solusi optimal?",
+      options: ["Solusi terbaik yang memenuhi semua batasan", "Solusi yang hanya memenuhi sebagian batasan", "Solusi sementara", "Solusi yang tidak feasible"],
+      answer: "Solusi terbaik yang memenuhi semua batasan"
+    }
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
