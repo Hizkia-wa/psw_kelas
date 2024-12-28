@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/TryOut.css";
 import Timer from "./Timer";
@@ -10,14 +10,14 @@ const Tryout = () => {
   const questions = [
     // Matematika
     {
-      question: "1. Tentukan solusi dari persamaan linear \( 3x + 5 = 20 \).",
+      question: "1. Tentukan solusi dari persamaan linear 3x + 5 = 20.",
       options: ["x = 5", "x = 10", "x = 15", "x = 3"],
       answer: "x = 5"
     },
     {
-      question: "2. Hitunglah nilai dari \( \frac{5}{3} \times \frac{3}{4} \).",
-      options: ["\( \frac{15}{12} \)", "\( \frac{5}{12} \)", "\( \frac{15}{7} \)", "\( \frac{5}{7} \)"],
-      answer: "\( \frac{5}{12} \)"
+      question: "2. Hitunglah nilai dari frac{5}{3} times frac{3}{4}.",
+      options: ["frac{15}{12} ", "frac{5}{12}", "frac{15}{7}", "frac{5}{7}"],
+      answer: "frac{5}{12}"
     },
     // Biologi
     {
@@ -53,7 +53,7 @@ const Tryout = () => {
     },
     // Kimia
     {
-      question: "7. Senyawa dengan rumus kimia \( H_2O \) adalah?",
+      question: "7. Senyawa dengan rumus kimia H_2O adalah?",
       options: ["Asam sulfat", "Air", "Asam klorida", "Amonia"],
       answer: "Air"
     },
@@ -101,14 +101,14 @@ const Tryout = () => {
     },
     // Matematika
     {
-      question: "13. Tentukan hasil dari \( (x^2 - 4) / (x - 2) \) untuk \( x = 3 \).",
+      question: "13. Tentukan hasil dari (x^2 - 4) / (x - 2) untuk x = 3.",
       options: ["1", "2", "3", "4"],
       answer: "1"
     },
     {
-      question: "14. Tentukan hasil dari \( \frac{2}{3} + \frac{3}{4} \).",
-      options: ["\( \frac{17}{12} \)", "\( \frac{5}{7} \)", "\( \frac{11}{12} \)", "\( \frac{9}{7} \)"],
-      answer: "\( \frac{17}{12} \)"
+      question: "14. Tentukan hasil dari frac{2}{3} + frac{3}{4}.",
+      options: ["frac{17}{12}", "frac{5}{7}", "frac{11}{12}", "frac{9}{7}"],
+      answer: "frac{17}{12}"
     },
     // Biologi
     {
