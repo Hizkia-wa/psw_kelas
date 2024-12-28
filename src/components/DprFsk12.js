@@ -18,14 +18,14 @@ import tm15 from '../images/Fsk12p15.jpg';
 import tm16 from '../images/Fsk12p16.jpg';
 
 const teamData = [
-  { id: 1, name: "Stevani Rointan Nadeak", img: tm9,about: "Aku adalah orang yang sangat mencintai musik. Saat aku mendengarkan musik aku langsung menyanyi." },
+  { id: 1, name: "Stevani Rointan Nadeak", img: tm10,about: "Aku adalah orang yang sangat mencintai musik. Saat aku mendengarkan musik aku langsung menyanyi." },
   { id: 2, name: "Jamot Togu Suryadi Sigiro", img: tm1,about: "Hi !, Perkenalkan namaku Jamot Togu Suryadi Sigiro Dari prodi DIV TRPL dengan NIM 41424017.Aku adalah orang yang mudah marah dan juga suka ngomong kasar,tapi sebenarnya aku punya hati yang baik dan suka membantu teman.aku suka membaca manga,manhwa dan manhua,karakter fiksi kesukaanku adalah Sun wukong,son Goku,Kamen Rider Decade,Van Helsing dan karakter sejarah Favoritku adalah LUBU FENGXIAN" },
   { id: 3, name: "Lastri Anna Hutagalung", img: tm5,about: "Halo, saya Lastri Anna Hutagalung. Saya adalah pribadi yang menemukan semangat dalam hal-hal sederhana, seperti menikmati makanan manis favorit saya dan mendengarkan musik di waktu luang. Saya juga sangat menyukai anjing—makhluk menggemaskan dan setia." },
   { id: 4, name: "Epelina Oktavia Pangaribuan", img: tm13, about: "Hobi mendengarkan musik dan film Korea. Memiliki pribadi yang disiplin,pemberani dan suka berbagi!" },
 ];
 
 const myTeamImages = [
-  [tm10,tm11,tm12],
+  [tm9,tm11,tm12],
   [tm2,tm3,tm4],
   [tm6,tm7,tm8],
   [tm14, tm15, tm16],

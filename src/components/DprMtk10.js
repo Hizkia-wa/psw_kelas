@@ -14,14 +14,14 @@ import tm11 from '../images/Mtk10p11.jpg';
 import tm12 from '../images/Mtk10p12.jpg';
 
 const teamData = [
-  { id: 1, name: "Hugo Henock Morales Simorangkir", img: tm5, about: "Aku orang yang suka main musik, sering banget menghabiskan waktu buat main game, dan nggak bisa lepas dari kopi. Dalam obrolan, aku selalu mencoba pengertian, meskipun kadang nggak semua orang bisa aku pahami sepenuhnya. Tapi tenang aja, itu cuma caraku untuk lebih memahami situasi. Aku Aldi Fahrel Nababan, dan ya, aku orang yang santai tapi selalu mendengarkan." },
-  { id: 2, name: "OCTAVIA M. SIDABUTAR", img: tm1, about: "aku orang nya suka nonton drama apalagi nonton drakor,suka jalan-jalan dan mencoba hal-hal baru" },
+  { id: 1, name: "Hugo Henock Morales Simorangkir", img: tm6, about: "Aku orang yang suka main musik, sering banget menghabiskan waktu buat main game, dan nggak bisa lepas dari kopi. Dalam obrolan, aku selalu mencoba pengertian, meskipun kadang nggak semua orang bisa aku pahami sepenuhnya. Tapi tenang aja, itu cuma caraku untuk lebih memahami situasi. Aku Aldi Fahrel Nababan, dan ya, aku orang yang santai tapi selalu mendengarkan." },
+  { id: 2, name: "OCTAVIA M. SIDABUTAR", img: tm4, about: "aku orang nya suka nonton drama apalagi nonton drakor,suka jalan-jalan dan mencoba hal-hal baru" },
   { id: 3, name: "Novi Windyani Simanjuntak", img: tm9, about: "Aku orangnya gampang seru diajak ngobrol, suka banget bercanda, tapi jujur, aku juga mudah bosan kalau suasananya monoton. Aku selalu pengen coba hal-hal baru biar gak stuck di situ-situ aja. Kadang-kadang, aku bisa keras kepala kalau lagi yakin sama sesuatu, tapi di balik itu, aku sebenarnya sangat memperhatikan orang-orang yang aku sayang. Itu lah aku, Novi Windyani Simanjuntak. Saya suka menjelajahi tempat baru, menonton film komedi dan drakor , dan nyari inspirasi." },
 ];
 
 const myTeamImages = [
-  [tm6, tm7, tm8],
-  [tm2, tm3, tm4],
+  [tm5, tm7, tm8],
+  [tm2, tm3, tm1],
   [tm10, tm11, tm12],
 ];
 
