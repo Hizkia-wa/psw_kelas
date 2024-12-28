@@ -13,47 +13,12 @@ const Contact = () => {
       <div className="text-center mb-5">
         <h1 className="contact-title">Contact Us</h1>
         <nav>
-          <a href="/" className="contact-nav">
-            Home
-          </a>{" "}
           / <span>Contact</span>
         </nav>
       </div>
 
       <div className="container">
         <div className="row">
-          {/* Contact Form */}
-          <div className="col-md-6 mb-4">
-            <div className="contact-form">
-              <h2>hubungi Kami:</h2>
-              <form>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Nama..."
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Email..."
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    className="form-control"
-                    rows="4"
-                    placeholder="Pesan..."
-                  ></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary w-100">
-                  Kirim
-                </button>
-              </form>
-            </div>
-          </div>
 
           {/* Contact Info */}
           <div className="col-md-6">
@@ -63,21 +28,15 @@ const Contact = () => {
               </p>
               <div className="info-item">
                 <i className="bi bi-telephone"></i>
-                <p>
-                  <strong>Nomor Telepon:</strong> +6278-9449-0079
-                </p>
               </div>
               <div className="info-item">
                 <i className="bi bi-envelope"></i>
                 <p>
-                  <strong>Alamat Email:</strong> Rumapibisa@gmail.com
+                  <strong>Alamat Email:</strong>ruangbelajarcermat@gmail.com
                 </p>
               </div>
               <div className="info-item">
                 <i className="bi bi-whatsapp"></i>
-                <p>
-                  <strong>Whatsapp:</strong> 0878-9449-0079
-                </p>
               </div>
               <div className="info-item">
                 <i className="bi bi-geo-alt"></i>
@@ -98,14 +57,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-
-
-      <div className="hire-us-section text-center mt-5">
-        <h3>Mulai Belajar Dengan Kami!</h3>
-        <p>Kami siap memberi Anda solusi terbaik untuk kebutuhan Anda.</p>
-        <button className="btn btn-outline-light"
-        onClick={() => navigate ("/Home")}>Mulai</button>
       </div>
     </div>
   );

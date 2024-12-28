@@ -81,16 +81,6 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="card border-0 shadow p-4 h-100 bg-white rounded">
-              <FaTeamspeak size={50} className="text-info mb-3" />
-              <h4 className="text-primary">Bersama Kami</h4>
-              <p className="text-muted">
-                Belajar menjadi lebih seru dengan panduan dari tim pengajar
-                kami.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </div>
